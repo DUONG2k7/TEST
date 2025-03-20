@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231 - 3layer\\sof102_asm\\asm\\formlichsudangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formlichsudangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|c:\\git_pro231 - 3layer\\sof102_asm\\bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|solutionrelative:bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|c:\\git_pro231 - 3layer\\sof102_asm\\bus_ql\\bus_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|solutionrelative:bus_ql\\bus_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|c:\\git_pro231 - 3layer\\sof102_asm\\dal_ql\\dal_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dal_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 165,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BUS_IT.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\BUS_QL\\BUS_IT.cs",
+              "RelativeDocumentMoniker": "BUS_QL\\BUS_IT.cs",
+              "ToolTip": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\BUS_QL\\BUS_IT.cs",
+              "RelativeToolTip": "BUS_QL\\BUS_IT.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwDoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:07:47.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormLichSuDangNhap.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\ASM\\FormLichSuDangNhap.cs",
+              "RelativeDocumentMoniker": "ASM\\FormLichSuDangNhap.cs",
+              "ToolTip": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\ASM\\FormLichSuDangNhap.cs",
+              "RelativeToolTip": "ASM\\FormLichSuDangNhap.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:05:02.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BUS_GUI.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\BUS_QL\\BUS_GUI.cs",
+              "RelativeDocumentMoniker": "BUS_QL\\BUS_GUI.cs",
+              "ToolTip": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\BUS_QL\\BUS_GUI.cs",
+              "RelativeToolTip": "BUS_QL\\BUS_GUI.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:39:53.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DAL_GUI.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\DAL_QL\\DAL_GUI.cs",
+              "RelativeDocumentMoniker": "DAL_QL\\DAL_GUI.cs",
+              "ToolTip": "C:\\GIT_PRO231 - 3layer\\SOF102_ASM\\DAL_QL\\DAL_GUI.cs",
+              "RelativeToolTip": "DAL_QL\\DAL_GUI.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA3wD8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:37:45.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
