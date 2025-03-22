@@ -127,10 +127,12 @@ GO
 -- Bảng Môn học
 CREATE TABLE MonHoc (
     IDMonHoc NVARCHAR(50) NOT NULL PRIMARY KEY,
-    TenMon NVARCHAR(50),
     IDKyHoc NVARCHAR(50),
+    TenMon NVARCHAR(50),
     SoTiet INT,
-    Trangthai BIT
+    Trangthai BIT,
+	IDGV NVARCHAR(50) UNIQUE,
+	FOREIGN KEY (IDGV) REFERENCES TEACHERS(IDGV)
 );
 GO
 
@@ -314,13 +316,13 @@ VALUES
 ('HK2-2025', N'Học kỳ 2', '2025-2026');
 
 -- Thêm dữ liệu vào bảng MonHoc
-INSERT INTO MonHoc (IDMonHoc, TenMon, SoTiet)
+INSERT INTO MonHoc (IDMonHoc, TenMon, SoTiet, IDGV)
 VALUES 
-('MH001', N'Toán', 3),
-('MH002', N'Văn', 2),
-('MH003', N'Anh Văn', 3),
-('MH004', N'Lý', 3),
-('MH005', N'Hóa', 3);
+('MH001', N'Toán', 3, 'GV01'),
+('MH002', N'Văn', 2, 'GV02'),
+('MH003', N'Anh Văn', 3, 'GV03'),
+('MH004', N'Lý', 3, 'GV04'),
+('MH005', N'Hóa', 3, 'GV05');
 
 -- Thêm điểm cho nửa còn lại sinh viên ở các lớp L01, L02, L03
 INSERT INTO DIEM (IDSV, IDMonHoc, Diem)

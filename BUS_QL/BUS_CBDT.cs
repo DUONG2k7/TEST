@@ -34,13 +34,13 @@ namespace BUS_QL
         {
             return QlThongTin.KiemTraSVDaCoDiemChua(maSV);
         }
-        public bool ThemSinhVien(DTO_CBDT_SV SinhVien)
+        public bool ThemSinhVien(DTO_CBDT_SV SinhVien, out string message)
         {
-            return QlThongTin.InsertStudent(SinhVien);
+            return QlThongTin.InsertStudent(SinhVien, out message);
         }
-        public bool CapNhatSinhVien(DTO_CBDT_SV SinhVien)
+        public bool CapNhatSinhVien(DTO_CBDT_SV SinhVien, out string message)
         {
-            return QlThongTin.UpdateStudent(SinhVien);
+            return QlThongTin.UpdateStudent(SinhVien, out message);
         }
         public bool XoaSinhVien(string maSV)
         {
@@ -68,13 +68,13 @@ namespace BUS_QL
         {
             return QlThongTin.KtLopDaTonTai(maLop);
         }
-        public bool ThemLop(DTO_CBDT_CLASS lop)
+        public bool ThemLop(DTO_CBDT_CLASS lop, out string message)
         {
-            return QlThongTin.InsertClass(lop);
+            return QlThongTin.InsertClass(lop, out message);
         }
-        public bool CapNhatLop(DTO_CBDT_CLASS lop)
+        public bool CapNhatLop(DTO_CBDT_CLASS lop, out string message)
         {
-            return QlThongTin.UpdateClass(lop);
+            return QlThongTin.UpdateClass(lop, out message);
         }
         public bool XoaLop(string maLop)
         {
@@ -102,13 +102,13 @@ namespace BUS_QL
         {
             return QlThongTin.KtTKDaChiDinh(MaGV);
         }
-        public bool ThemGiaoVien(DTO_CBDT_GV GiaoVien)
+        public bool ThemGiaoVien(DTO_CBDT_GV GiaoVien, out string message)
         {
-            return QlThongTin.InsertTeacher(GiaoVien);
+            return QlThongTin.InsertTeacher(GiaoVien, out message);
         }
-        public bool CapNhatGiaoVien(DTO_CBDT_GV GiaoVien)
+        public bool CapNhatGiaoVien(DTO_CBDT_GV GiaoVien, out string message)
         {
-            return QlThongTin.UpdateTeacher(GiaoVien);
+            return QlThongTin.UpdateTeacher(GiaoVien, out message);
         }
         public bool XoaGiaoVien(string magv)
         {

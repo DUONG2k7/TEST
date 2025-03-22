@@ -19,11 +19,12 @@ namespace ASM
         private int xPosition;
         private string[] images;
         private int index = 0;
-        string role;
         string username;
-        public FormGV(string User, string IDrole)
+        string IDACC;
+        public FormGV(string User, string IDrole, string idacc)
         {
             InitializeComponent();
+            IDACC = idacc;
             username = User;
             ThongTinTaiKhoan.Text = "Chào " + User;
             UserNameThongTinTaiKhoan.Text = "Username: " + User;
@@ -54,7 +55,7 @@ namespace ASM
         private void btnMenuQlyDiem_Click(object sender, EventArgs e)
         {
             tabMain.Controls.Clear();
-            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(username);
+            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(username, IDACC);
             GV.TopLevel = false;
             GV.FormBorderStyle = FormBorderStyle.None;
             GV.Dock = DockStyle.Fill;

@@ -86,7 +86,7 @@ namespace ASM
         {
             cbGVCN.DataSource = QlLop.LoadDsGvChoLop();
             cbGVCN.DisplayMember = "TenGV";
-            cbGVCN.ValueMember = "MaGV";
+            cbGVCN.ValueMember = "IDGV";
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -168,7 +168,7 @@ namespace ASM
                     btnUpdate.Enabled = true;
                     btnDelete.Enabled = true;
 
-                    txtMaLop.Text = dgvData.CurrentRow.Cells["MaLop"]?.Value?.ToString() ?? string.Empty;
+                    txtMaLop.Text = dgvData.CurrentRow.Cells["IDLop"]?.Value?.ToString() ?? string.Empty;
                     txtTenlop.Text = dgvData.CurrentRow.Cells["ClassName"]?.Value?.ToString() ?? string.Empty;
 
                     btnLoU.Enabled = true;
@@ -208,6 +208,7 @@ namespace ASM
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
+            string messsage;
             if (isAdding)
             {
                 if (!CheckInput())
@@ -222,9 +223,13 @@ namespace ASM
                 }
 
                 DTO_CBDT_CLASS lop = new DTO_CBDT_CLASS(txtMaLop.Text, txtTenlop.Text, cbGVCN.SelectedValue.ToString());
-                if (QlLop.ThemLop(lop))
+                if (QlLop.ThemLop(lop, out messsage))
                 {
-                    MessageBox.Show("Thông tin lớp đã được lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(messsage, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(messsage, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -239,13 +244,13 @@ namespace ASM
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật lớp này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    if (QlLop.CapNhatLop(lop))
+                    if (QlLop.CapNhatLop(lop, out messsage))
                     {
-                        MessageBox.Show("Thông tin lớp đã được cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(messsage, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy lớp để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(messsage, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }

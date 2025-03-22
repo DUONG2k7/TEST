@@ -98,7 +98,7 @@ namespace ASM
         {
             cbLop.DataSource = QlSinhVien.LoadDsLopChoSinhVien();
             cbLop.DisplayMember = "ClassName";
-            cbLop.ValueMember = "MaLop";
+            cbLop.ValueMember = "IDLop";
         }
         private void LoadPictureBox()
         {
@@ -202,9 +202,9 @@ namespace ASM
                     btnUpdate.Enabled = true;
                     btnDelete.Enabled = true;
 
-                    txtMasv.Text = dgvData.CurrentRow.Cells["MaSV"]?.Value?.ToString() ?? string.Empty;
+                    txtMasv.Text = dgvData.CurrentRow.Cells["IDSV"]?.Value?.ToString() ?? string.Empty;
                     txtHoten.Text = dgvData.CurrentRow.Cells["TenSV"]?.Value?.ToString() ?? string.Empty;
-                    cbLop.SelectedValue = dgvData.CurrentRow.Cells["MaLop"]?.Value?.ToString() ?? string.Empty;
+                    cbLop.SelectedValue = dgvData.CurrentRow.Cells["IDLop"]?.Value?.ToString() ?? string.Empty;
                     txtEmail.Text = dgvData.CurrentRow.Cells["Email"]?.Value?.ToString() ?? string.Empty;
                     txtSodt.Text = dgvData.CurrentRow.Cells["SoDT"]?.Value?.ToString() ?? string.Empty;
                     txtDiachi.Text = dgvData.CurrentRow.Cells["Diachi"]?.Value?.ToString() ?? string.Empty;
@@ -278,6 +278,7 @@ namespace ASM
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
+            string message;
             if (isAdding)
             {
                 if (!CheckInput())
@@ -306,9 +307,13 @@ namespace ASM
 
                 DTO_CBDT_SV sinhvien = new DTO_CBDT_SV(txtMasv.Text,cbLop.SelectedValue.ToString(),txtHoten.Text,txtEmail.Text,
                                                         txtSodt.Text,rdbNam.Checked,txtDiachi.Text,image);
-                if (QlSinhVien.ThemSinhVien(sinhvien))
+                if (QlSinhVien.ThemSinhVien(sinhvien, out message))
                 {
-                    MessageBox.Show("Thông tin sinh viên đã được lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -337,13 +342,13 @@ namespace ASM
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    if (QlSinhVien.CapNhatSinhVien(sinhvien))
+                    if (QlSinhVien.CapNhatSinhVien(sinhvien, out message))
                     {
-                        MessageBox.Show("Thông tin sinh viên đã được cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy sinh viên để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }

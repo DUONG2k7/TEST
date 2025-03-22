@@ -82,7 +82,7 @@ namespace ASM
                     switch (role)
                     {
                         case "R04":
-                            form = new FormGV(txtUsername.Text, role);
+                            form = new FormGV(txtUsername.Text, role, idAcc);
                             break;
                         case "R02":
                             form = new FormCBDT(txtUsername.Text, role);

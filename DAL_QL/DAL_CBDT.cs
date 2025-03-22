@@ -62,7 +62,7 @@ namespace DAL_QL
         }
         public bool KtSvDaTonTai(string maHs)
         {
-            string query = "SELECT COUNT(*) FROM STUDENTS WHERE MASV = @MASV";
+            string query = "SELECT COUNT(*) FROM STUDENTS WHERE IDSV = @IDSV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -70,7 +70,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MASV", maHs);
+                        cmd.Parameters.AddWithValue("@IDSV", maHs);
                         int count = (int)cmd.ExecuteScalar();
                         return count > 0;
                     }
@@ -102,9 +102,9 @@ namespace DAL_QL
                 }
             }
         }
-        public bool InsertStudent(DTO_CBDT_SV SinhVien)
+        public bool InsertStudent(DTO_CBDT_SV SinhVien, out string message)
         {
-            string insertQuery = "INSERT INTO STUDENTS (MASV, TenSV, IDLop, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@MASV, @TenSV, @IDLop, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
+            string insertQuery = "INSERT INTO STUDENTS (IDSV, TenSV, IDLop, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@IDSV, @TenSV, @IDLop, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -112,7 +112,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MASV", SinhVien._MaSV);
+                        cmd.Parameters.AddWithValue("@IDSV", SinhVien._MaSV);
                         cmd.Parameters.AddWithValue("@TenSV", SinhVien._TenSV);
                         cmd.Parameters.AddWithValue("@IDLop", SinhVien._MaLop);
                         cmd.Parameters.AddWithValue("@Email", SinhVien._Email);
@@ -121,18 +121,29 @@ namespace DAL_QL
                         cmd.Parameters.AddWithValue("@Diachi", SinhVien._Diachi);
                         cmd.Parameters.AddWithValue("@Hinh", SinhVien._Hinh);
 
-                        return cmd.ExecuteNonQuery() > 0;
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin sinh viên đã được lưu thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có dữ liệu nào được thêm.";
+                            return false;
+                        }
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    message = "Lỗi khi thêm sinh viên: " + ex.Message;
                     return false;
                 }
             }
         }
-        public bool UpdateStudent(DTO_CBDT_SV SinhVien)
+        public bool UpdateStudent(DTO_CBDT_SV SinhVien, out string message)
         {
-            string updateQuery = "UPDATE STUDENTS SET TenSV = @TenSV, IDLop = @Malop, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE MASV = @MASV";
+            string updateQuery = "UPDATE STUDENTS SET TenSV = @TenSV, IDLop = @IDLop, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE IDSV = @IDSV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -140,7 +151,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MASV", SinhVien._MaSV);
+                        cmd.Parameters.AddWithValue("@IDSV", SinhVien._MaSV);
                         cmd.Parameters.AddWithValue("@TenSV", SinhVien._TenSV);
                         cmd.Parameters.AddWithValue("@IDLop", SinhVien._MaLop);
                         cmd.Parameters.AddWithValue("@Email", SinhVien._Email);
@@ -149,11 +160,22 @@ namespace DAL_QL
                         cmd.Parameters.AddWithValue("@Diachi", SinhVien._Diachi);
                         cmd.Parameters.AddWithValue("@Hinh", SinhVien._Hinh);
 
-                        return cmd.ExecuteNonQuery() > 0;
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin sinh viên đã được cập nhật thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có sinh viên nào được cập nhật.";
+                            return false;
+                        }
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    message = "Lỗi khi cập nhật sinh viên: " + ex.Message;
                     return false;
                 }
             }
@@ -161,7 +183,7 @@ namespace DAL_QL
 
         public bool DeleteStudent(string maSV)
         {
-            string deleteQuery = "DELETE FROM STUDENTS WHERE MASV = @MASV";
+            string deleteQuery = "DELETE FROM STUDENTS WHERE IDSV = @IDSV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -169,7 +191,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(deleteQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MASV", maSV);
+                        cmd.Parameters.AddWithValue("@IDSV", maSV);
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
@@ -237,7 +259,7 @@ namespace DAL_QL
         //Class
         public DataTable GetListClass()
         {
-            string query = "SELECT c.IDLop, c.ClassName, COUNT(s.IDSV) AS SiSo, ISNULL(t.TenGV, N'Không có GVCN') AS TenGiaoVien, CASE WHEN c.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM CLASSES c LEFT JOIN STUDENTS s ON c.IDLop = s.IDLop LEFT JOIN TEACHERS t ON c.MaGV = t.MaGV GROUP BY c.IDLop, c.ClassName, t.TenGV, c.Trangthai;";
+            string query = "SELECT c.IDLop, c.ClassName, COUNT(s.IDSV) AS SiSo, ISNULL(t.TenGV, N'Không có GVCN') AS TenGiaoVien, CASE WHEN c.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM CLASSES c LEFT JOIN STUDENTS s ON c.IDLop = s.IDLop LEFT JOIN TEACHERS t ON c.IDGV = t.IDGV GROUP BY c.IDLop, c.ClassName, t.TenGV, c.Trangthai;";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -251,7 +273,7 @@ namespace DAL_QL
         }
         public DataTable GetListTeacherFromClass()
         {
-            string query = "SELECT T.MaGV, T.TenGV FROM TEACHERS T LEFT JOIN CLASSES C ON T.MaGV = C.MaGV WHERE C.MaGV IS NULL AND T.IdAcc IS NOT NULL";
+            string query = "SELECT T.IDGV, T.TenGV FROM TEACHERS T LEFT JOIN CLASSES C ON T.IDGV = C.IDGV WHERE C.IDGV IS NULL AND T.IdAcc IS NOT NULL";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
@@ -260,7 +282,7 @@ namespace DAL_QL
                 dataAdapter.Fill(dataTable);
 
                 DataRow emptyRow = dataTable.NewRow();
-                emptyRow["MaGV"] = DBNull.Value;
+                emptyRow["IDGV"] = DBNull.Value;
                 emptyRow["TenGV"] = "Không chỉ định";
                 dataTable.Rows.InsertAt(emptyRow, 0);
 
@@ -297,7 +319,7 @@ namespace DAL_QL
         }
         public bool KtGVDaChiDinh(string maLop)
         {
-            string query = "SELECT MaGV FROM CLASSES WHERE IDLop = @IDLop";
+            string query = "SELECT IDGV FROM CLASSES WHERE IDLop = @IDLop";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -323,38 +345,72 @@ namespace DAL_QL
             }
         }
 
-        public bool InsertClass(DTO_CBDT_CLASS lop)
+        public bool InsertClass(DTO_CBDT_CLASS lop, out string message)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
-                conn.Open();
-                string insertQuery = "INSERT INTO CLASSES (IDLop, ClassName, MaGV) VALUES (@IDLop, @ClassName, @MaGV)";
-                using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                try
                 {
-                    cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
-                    cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
-                    cmd.Parameters.AddWithValue("@MaGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
+                    conn.Open();
+                    string insertQuery = "INSERT INTO CLASSES (IDLop, ClassName, IDGV) VALUES (@IDLop, @ClassName, @IDGV)";
+                    using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
+                        cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
+                        cmd.Parameters.AddWithValue("@IDGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0;
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin lớp đã được lưu thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có dữ liệu nào được thêm.";
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    message = "Lỗi khi thêm lớp học: " + ex.Message;
+                    return false;
                 }
             }
         }
 
-        public bool UpdateClass(DTO_CBDT_CLASS lop)
+        public bool UpdateClass(DTO_CBDT_CLASS lop, out string message)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
-                conn.Open();
-                string updateQuery = "UPDATE CLASSES SET ClassName = @ClassName, MaGV = @MaGV WHERE IDLop = @IDLop";
-                using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                try
                 {
-                    cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
-                    cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
-                    cmd.Parameters.AddWithValue("@MaGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
+                    conn.Open();
+                    string updateQuery = "UPDATE CLASSES SET ClassName = @ClassName, IDGV = @IDGV WHERE IDLop = @IDLop";
+                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
+                        cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
+                        cmd.Parameters.AddWithValue("@IDGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    return rowsAffected > 0;
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin lớp đã được cập nhật thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có lớp học nào được cập nhật.";
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    message = "Lỗi khi cập nhật lớp học: " + ex.Message;
+                    return false;
                 }
             }
         }
@@ -464,7 +520,7 @@ namespace DAL_QL
 
         public DataTable GetListTeacher()
         {
-            string query = "SELECT T.MaGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, T.Diachi, T.Hinh, ISNULL(C.IDLop, N'Chưa có lớp') AS Lop FROM TEACHERS T LEFT JOIN CLASSES C ON T.MaGV = C.MaGV";
+            string query = "SELECT T.IDGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, T.Diachi, T.Hinh, ISNULL(C.IDLop, N'Chưa có lớp') AS Lop FROM TEACHERS T LEFT JOIN CLASSES C ON T.IDGV = C.IDGV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -478,7 +534,7 @@ namespace DAL_QL
         }
         public bool KtGvDaTonTai(string maGV)
         {
-            string query = "SELECT COUNT(*) FROM TEACHERS WHERE MaGV = @MaGV";
+            string query = "SELECT COUNT(*) FROM TEACHERS WHERE IDGV = @IDGV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -486,7 +542,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MaGV", maGV);
+                        cmd.Parameters.AddWithValue("@IDGV", maGV);
                         int count = (int)cmd.ExecuteScalar();
                         return count > 0;
                     }
@@ -497,9 +553,9 @@ namespace DAL_QL
                 }
             }
         }
-        public bool KtTKDaChiDinh(string MaGV)
+        public bool KtTKDaChiDinh(string IDGV)
         {
-            string query = "SELECT IdAcc FROM TEACHERS WHERE MaGV = @MaGV";
+            string query = "SELECT IdAcc FROM TEACHERS WHERE IDGV = @IDGV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -507,7 +563,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MaGV", MaGV);
+                        cmd.Parameters.AddWithValue("@IDGV", IDGV);
                         object result = cmd.ExecuteScalar();
 
                         if (result != null && result != DBNull.Value)
@@ -524,45 +580,17 @@ namespace DAL_QL
                 }
             }
         }
-        public bool InsertTeacher(DTO_CBDT_GV GiaoVien)
+        public bool InsertTeacher(DTO_CBDT_GV GiaoVien, out string message)
         {
             try
             {
-                string insertQuery = "INSERT INTO TEACHERS (MaGV, TenGV, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@MaGV, @TenGV, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
+                string insertQuery = "INSERT INTO TEACHERS (IDGV, TenGV, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@IDGV, @TenGV, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
                 using (SqlConnection conn = new SqlConnection(ConnectionString))
                 {
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MaGV", GiaoVien._MaGV);
-                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
-                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
-                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
-                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
-                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
-
-                        cmd.ExecuteNonQuery();
-                        return true;
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-        public bool UpdateTeacher(DTO_CBDT_GV GiaoVien)
-        {
-            try
-            {
-                string updateQuery = "UPDATE TEACHERS SET TenGV = @TenGV, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE MaGV = @MaGV";
-                using (SqlConnection conn = new SqlConnection(ConnectionString))
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@MaGV", GiaoVien._MaGV);
+                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
                         cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
                         cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
                         cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
@@ -573,17 +601,58 @@ namespace DAL_QL
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
+                            message = "Thông tin giảng viên đã được lưu thành công!";
                             return true;
                         }
                         else
                         {
+                            message = "Không có dữ liệu nào được thêm.";
                             return false;
                         }
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                message = "Lỗi khi thêm giảng viên: " + ex.Message;
+                return false;
+            }
+        }
+        public bool UpdateTeacher(DTO_CBDT_GV GiaoVien, out string message)
+        {
+            try
+            {
+                string updateQuery = "UPDATE TEACHERS SET TenGV = @TenGV, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE IDGV = @IDGV";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
+                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
+                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
+                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
+                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
+                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin giảng viên đã được cập nhật thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có giảng viên nào được cập nhật.";
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Lỗi khi cập nhật giảng viên: " + ex.Message;
                 return false;
             }
         }
@@ -591,13 +660,13 @@ namespace DAL_QL
         {
             try
             {
-                string deleteQuery = "DELETE FROM TEACHERS WHERE MaGV = @MaGV";
+                string deleteQuery = "DELETE FROM TEACHERS WHERE IDGV = @IDGV";
                 using (SqlConnection conn = new SqlConnection(ConnectionString))
                 {
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(deleteQuery, conn))
                     {
-                        cmd.Parameters.AddWithValue("@MaGV", magv);
+                        cmd.Parameters.AddWithValue("@IDGV", magv);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -622,7 +691,7 @@ namespace DAL_QL
         {
             List<int> numbers = new List<int>();
 
-            string query = "SELECT MaGV FROM TEACHERS WHERE MaGV LIKE @prefix + '%'";
+            string query = "SELECT IDGV FROM TEACHERS WHERE IDGV LIKE @prefix + '%'";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -633,7 +702,7 @@ namespace DAL_QL
                     {
                         while (reader.Read())
                         {
-                            string id = reader["MaGV"].ToString();
+                            string id = reader["IDGV"].ToString();
                             if (id.Length > prefix.Length)
                             {
                                 string numberPart = id.Substring(prefix.Length);

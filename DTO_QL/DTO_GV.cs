@@ -9,9 +9,8 @@ namespace DTO_QL
     public class DTO_GV
     {
         private string MaSV;
-        private string TenSV;
-        private string TenMon;
-        private double Diem;
+        private string IDMonHoc;
+        private string Diem;
 
         public string _MaSV
         {
@@ -24,29 +23,18 @@ namespace DTO_QL
                 MaSV = value;
             }
         }
-        public string _TenSV
+        public string _IDMonHoc
         {
             get
             {
-                return TenSV;
+                return IDMonHoc;
             }
             set
             {
-                TenSV = value;
+                IDMonHoc = value;
             }
         }
-        public string _TenMon
-        {
-            get
-            {
-                return TenMon;
-            }
-            set
-            {
-                TenMon = value;
-            }
-        }
-        public double _Diem
+        public string _Diem
         {
             get
             {
@@ -56,6 +44,17 @@ namespace DTO_QL
             {
                 Diem = value;
             }
+        }
+        public DTO_GV(string MASV, string IDMONHOC, string DIEM)
+        {
+            _MaSV = MASV;
+            _IDMonHoc = IDMONHOC;
+            _Diem = DIEM;
+        }
+        public DTO_GV(string MASV, string IDMONHOC)
+        {
+            _MaSV = MASV;
+            _IDMonHoc = IDMONHOC;
         }
     }
 }

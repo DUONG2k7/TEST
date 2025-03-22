@@ -20,7 +20,6 @@ namespace ASM
         private int xPosition;
         private string[] images;
         private int index = 0;
-        string role;
         public FormCBDT(string User, string IDrole)
         {
             InitializeComponent();

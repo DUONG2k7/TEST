@@ -19,7 +19,6 @@ namespace ASM
         private int xPosition;
         private string[] images;
         private int index = 0;
-        string role;
 
         public FormADMIN(string Username, string IDrole)
         {
