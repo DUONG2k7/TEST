@@ -31,25 +31,70 @@ namespace ASM
             switch (cbDanhSach.SelectedItem.ToString())
             {
                 case "Mặc định":
-                    query = "SELECT SV.IDGV, SV.TenSV, GD.Toan, GD.Van, GD.TiengAnh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop";
+                    query = @"SELECT GD.IDDiem, SV.IDSV, SV.TenSV, MH.TenMon,
+                            COALESCE(CAST(GD.Diem AS NVARCHAR), N'Chưa nhập') AS Diem 
+                            FROM STUDENTS SV 
+                            LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV 
+                            LEFT JOIN MonHoc MH ON GD.IDMonHoc = MH.IDMonHoc 
+                            WHERE SV.IDLop = @IDLop";
                     break;
+
                 case "Top 3 sinh viên cao nhất":
-                    query = "SELECT TOP 3 SV.IDGV, SV.TenSV, GD.Toan, GD.Van, GD.TiengAnh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop ORDER BY ((GD.Toan + GD.Van + GD.TiengAnh) / 3) DESC";
+                    query = @"SELECT TOP 3 SV.IDSV, SV.TenSV, 
+                            ROUND(SUM(GD.Diem) / COUNT(GD.IDDiem), 2) AS DiemTB
+                            FROM STUDENTS SV
+                            JOIN Diem GD ON SV.IDSV = GD.IDSV
+                            WHERE SV.IDLop = @IDLop AND GD.Diem IS NOT NULL
+                            GROUP BY SV.IDSV, SV.TenSV
+                            ORDER BY DiemTB DESC";
                     break;
+
                 case "Tăng dần theo mã sinh viên":
-                    query = "SELECT SV.IDGV, SV.TenSV, GD.Toan, GD.Van, GD.TiengAnh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop ORDER BY SV.IDGV ASC";
+                    query = @"SELECT SV.IDSV, SV.TenSV, 
+                            COALESCE(CAST(GD.Diem AS NVARCHAR), N'Chưa nhập') AS Diem, 
+                            ROUND(AVG(CAST(GD.Diem AS FLOAT)), 2) AS DiemTB 
+                            FROM STUDENTS SV 
+                            LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV 
+                            WHERE SV.IDLop = @IDLop 
+                            GROUP BY SV.IDSV, SV.TenSV, GD.Diem 
+                            ORDER BY SV.IDSV ASC";
                     break;
+
                 case "Tăng dần theo giới tính":
-                    query = "SELECT SV.IDGV, SV.TenSV, CASE WHEN SV.GioiTinh = 1 THEN 'Nam' ELSE N'Nữ' END AS GioiTinh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop ORDER BY SV.GioiTinh DESC";
+                    query = @"SELECT SV.IDSV, SV.TenSV, 
+                            CASE WHEN SV.GioiTinh = 1 THEN N'Nam' ELSE N'Nữ' END AS GioiTinh, 
+                            ROUND(AVG(CAST(GD.Diem AS FLOAT)), 2) AS DiemTB 
+                            FROM STUDENTS SV 
+                            LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV 
+                            WHERE SV.IDLop = @IDLop 
+                            GROUP BY SV.IDSV, SV.TenSV, SV.GioiTinh 
+                            ORDER BY SV.GioiTinh ASC";
                     break;
+
                 case "Giảm dần theo mã sinh viên":
-                    query = "SELECT SV.IDGV, SV.TenSV, GD.Toan, GD.Van, GD.TiengAnh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop ORDER BY SV.IDGV DESC";
+                    query = @"SELECT SV.IDSV, SV.TenSV, 
+                            COALESCE(CAST(GD.Diem AS NVARCHAR), N'Chưa nhập') AS Diem, 
+                            ROUND(AVG(CAST(GD.Diem AS FLOAT)), 2) AS DiemTB 
+                            FROM STUDENTS SV 
+                            LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV 
+                            WHERE SV.IDLop = @IDLop 
+                            GROUP BY SV.IDSV, SV.TenSV, GD.Diem 
+                            ORDER BY SV.IDSV DESC";
                     break;
+
                 case "Giảm dần theo giới tính":
-                    query = "SELECT SV.IDGV, SV.TenSV, CASE WHEN SV.GioiTinh = 1 THEN 'Nam' ELSE N'Nữ' END AS GioiTinh, ROUND(CAST((GD.Toan + GD.Van + GD.TiengAnh) AS FLOAT) / 3, 2) AS DiemTB FROM STUDENTS SV JOIN GRADE GD ON SV.IDGV = GD.IDGV WHERE SV.IDLop = @IDLop ORDER BY SV.GioiTinh";
+                    query = @"SELECT SV.IDSV, SV.TenSV, 
+                            CASE WHEN SV.GioiTinh = 1 THEN N'Nam' ELSE N'Nữ' END AS GioiTinh, 
+                            ROUND(AVG(CAST(GD.Diem AS FLOAT)), 2) AS DiemTB 
+                            FROM STUDENTS SV 
+                            LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV 
+                            WHERE SV.IDLop = @IDLop 
+                            GROUP BY SV.IDSV, SV.TenSV, SV.GioiTinh 
+                            ORDER BY SV.GioiTinh DESC";
                     break;
+
                 default:
-                    MessageBox.Show("Vui lòng chọn 1 lựa chọn hiện thị");
+                    MessageBox.Show("Vui lòng chọn 1 lựa chọn hiển thị");
                     break;
             }
             if (!string.IsNullOrEmpty(query))
