@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4ED0B138-2E1E-4993-BB69-2B902511DF0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ASM</RootNamespace>
+    <AssemblyName>ASM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormADMIN.Designer.cs">
+      <DependentUpon>FormADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanCBDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanCBDT.Designer.cs">
+      <DependentUpon>FormAdminQuanLyTaiKhoanCBDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanZeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanZeros.Designer.cs">
+      <DependentUpon>FormAdminQuanLyTaiKhoanZeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanGV.Designer.cs">
+      <DependentUpon>FormAdminQuanLyTaiKhoanGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminQuanLyTaiKhoanADMIN.Designer.cs">
+      <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCBDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCBDT.Designer.cs">
+      <DependentUpon>FormCBDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDanhSachHienThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanhSachHienThi.Designer.cs">
+      <DependentUpon>FormDanhSachHienThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGV.Designer.cs">
+      <DependentUpon>FormGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyCongViec.Designer.cs">
+      <DependentUpon>FormQuanLyCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyLich.Designer.cs">
+      <DependentUpon>FormQuanLyLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLichSuDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLichSuDangNhap.Designer.cs">
+      <DependentUpon>FormLichSuDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyKyHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyKyHoc.Designer.cs">
+      <DependentUpon>FormQuanLyKyHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyMonHoc.Designer.cs">
+      <DependentUpon>FormQuanLyMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLySVDaCoDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLySVDaCoDiem.Designer.cs">
+      <DependentUpon>FormQuanLySVDaCoDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyGV.Designer.cs">
+      <DependentUpon>FormQuanLyGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyLop.Designer.cs">
+      <DependentUpon>FormQuanLyLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLySV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLySV.Designer.cs">
+      <DependentUpon>FormQuanLySV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormADMIN.resx">
+      <DependentUpon>FormADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanCBDT.resx">
+      <DependentUpon>FormAdminQuanLyTaiKhoanCBDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanZeros.resx">
+      <DependentUpon>FormAdminQuanLyTaiKhoanZeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanGV.resx">
+      <DependentUpon>FormAdminQuanLyTaiKhoanGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanADMIN.resx">
+      <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCBDT.resx">
+      <DependentUpon>FormCBDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanhSachHienThi.resx">
+      <DependentUpon>FormDanhSachHienThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGV.resx">
+      <DependentUpon>FormGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyCongViec.resx">
+      <DependentUpon>FormQuanLyCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyKyHoc.resx">
+      <DependentUpon>FormQuanLyKyHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyLich.resx">
+      <DependentUpon>FormQuanLyLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLichSuDangNhap.resx">
+      <DependentUpon>FormLichSuDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyMonHoc.resx">
+      <DependentUpon>FormQuanLyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLySVDaCoDiem.resx">
+      <DependentUpon>FormQuanLySVDaCoDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyGV.resx">
+      <DependentUpon>FormQuanLyGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyLop.resx">
+      <DependentUpon>FormQuanLyLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLySV.resx">
+      <DependentUpon>FormQuanLySV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-PTCD-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2022-PTCD-Black-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2022-PTCD-White-01.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner-548-x-1280.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bia.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LDP-2000-x-947.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-06-05 174520.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banner-548-x-12801.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020-FPTPolytechic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc-011.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-PhoThongFPT E.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-PhoThongFPT V %281%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-17 142410.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020-FPTPolytechic1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ %281%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bee.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-170-1024x440.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_VN_26032025.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135131.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135148.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135200.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135210.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135221.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135234.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-18 135244.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butchi1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dấu x1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daucong41.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kính Lúp1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dấu x11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPic\ADMIN %281%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AdminPic\ADMIN %282%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AdminPic\ADMIN %283%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %281%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2810%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2811%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2812%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2813%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2814%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2815%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2816%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2817%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2818%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2819%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %282%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2820%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2821%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %2822%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %283%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %284%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %285%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %286%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %287%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %288%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CBDTPIC\CBDT %289%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %281%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %282%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %283%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %284%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %285%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %286%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %287%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GVPIC\GV %288%29.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\10.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\11.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\12.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainPicture\9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Untitled-12.png" />
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QL\BUS_QL.csproj">
+      <Project>{855f2da6-1611-498d-b4ea-f269c56a64e5}</Project>
+      <Name>BUS_QL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QL\DTO_QL.csproj">
+      <Project>{15a6ce88-3913-45d7-bf6a-fc3fe51f7844}</Project>
+      <Name>DTO_QL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

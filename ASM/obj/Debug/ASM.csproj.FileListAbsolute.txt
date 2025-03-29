@@ -1,0 +1,1324 @@
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\PC\Documents\Tin Học\NET103_SD1805\NET103_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\NET103_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+D:\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+D:\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe
+D:\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.exe
+D:\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\5.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\6.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\7.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\8.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\9.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\10.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\11.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\12.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\346104421_1305112090089329_4669083834439119815_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\431766815_122172930386024959_4570986269021735822_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\438305460_122187985226024959_3326803832148336947_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\468662355_122235533912024959_5558588795445625449_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\471404463_122242098248024959_8292094526866774005_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\473188134_122245476482024959_1332967311532809862_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\474585587_122248675502024959_4338979044892090911_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\476065154_122251478390024959_5729969554188984522_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\476124598_122251090670024959_3040788803788827362_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\477118648_122253006026024959_4538278562090150839_n.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135014.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135024.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135033.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3Banner-2.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1Banner.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2Banner.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LaptrinhGame-1200x628-1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\UngDungPhanMem1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\XuLyDuLieu1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LapTrinhMoBile1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LapTrinhWebsite1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\PhatTrienPhanMem1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\QuanTriDLLH1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\QuanTriKSNH1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Logistic1200x628-2.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\FPT-Polytechnic-TCSK1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Marketing_Sale1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\DigitalMarketing1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2-32.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3-32.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1-35.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4-2.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Duoc1200x628.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4Banner.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\TKĐH-1.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\ADMIN\Desktop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\5.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\6.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\7.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\8.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\9.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\10.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\11.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\12.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\346104421_1305112090089329_4669083834439119815_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\431766815_122172930386024959_4570986269021735822_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\438305460_122187985226024959_3326803832148336947_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\468662355_122235533912024959_5558588795445625449_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\471404463_122242098248024959_8292094526866774005_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\473188134_122245476482024959_1332967311532809862_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\474585587_122248675502024959_4338979044892090911_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\476065154_122251478390024959_5729969554188984522_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\476124598_122251090670024959_3040788803788827362_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\477118648_122253006026024959_4538278562090150839_n.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135014.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135024.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135033.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3Banner-2.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1Banner.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2Banner.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LaptrinhGame-1200x628-1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\UngDungPhanMem1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\XuLyDuLieu1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LapTrinhMoBile1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LapTrinhWebsite1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\PhatTrienPhanMem1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\QuanTriDLLH1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\QuanTriKSNH1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Logistic1200x628-2.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\FPT-Polytechnic-TCSK1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Marketing_Sale1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\DigitalMarketing1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2-32.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\3-32.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\1-35.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4-2.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Duoc1200x628.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\4Banner.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\TKĐH-1.png
+C:\Users\ADMIN\Desktop\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\346104421_1305112090089329_4669083834439119815_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\431766815_122172930386024959_4570986269021735822_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\438305460_122187985226024959_3326803832148336947_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\468662355_122235533912024959_5558588795445625449_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\471404463_122242098248024959_8292094526866774005_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\473188134_122245476482024959_1332967311532809862_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\474585587_122248675502024959_4338979044892090911_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\476065154_122251478390024959_5729969554188984522_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\476124598_122251090670024959_3040788803788827362_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\GVPIC\477118648_122253006026024959_4538278562090150839_n.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135014.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135024.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135033.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\3Banner-2.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\1Banner.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\2Banner.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LaptrinhGame-1200x628-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\UngDungPhanMem1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\XuLyDuLieu1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LapTrinhMoBile1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LapTrinhWebsite1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\PhatTrienPhanMem1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\QuanTriDLLH1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\QuanTriKSNH1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Logistic1200x628-2.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\FPT-Polytechnic-TCSK1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Marketing_Sale1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\DigitalMarketing1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\2-32.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\3-32.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\1-35.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\4-2.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Duoc1200x628.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\4Banner.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\CBDTPIC\TKĐH-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\WS6\asm sof\asm sof\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\1.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\2.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\3.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\4.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\5.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\6.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\7.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\GVPIC\8.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135014.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135024.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\AdminPic\Screenshot 2025-02-18 135033.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\3Banner-2.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\1Banner.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\2Banner.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LaptrinhGame-1200x628-1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\UngDungPhanMem1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\XuLyDuLieu1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LapTrinhMoBile1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\LapTrinhWebsite1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\PhatTrienPhanMem1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\QuanTriDLLH1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\QuanTriKSNH1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Logistic1200x628-2.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\FPT-Polytechnic-TCSK1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Marketing_Sale1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\DigitalMarketing1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\2-32.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\3-32.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\1-35.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\4-2.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\Duoc1200x628.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\4Banner.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\CBDTPIC\TKĐH-1.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\ASM.exe
+D:\asm sof\cc\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.exe
+D:\asm sof\cc\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\Users\PC\Documents\Tin Học\SOF102_Nhập môn kỹ thuật phần mềm\WORKSHOP-Nop\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.exe
+D:\asm sof\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.exe
+D:\asm sof\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyDiemSV.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\GIT_SOF102\ASM4\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.dll
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.dll
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.dll
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.Up2Date
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\GIT_SOF102 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySVDaCoDiem.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.dll
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.dll
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.dll
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.pdb
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.pdb
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.pdb
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySVDaCoDiem.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.Up2Date
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\GIT_PRO231 - 3layer\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\10.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\11.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\12.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\2.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\3.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\4.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\5.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\6.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\7.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\8.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\MainPicture\9.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\redo.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\user1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\undo.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\bia.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\images.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Untitled-1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\cc-011.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\eye.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\hidden.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\lock.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\bee.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\butchi1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\daucong41.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\save1.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\Resources\dấu x11.png
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe.config
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\ASM.exe
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\ASM.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.dll
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.dll
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.dll
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\BUS_QL.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\DTO_QL.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\bin\Debug\DAL_QL.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormGV.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormLogin.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormMain.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySVDaCoDiem.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.csproj.Up2Date
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.exe
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.pdb
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyKyHoc.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyLich.resources
+C:\GIT_PRO231_3layer\SOF102_ASM\ASM\obj\Debug\ASM.FormQuanLyMonHoc.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.csproj.AssemblyReference.cache
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormADMIN.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanCBDT.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanZeros.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanGV.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormAdminQuanLyTaiKhoanADMIN.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormCBDT.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormDanhSachHienThi.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormGV.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyCongViec.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyKyHoc.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyLich.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormLichSuDangNhap.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormLogin.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormMain.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyMonHoc.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLySVDaCoDiem.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyGV.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLyLop.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormQuanLySV.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.Properties.Resources.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.csproj.GenerateResource.cache
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.csproj.CoreCompileInputs.cache
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.exe
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.pdb
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\AdminPic\ADMIN (1).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\AdminPic\ADMIN (2).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\AdminPic\ADMIN (3).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (1).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (10).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (11).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (12).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (13).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (14).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (15).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (16).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (17).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (18).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (19).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (2).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (20).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (21).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (22).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (3).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (4).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (5).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (6).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (7).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (8).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\CBDTPIC\CBDT (9).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (1).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (2).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (3).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (4).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (5).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (6).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (7).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\GVPIC\GV (8).jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\10.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\11.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\12.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\2.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\3.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\4.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\5.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\6.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\7.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\8.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\MainPicture\9.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\redo.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\user1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\undo.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2021-PTCD-01.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2022-PTCD-Black-01.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2022-PTCD-White-01.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Banner-548-x-1280.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\bia.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\images.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\LDP-2000-x-947.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\post-anh-Gia-Binh_Mesa-de-trabajo-1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2024-06-05 174520.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\z6312873568572_bc01b9f2c341f9595dfbf640892f6968-1024x485.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Banner-548-x-12801.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Untitled-1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2020-FPTPolytechic.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\cc-011.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2021-PhoThongFPT E.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2021-PhoThongFPT V (1).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-17 142410.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\2020-FPTPolytechic1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\x18198154_10208600482868814_3469513_n.png.pagespeed.ic_.4_CcyctRxZ (1).png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\eye.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\hidden.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\lock.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\bee.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\image-170-1024x440.jpeg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\About_VN_26032025.jpg
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135131.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135148.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135200.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135210.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135221.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135234.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Screenshot 2025-02-18 135244.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\butchi1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\dấu x1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\daucong41.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\Kính Lúp1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\save1.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\Resources\dấu x11.png
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\ASM.exe.config
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\ASM.exe
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\ASM.pdb
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\BUS_QL.dll
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\DTO_QL.dll
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\DAL_QL.dll
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\BUS_QL.pdb
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\DTO_QL.pdb
+C:\GIT_PRO231_3layer\TEST-main\ASM\bin\Debug\DAL_QL.pdb
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.csproj.Up2Date
