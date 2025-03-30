@@ -228,7 +228,7 @@ namespace ASM
         private void btnUpdateSetMHtoKyHoc_Click(object sender, EventArgs e)
         {
             IsAdding = false;
-            cbChonKyHoc.Enabled = true;
+            cbChonKyHoc.Enabled = false;
             dgvChiDinhMHtoKyhoc.Enabled = true;
 
             btnNew.Enabled = false;

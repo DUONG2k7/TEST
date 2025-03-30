@@ -3,6 +3,7 @@ using DTO_QL;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,7 @@ namespace BUS_QL
         {
             return QlGiaoVien.GetIdGvFromIdAcc(Idacc);
         }
-        public string GetIdMonhocFromIdGv(string IdGv)
+        public int GetIdMonhocFromIdGv(string IdGv)
         {
             return QlGiaoVien.GetIdMonhocFromIdGv(IdGv);
         }
@@ -65,6 +66,28 @@ namespace BUS_QL
         public bool XoaDiem(DTO_GV DiemSV, out string message)
         {
             return QlGiaoVien.DeleteGrade(DiemSV, out message);
+        }
+
+        //Form Điểm danh
+        public DataTable LoadDsSinhVienDiemDanh(string IDLop, int lichhoc, DateTime ngaydiemdanh)
+        {
+            return QlGiaoVien.GetListSinhVienDiemDanh(IDLop, lichhoc, ngaydiemdanh);
+        }
+        public DataTable LoadDsLopGvDangDay(string IDGV)
+        {
+            return QlGiaoVien.GetListClassOfTeacher(IDGV);
+        }
+        public DataTable LoadDsMonHocGvDangDay(string IDGV, string IDLOP)
+        {
+            return QlGiaoVien.GetListSubjectOfTeacher(IDGV, IDLOP);
+        }
+        public int LayIDLichHOC(string IDLop, int IDmonhoc, string IDGV, int idkyhoc)
+        {
+            return QlGiaoVien.GetIDLichHoc(IDLop, IDmonhoc, IDGV, idkyhoc);
+        }
+        public DateTime? LayNgayDiemdanh(int IDLichhoc)
+        {
+            return QlGiaoVien.GetNgayDiemdanh(IDLichhoc);
         }
     }
 }

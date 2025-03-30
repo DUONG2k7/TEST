@@ -45,6 +45,7 @@
     <Compile Include="BUS_GUI.cs" />
     <Compile Include="BUS_GV.cs" />
     <Compile Include="BUS_IT.cs" />
+    <Compile Include="BUS_SV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

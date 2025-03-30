@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\GIT_PRO231_3layer\\TEST-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|c:\\git_pro231_3layer\\test-main\\dal_ql\\dal_gv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dal_gv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main\\asm\\formquanlysvdacodiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlysvdacodiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main\\asm\\formquanlycongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlycongviec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main\\asm\\formsvxemdiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formsvxemdiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|c:\\git_pro231_3layer\\test-main\\dal_ql\\dal_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dal_sv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main\\asm\\formsvxemdiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formsvxemdiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DAL_GV.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_GV.cs",
-              "RelativeDocumentMoniker": "DAL_QL\\DAL_GV.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_GV.cs",
-              "RelativeToolTip": "DAL_QL\\DAL_GV.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAswDoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:34:35.104Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
@@ -43,16 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormQuanLyCongViec.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormQuanLyCongViec.cs",
-              "RelativeDocumentMoniker": "ASM\\FormQuanLyCongViec.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormQuanLyCongViec.cs",
-              "RelativeToolTip": "ASM\\FormQuanLyCongViec.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowCEAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FormQuanLySVDaCoDiem.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormQuanLySVDaCoDiem.cs",
+              "RelativeDocumentMoniker": "ASM\\FormQuanLySVDaCoDiem.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormQuanLySVDaCoDiem.cs",
+              "RelativeToolTip": "ASM\\FormQuanLySVDaCoDiem.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAqwMQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:33:34.296Z",
+              "WhenOpened": "2025-03-30T15:40:54.696Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DAL_SV.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_SV.cs",
+              "RelativeDocumentMoniker": "DAL_QL\\DAL_SV.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_SV.cs",
+              "RelativeToolTip": "DAL_QL\\DAL_SV.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:38:28.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormSvXemDiem.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormSvXemDiem.cs",
+              "RelativeDocumentMoniker": "ASM\\FormSvXemDiem.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormSvXemDiem.cs",
+              "RelativeToolTip": "ASM\\FormSvXemDiem.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:35:53.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormSvXemDiem.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormSvXemDiem.cs",
+              "RelativeDocumentMoniker": "ASM\\FormSvXemDiem.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormSvXemDiem.cs [Design]",
+              "RelativeToolTip": "ASM\\FormSvXemDiem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:35:47.303Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

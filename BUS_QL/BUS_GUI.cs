@@ -1,6 +1,7 @@
 ﻿using DAL_QL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -50,6 +51,12 @@ namespace BUS_QL
         public string GetRole(string ID)
         {
             return QlGiaoDien.GetRole(ID);
+        }
+
+        //Form ADMIN
+        public DataTable LayThongTinCoBanSv(string IdAcc)
+        {
+            return QlGiaoDien.GetInfoSv(IdAcc);
         }
     }
 }

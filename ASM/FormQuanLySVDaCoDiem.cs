@@ -26,10 +26,12 @@ namespace ASM
         int max;
         string Malop;
         string IdGv;
-        string IdMonhoc;
-        public FormQuanLySVDaCoDiem(string Tk, string Idacc)
+        int IdMonhoc;
+        int idkyhoc;
+        public FormQuanLySVDaCoDiem(string Tk, string Idacc, int IDKYHOC)
         {
             InitializeComponent();
+            idkyhoc = IDKYHOC;
             Malop = QlGiangVien.GetMaLop(Tk);
             max = QlGiangVien.GetTotalStudent(Malop);
             IdGv = QlGiangVien.GetIdGvFromIdAcc(Idacc);
@@ -43,7 +45,6 @@ namespace ASM
         {
             dt = QlGiangVien.LoadDsSinhVien(Malop, IdGv);
             dgvDanhSachSV.DataSource = QlGiangVien.LoadDsSinhVien(Malop,IdGv);
-
         }
 
         public void LoadTrangThaiDulieu()
@@ -195,13 +196,7 @@ namespace ASM
                     return;
                 }
 
-                if (QlGiangVien.KtSvDaCoDiemChua(txtMasvDiemtb.Text))
-                {
-                    MessageBox.Show("Mã học sinh đã có điểm. Vui lòng nhập mã khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                DTO_GV Diemsv = new DTO_GV(txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
+                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
                 if (QlGiangVien.ThemDiem(Diemsv, out message))
                 {
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -221,7 +216,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_GV Diemsv = new DTO_GV(txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
+                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật điểm không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
@@ -245,7 +240,7 @@ namespace ASM
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string message;
-            DTO_GV Diemsv = new DTO_GV(txtMasvDiemtb.Text, IdMonhoc);
+            DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc);
             DialogResult s = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (s == DialogResult.Yes)
             {

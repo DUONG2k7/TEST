@@ -95,5 +95,22 @@ namespace DAL_QL
             }
             return role;
         }
+
+        //Form SV
+        public DataTable GetInfoSv(string IdAcc)
+        {
+            string query = "SELECT IDSV, IDLop, TenSV, Email, SoDT, GioiTinh, Diachi FROM STUDENTS WHERE IdAcc = @IdAcc";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IdAcc", IdAcc);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    return dt;
+                }
+            }
+        }
     }
 }

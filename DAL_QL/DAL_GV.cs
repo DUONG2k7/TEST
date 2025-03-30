@@ -14,7 +14,11 @@ namespace DAL_QL
         //Tất cả Form đều dùng
         public string GetMaLop(string taikhoan)
         {
-            string query = @"SELECT C.IDLop FROM CLASSES C INNER JOIN TEACHERS T ON C.IDGV = T.IDGV INNER JOIN ACCOUNTS A ON T.IdAcc = A.IdAcc WHERE A.Username = @Username";
+            string query = @"SELECT C.IDLop FROM CLASSES C 
+                            JOIN Class_Teacher CT ON C.IDLop = CT.IDLop 
+                            JOIN TEACHERS T ON CT.IDGV = T.IDGV 
+                            JOIN ACCOUNTS A ON T.IdAcc = A.IdAcc 
+                            WHERE A.Username = @Username";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -108,7 +112,7 @@ namespace DAL_QL
                 }
             }
         }
-        public string GetIdMonhocFromIdGv(string IdGv)
+        public int GetIdMonhocFromIdGv(string IdGv)
         {
             string query = "SELECT IDMonHoc FROM MonHoc_GiangVien WHERE IDGV = @IDGV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
@@ -117,7 +121,7 @@ namespace DAL_QL
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@IDGV", IdGv);
-                    return cmd.ExecuteScalar()?.ToString();
+                    return (int)cmd.ExecuteScalar();
                 }
             }
         }
@@ -153,8 +157,8 @@ namespace DAL_QL
             string query = "SELECT SV.IDSV, SV.TenSV, MH.TenMon, " +
                             "COALESCE(CAST(GD.Diem AS NVARCHAR), N'Chưa nhập') AS Diem " +
                             "FROM STUDENTS SV " +
-                            "LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV AND GD.IDMonHoc = (SELECT IDMonHoc FROM MonHoc_GiangVien WHERE IDGV = @IDGV) " +
-                            "LEFT JOIN MonHoc MH ON MH.IDMonHoc = (SELECT IDMonHoc FROM MonHoc_GiangVien WHERE IDGV = @IDGV) " +
+                            "LEFT JOIN Diem GD ON SV.IDSV = GD.IDSV AND GD.IDMonHoc IN (SELECT IDMonHoc FROM MonHoc_GiangVien WHERE IDGV = @IDGV) " +
+                            "LEFT JOIN MonHoc MH ON MH.IDMonHoc IN (SELECT IDMonHoc FROM MonHoc_GiangVien WHERE IDGV = @IDGV) " +
                             "WHERE SV.IDLop = @IDLop AND SV.IDSV LIKE @IDSV";
 
             using (SqlConnection conn = new SqlConnection(ConnectionString))
@@ -174,7 +178,7 @@ namespace DAL_QL
         }
         public bool InsertGrade(DTO_GV DiemSV, out string message)
         {
-            string query = "INSERT INTO Diem (IDSV, IDMonHoc, Diem) VALUES (@IDSV, @IDMonHoc, @Diem)";
+            string query = "INSERT INTO Diem (IDKyHoc, IDSV, IDMonHoc, Diem) VALUES (@IDKyHoc, @IDSV, @IDMonHoc, @Diem)";
 
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
@@ -183,6 +187,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("@IDKyHoc", DiemSV._IDKyHoc);
                         cmd.Parameters.AddWithValue("@IDSV", DiemSV._MaSV);
                         cmd.Parameters.AddWithValue("@IDMonHoc", DiemSV._IDMonHoc);
                         cmd.Parameters.AddWithValue("@Diem", DiemSV._Diem);
@@ -209,7 +214,7 @@ namespace DAL_QL
         }
         public bool UpdateGrade(DTO_GV DiemSV, out string message)
         {
-            string query = "UPDATE Diem SET Diem = @Diem WHERE IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
+            string query = "UPDATE Diem SET Diem = @Diem WHERE IDKyHoc = @IDKyHoc AND IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
 
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
@@ -218,6 +223,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("@IDKyHoc", DiemSV._IDKyHoc);
                         cmd.Parameters.AddWithValue("@IDSV", DiemSV._MaSV);
                         cmd.Parameters.AddWithValue("@IDMonHoc", DiemSV._IDMonHoc);
                         cmd.Parameters.AddWithValue("@Diem", DiemSV._Diem);
@@ -244,7 +250,7 @@ namespace DAL_QL
         }
         public bool DeleteGrade(DTO_GV DiemSV, out string message)
         {
-            string Deletequery = "DELETE FROM Diem WHERE IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
+            string Deletequery = "DELETE FROM Diem WHERE IDKyHoc = @IDKyHoc AND IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 try
@@ -252,6 +258,7 @@ namespace DAL_QL
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand(Deletequery, conn))
                     {
+                        cmd.Parameters.AddWithValue("@IDKyHoc", DiemSV._IDKyHoc);
                         cmd.Parameters.AddWithValue("@IDSV", DiemSV._MaSV);
                         cmd.Parameters.AddWithValue("@IDMonHoc", DiemSV._IDMonHoc);
 
@@ -273,6 +280,115 @@ namespace DAL_QL
                     message = "Lỗi: " + ex.Message;
                     return false;
                 }
+            }
+        }
+
+        //Form Điểm danh
+        public DataTable GetListSinhVienDiemDanh(string IDLop, int lichhoc, DateTime ngaydiemdanh)
+        {
+            string query = @"SELECT SV.IDSV, SV.TenSV, DD.TrangThai, ISNULL(DD.GhiChu, '') AS GhiChu FROM STUDENTS SV
+                            LEFT JOIN DIEMDANH DD ON SV.IDSV = DD.IDSV AND DD.IDLichHoc = @IDLichHoc AND DD.ThoiGianDiemDanh = @ThoiGianDiemDanh
+                            WHERE SV.IDLop = @IDLop ORDER BY SV.IDSV";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDLichHoc", lichhoc);
+                    cmd.Parameters.AddWithValue("@IDLop", IDLop);
+                    cmd.Parameters.AddWithValue("@ThoiGianDiemDanh", ngaydiemdanh);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
+                    }
+                }
+            }
+        }
+        public DataTable GetListClassOfTeacher(string IDGV)
+        {
+            string query = @"SELECT C.IDLop, C.ClassName 
+                            FROM CLASSES C
+                            JOIN Class_Teacher CT ON C.IDLop = CT.IDLop
+                            JOIN KyHoc KH ON CT.IDKyHoc = KH.IDKyHoc
+                            WHERE CT.IDGV = @IDGV AND KH.Trangthai = 1";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDGV", IDGV);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
+                    }
+                }
+            }
+        }
+        public DataTable GetListSubjectOfTeacher(string IDGV, string IDLop)
+        {
+            string query = @"SELECT MH.IDMonHoc, MH.TenMon
+                            FROM MonHoc MH
+                            JOIN MonHoc_GiangVien MG ON MH.IDMonHoc = MG.IDMonHoc
+                            JOIN Class_Teacher CT ON MG.IDGV = CT.IDGV AND MG.IDKyHoc = CT.IDKyHoc
+                            JOIN KyHoc KH ON CT.IDKyHoc = KH.IDKyHoc
+                            WHERE MG.IDGV = @IDGV AND CT.IDLop = @IDLop AND KH.Trangthai = 1";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDGV", IDGV);
+                    cmd.Parameters.AddWithValue("@IDLop", IDLop);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
+                    }
+                }
+            }
+        }
+        public int GetIDLichHoc(string IDLop, int IDmonhoc, string IDGV, int idkyhoc)
+        {
+            string query = @"SELECT IDLichHoc FROM LichHoc WHERE IDLop = @IDLop AND IDMonHoc = @IDMonHoc AND IDGV = @IDGV AND IDKyHoc = @IDKyHoc";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDLop", IDLop);
+                    cmd.Parameters.AddWithValue("@IDMonHoc", IDmonhoc);
+                    cmd.Parameters.AddWithValue("@IDGV", IDGV);
+                    cmd.Parameters.AddWithValue("@IDKyHoc", idkyhoc);
+
+                    object result = cmd.ExecuteScalar();
+
+                    return (result != null) ? Convert.ToInt32(result) : -1;
+                }
+            }
+        }
+        public DateTime? GetNgayDiemdanh(int IDLichHoc)
+        {
+            string query = @"SELECT TOP 1 Ngay
+                            FROM LichHoc
+                            WHERE IDLichHoc = @IDLichHoc";
+
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@IDLichHoc", IDLichHoc);
+
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+
+                return (result != null && result != DBNull.Value) ? Convert.ToDateTime(result) : (DateTime?)null;
             }
         }
     }

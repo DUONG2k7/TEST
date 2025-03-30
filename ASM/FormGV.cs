@@ -21,6 +21,7 @@ namespace ASM
         private int index = 0;
         string username;
         string IDACC;
+        int idkyhoc;
         public FormGV(string User, string IDrole, string idacc)
         {
             InitializeComponent();
@@ -47,22 +48,6 @@ namespace ASM
             timer2.Tick += timer1_Tick; // Gán sự kiện Timer
             timer2.Start(); // Bắt đầu Timer
         }
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnMenuQlyDiem_Click(object sender, EventArgs e)
-        {
-            tabMain.Controls.Clear();
-            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(username, IDACC);
-            GV.TopLevel = false;
-            GV.FormBorderStyle = FormBorderStyle.None;
-            GV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(GV);
-            GV.Show();
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             xPosition -= 5; // Giảm vị trí X để chữ chạy từ phải sang trái
@@ -81,6 +66,33 @@ namespace ASM
             pictureBox1.Image = Image.FromFile(images[index]);
         }
 
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMenuQlyDiem_Click(object sender, EventArgs e)
+        {
+            idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
+            tabMain.Controls.Clear();
+            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(username, IDACC, idkyhoc);
+            GV.TopLevel = false;
+            GV.FormBorderStyle = FormBorderStyle.None;
+            GV.Dock = DockStyle.Fill;
+            tabMain.Controls.Add(GV);
+            GV.Show();
+        }
+        private void btnMenuDiemDanhSV_Click(object sender, EventArgs e)
+        {
+            idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
+            tabMain.Controls.Clear();
+            FormDiemDanhSV GV = new FormDiemDanhSV(IDACC, idkyhoc);
+            GV.TopLevel = false;
+            GV.FormBorderStyle = FormBorderStyle.None;
+            GV.Dock = DockStyle.Fill;
+            tabMain.Controls.Add(GV);
+            GV.Show();
+        }
         private void btnMenuQlyDanhSach_Click(object sender, EventArgs e)
         {
             tabMain.Controls.Clear();

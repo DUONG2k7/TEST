@@ -8,10 +8,22 @@ namespace DTO_QL
 {
     public class DTO_GV
     {
+        private int IDKyHoc;
         private string MaSV;
-        private string IDMonHoc;
+        private int IDMonHoc;
         private string Diem;
 
+        public int _IDKyHoc
+        {
+            get
+            {
+                return IDKyHoc;
+            }
+            set
+            {
+                IDKyHoc = value;
+            }
+        }
         public string _MaSV
         {
             get
@@ -23,7 +35,7 @@ namespace DTO_QL
                 MaSV = value;
             }
         }
-        public string _IDMonHoc
+        public int _IDMonHoc
         {
             get
             {
@@ -45,14 +57,16 @@ namespace DTO_QL
                 Diem = value;
             }
         }
-        public DTO_GV(string MASV, string IDMONHOC, string DIEM)
+        public DTO_GV(int IDKYHOC, string MASV, int IDMONHOC, string DIEM)
         {
+            _IDKyHoc = IDKYHOC;
             _MaSV = MASV;
             _IDMonHoc = IDMONHOC;
             _Diem = DIEM;
         }
-        public DTO_GV(string MASV, string IDMONHOC)
+        public DTO_GV(int IDKYHOC, string MASV, int IDMONHOC)
         {
+            _IDKyHoc = IDKYHOC;
             _MaSV = MASV;
             _IDMonHoc = IDMONHOC;
         }

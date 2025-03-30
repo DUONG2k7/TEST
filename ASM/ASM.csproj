@@ -88,11 +88,23 @@
     <Compile Include="FormDanhSachHienThi.Designer.cs">
       <DependentUpon>FormDanhSachHienThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDiemDanhSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiemDanhSV.Designer.cs">
+      <DependentUpon>FormDiemDanhSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormGV.Designer.cs">
       <DependentUpon>FormGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGVXemLichDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGVXemLichDay.Designer.cs">
+      <DependentUpon>FormGVXemLichDay.cs</DependentUpon>
     </Compile>
     <Compile Include="FormQuanLyCongViec.cs">
       <SubType>Form</SubType>
@@ -160,6 +172,30 @@
     <Compile Include="FormQuanLySV.Designer.cs">
       <DependentUpon>FormQuanLySV.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSV.Designer.cs">
+      <DependentUpon>FormSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSvXemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSvXemDiem.Designer.cs">
+      <DependentUpon>FormSvXemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSvXemLichHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSvXemLichHoc.Designer.cs">
+      <DependentUpon>FormSvXemLichHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSvXemLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSvXemLichThi.Designer.cs">
+      <DependentUpon>FormSvXemLichThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormADMIN.resx">
@@ -183,8 +219,14 @@
     <EmbeddedResource Include="FormDanhSachHienThi.resx">
       <DependentUpon>FormDanhSachHienThi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDiemDanhSV.resx">
+      <DependentUpon>FormDiemDanhSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGV.resx">
       <DependentUpon>FormGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGVXemLichDay.resx">
+      <DependentUpon>FormGVXemLichDay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLyCongViec.resx">
       <DependentUpon>FormQuanLyCongViec.cs</DependentUpon>
@@ -218,6 +260,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLySV.resx">
       <DependentUpon>FormQuanLySV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSV.resx">
+      <DependentUpon>FormSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSvXemDiem.resx">
+      <DependentUpon>FormSvXemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSvXemLichHoc.resx">
+      <DependentUpon>FormSvXemLichHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSvXemLichThi.resx">
+      <DependentUpon>FormSvXemLichThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

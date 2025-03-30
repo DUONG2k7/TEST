@@ -24,7 +24,6 @@ namespace ASM
         {
             InitializeComponent();
             LoadDsLop();
-            LoadDanhSachGV();
             LoadsaukhidoiTrangThai();
 
             LockControl();
@@ -35,7 +34,6 @@ namespace ASM
         {
             txtMaLop.Enabled = false;
             txtTenlop.Enabled = false;
-            cbGVCN.Enabled = false;
 
             btnSave.Enabled = false;
             btnUpdate.Enabled = true;
@@ -83,18 +81,10 @@ namespace ASM
         {
             dgvData.DataSource = QlLop.LoadDsLop();
         }
-        public void LoadDanhSachGV()
-        {
-            cbGVCN.DataSource = QlLop.LoadDsGvChoLop();
-            cbGVCN.DisplayMember = "TenGV";
-            cbGVCN.ValueMember = "IDGV";
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
             isAdding = true;
             txtTenlop.Enabled = true;
-            cbGVCN.Enabled = true;
             btnSave.Enabled = true;
 
             btnNew.Enabled = false;
@@ -113,7 +103,6 @@ namespace ASM
         {
             isAdding = false;
             txtTenlop.Enabled = true;
-            cbGVCN.Enabled = true;
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
@@ -223,7 +212,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_CBDT_CLASS lop = new DTO_CBDT_CLASS(txtMaLop.Text, txtTenlop.Text, cbGVCN.SelectedValue.ToString(), rdbBuoiSang.Checked);
+                DTO_CBDT_CLASS lop = new DTO_CBDT_CLASS(txtMaLop.Text, txtTenlop.Text, rdbBuoiSang.Checked);
                 if (QlLop.ThemLop(lop, out messsage))
                 {
                     MessageBox.Show(messsage, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -240,7 +229,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_CBDT_CLASS lop = new DTO_CBDT_CLASS(txtMaLop.Text, txtTenlop.Text, cbGVCN.SelectedValue.ToString(), rdbBuoiSang.Checked);
+                DTO_CBDT_CLASS lop = new DTO_CBDT_CLASS(txtMaLop.Text, txtTenlop.Text, rdbBuoiSang.Checked);
                 
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật lớp này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)

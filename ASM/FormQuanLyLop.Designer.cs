@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbGVCN = new System.Windows.Forms.ComboBox();
             this.txtTenlop = new System.Windows.Forms.TextBox();
             this.txtMaLop = new System.Windows.Forms.TextBox();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,21 +51,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbGVCN
-            // 
-            this.cbGVCN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbGVCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbGVCN.FormattingEnabled = true;
-            this.cbGVCN.Location = new System.Drawing.Point(391, 134);
-            this.cbGVCN.Margin = new System.Windows.Forms.Padding(2);
-            this.cbGVCN.Name = "cbGVCN";
-            this.cbGVCN.Size = new System.Drawing.Size(297, 24);
-            this.cbGVCN.TabIndex = 30;
-            // 
             // txtTenlop
             // 
             this.txtTenlop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenlop.Location = new System.Drawing.Point(391, 170);
+            this.txtTenlop.Location = new System.Drawing.Point(391, 137);
             this.txtTenlop.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenlop.Name = "txtTenlop";
             this.txtTenlop.Size = new System.Drawing.Size(297, 23);
@@ -94,22 +81,11 @@
             this.dgvData.TabIndex = 17;
             this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(310, 135);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 18);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "GVCN:";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(310, 170);
+            this.label3.Location = new System.Drawing.Point(310, 137);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 18);
@@ -245,7 +221,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(310, 207);
+            this.label4.Location = new System.Drawing.Point(310, 174);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 18);
@@ -255,7 +231,7 @@
             // rdbBuoiSang
             // 
             this.rdbBuoiSang.AutoSize = true;
-            this.rdbBuoiSang.Location = new System.Drawing.Point(391, 207);
+            this.rdbBuoiSang.Location = new System.Drawing.Point(391, 174);
             this.rdbBuoiSang.Name = "rdbBuoiSang";
             this.rdbBuoiSang.Size = new System.Drawing.Size(74, 17);
             this.rdbBuoiSang.TabIndex = 45;
@@ -266,7 +242,7 @@
             // rdbBuoiChieu
             // 
             this.rdbBuoiChieu.AutoSize = true;
-            this.rdbBuoiChieu.Location = new System.Drawing.Point(511, 207);
+            this.rdbBuoiChieu.Location = new System.Drawing.Point(511, 174);
             this.rdbBuoiChieu.Name = "rdbBuoiChieu";
             this.rdbBuoiChieu.Size = new System.Drawing.Size(76, 17);
             this.rdbBuoiChieu.TabIndex = 45;
@@ -288,11 +264,9 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.cbGVCN);
             this.Controls.Add(this.btnLoU);
             this.Controls.Add(this.txtTenlop);
             this.Controls.Add(this.txtMaLop);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -312,12 +286,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cbGVCN;
         private System.Windows.Forms.TextBox txtTenlop;
         private System.Windows.Forms.TextBox txtMaLop;
         private System.Windows.Forms.DataGridView dgvData;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

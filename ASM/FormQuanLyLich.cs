@@ -29,7 +29,7 @@ namespace ASM
             LoadDsLop();
             LoadBuoiHoc(cbLop.SelectedValue.ToString());
             LoadDsMonHoc();
-            LoadDsGvBoMon(cbMonhoc.SelectedValue.ToString());
+            LoadDsGvBoMon();
             LoadCaHoc();
             LockControl();
 
@@ -76,10 +76,11 @@ namespace ASM
             cbMonhoc.DataSource = QlLich.LoadDsMonHoc();
             cbMonhoc.DisplayMember = "TenMon";
             cbMonhoc.ValueMember = "IDMonHoc";
+
         }
-        public void LoadDsGvBoMon(string IdMonHoc)
+        public void LoadDsGvBoMon()
         {
-            cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(IdMonHoc);
+            cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(Convert.ToInt32(cbMonhoc.SelectedValue), cbLop.SelectedValue.ToString(), idkyhoc);
             cbGvMonhoc.DisplayMember = "TenGV";
             cbGvMonhoc.ValueMember = "IDGV";
         }
@@ -112,7 +113,7 @@ namespace ASM
 
         private void cbMonhoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadDsGvBoMon(cbMonhoc.SelectedValue.ToString());
+            LoadDsGvBoMon();
         }
 
         private void txtBuoihoc_TextChanged(object sender, EventArgs e)
@@ -166,17 +167,8 @@ namespace ASM
         }
         public void ClearForm()
         {
-            cbLop.SelectedIndex = 0;
-            cbCahoc.SelectedIndex = 0;
-            cbMonhoc.SelectedIndex = 0;
-            cbGvMonhoc.SelectedIndex = 0;
             rdbNgayhoc.Checked = false;
             rdbNgaythi.Checked = false;
-
-            dtpGioBatDau.Checked = false;
-            dtpGioBatDau.ResetText();
-            dtpGioKetThuc.Checked = false;
-            dtpGioKetThuc.ResetText();
         }
         private bool CheckInput()
         {

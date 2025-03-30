@@ -45,6 +45,7 @@
     <Compile Include="DAL_GUI.cs" />
     <Compile Include="DAL_GV.cs" />
     <Compile Include="DAL_IT.cs" />
+    <Compile Include="DAL_SV.cs" />
     <Compile Include="DbConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

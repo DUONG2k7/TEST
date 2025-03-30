@@ -81,6 +81,9 @@ namespace ASM
                     Form form = null;
                     switch (role)
                     {
+                        case "R05":
+                            form = new FormSV(txtUsername.Text, role, idAcc);
+                            break;
                         case "R04":
                             form = new FormGV(txtUsername.Text, role, idAcc);
                             break;

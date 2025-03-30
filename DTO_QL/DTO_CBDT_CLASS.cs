@@ -16,7 +16,6 @@ namespace DTO_QL
 
         private string MaLop;
         private string ClassName;
-        private string MaGV;
         private bool Buoihoc;
 
         public string _MaLop
@@ -41,17 +40,6 @@ namespace DTO_QL
                 ClassName = value;
             }
         }
-        public string _MaGV
-        {
-            get
-            {
-                return MaGV;
-            }
-            set
-            {
-                MaGV = value;
-            }
-        }
         public bool _Buoihoc
         {
             get
@@ -63,11 +51,10 @@ namespace DTO_QL
                 Buoihoc = value;
             }
         }
-        public DTO_CBDT_CLASS(string malop, string classname, string magv, bool buoihoc)
+        public DTO_CBDT_CLASS(string malop, string classname, bool buoihoc)
         {
             _MaLop = malop;
             _ClassName = classname;
-            _MaGV = magv;
             _Buoihoc = buoihoc;
         }
     }

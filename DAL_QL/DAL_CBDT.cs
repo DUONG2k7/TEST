@@ -259,7 +259,7 @@ namespace DAL_QL
         //Class
         public DataTable GetListClass()
         {
-            string query = "SELECT c.IDLop, c.ClassName, COUNT(s.IDSV) AS SiSo, ISNULL(t.TenGV, N'Không có GVCN') AS TenGiaoVien, CASE WHEN c.BuoiHoc = 1 THEN N'Sáng' ELSE N'Chiều' END AS BuoiHoc, CASE WHEN c.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM CLASSES c LEFT JOIN STUDENTS s ON c.IDLop = s.IDLop LEFT JOIN TEACHERS t ON c.IDGV = t.IDGV GROUP BY c.IDLop, c.ClassName, t.TenGV, c.BuoiHoc, c.Trangthai";
+            string query = "SELECT c.IDLop, c.ClassName, COUNT(s.IDSV) AS SiSo, CASE WHEN c.BuoiHoc = 1 THEN N'Sáng' ELSE N'Chiều' END AS BuoiHoc, CASE WHEN c.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM CLASSES c LEFT JOIN STUDENTS s ON c.IDLop = s.IDLop GROUP BY c.IDLop, c.ClassName, c.BuoiHoc, c.Trangthai";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -352,13 +352,12 @@ namespace DAL_QL
                 try
                 {
                     conn.Open();
-                    string insertQuery = "INSERT INTO CLASSES (IDLop, ClassName, IDGV, BuoiHoc) VALUES (@IDLop, @ClassName, @IDGV, @BuoiHoc)";
+                    string insertQuery = "INSERT INTO CLASSES (IDLop, ClassName, BuoiHoc) VALUES (@IDLop, @ClassName, @BuoiHoc)";
                     using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
                         cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
-                        cmd.Parameters.AddWithValue("@IDGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
-                        cmd.Parameters.AddWithValue("@Gioitinh", lop._Buoihoc ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@BuoiHoc", lop._Buoihoc ? 1 : 0);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -388,13 +387,12 @@ namespace DAL_QL
                 try
                 {
                     conn.Open();
-                    string updateQuery = "UPDATE CLASSES SET ClassName = @ClassName, IDGV = @IDGV, BuoiHoc = @BuoiHoc WHERE IDLop = @IDLop";
+                    string updateQuery = "UPDATE CLASSES SET ClassName = @ClassName, BuoiHoc = @BuoiHoc WHERE IDLop = @IDLop";
                     using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
                     {
                         cmd.Parameters.AddWithValue("@IDLop", lop._MaLop);
                         cmd.Parameters.AddWithValue("@ClassName", lop._ClassName);
-                        cmd.Parameters.AddWithValue("@IDGV", string.IsNullOrEmpty(lop._MaGV) ? (object)DBNull.Value : lop._MaGV);
-                        cmd.Parameters.AddWithValue("@Gioitinh", lop._Buoihoc ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@BuoiHoc", lop._Buoihoc ? 1 : 0);
 
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
@@ -522,7 +520,13 @@ namespace DAL_QL
 
         public DataTable GetListTeacher()
         {
-            string query = "SELECT T.IDGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, T.Diachi, T.Hinh, ISNULL(C.IDLop, N'Chưa có lớp') AS Lop FROM TEACHERS T LEFT JOIN CLASSES C ON T.IDGV = C.IDGV";
+            string query =  "SELECT T.IDGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, " +
+                            "CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, " +
+                            "T.Diachi, T.Hinh, " +
+                            "ISNULL(C.ClassName, N'Chưa có lớp') AS TenLop " +
+                            "FROM TEACHERS T " +
+                            "LEFT JOIN Class_Teacher CT ON T.IDGV = CT.IDGV " +
+                            "LEFT JOIN CLASSES C ON CT.IDLop = C.IDLop";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
@@ -801,7 +805,7 @@ namespace DAL_QL
         }
         public DataTable GetListSubjectFormLich()
         {
-            string query = "SELECT IDMonHoc, TenMon FROM MonHoc";
+            string query = "SELECT MH.IDMonHoc, MH.TenMon FROM MonHoc MH JOIN MonHoc_KyHoc MK ON MH.IDMonHoc = MK.IDMonHoc JOIN KyHoc K ON MK.IDKyHoc = K.IDKyHoc WHERE K.Trangthai = 1";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
@@ -812,14 +816,20 @@ namespace DAL_QL
                 return dataTable;
             }
         }
-        public DataTable GetListTeacherOfSubjectFormLich(string IdMonHoc)
+        public DataTable GetListTeacherOfSubjectFormLich(int IdMonHoc, string IDLop, int IDKyHoc)
         {
-            string query = "SELECT T.IDGV, T.TenGV FROM TEACHERS T JOIN MonHoc_GiangVien MG ON T.IDGV = MG.IDGV WHERE MG.IDMonHoc = @IDMonHoc";
+            string query =  "SELECT T.IDGV, T.TenGV FROM TEACHERS T " +
+                            "JOIN MonHoc_GiangVien MG ON T.IDGV = MG.IDGV " +
+                            "JOIN Class_Teacher CT ON T.IDGV = CT.IDGV " +
+                            "JOIN KyHoc K ON MG.IDKyHoc = K.IDKyHoc " +
+                            "WHERE MG.IDMonHoc = @IDMonHoc AND CT.IDLop = @IDLop AND MG.IDKyHoc = @IDKyHoc AND K.Trangthai = 1";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@IDMonHoc", IdMonHoc);
+                    cmd.Parameters.AddWithValue("@IDLop", IDLop);
+                    cmd.Parameters.AddWithValue("@IDKyHoc", IDKyHoc);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
@@ -1279,14 +1289,54 @@ namespace DAL_QL
                 return dataTable;
             }
         }
-        public DataTable GetListGVFormChiDinhGV(int IDMonHoc)
+        public DataTable GetListLopHocGV()
         {
-            string query = "SELECT T.IDGV, T.TenGV FROM TEACHERS T WHERE T.IDGV NOT IN (SELECT MG.IDGV FROM MonHoc_GiangVien MG WHERE MG.IDMonHoc = @IDMonHoc)";
+            string query = "SELECT K.IDKYHOC, C.IDLop, K.TenKY, C.ClassName, T.TenGV, CT.NgayChotLop " +
+                            "FROM Class_Teacher CT " +
+                            "JOIN KyHoc K ON CT.IDKyHoc = K.IDKyHoc " +
+                            "JOIN CLASSES C ON CT.IDLop = C.IDLop " +
+                            "JOIN TEACHERS T ON CT.IDGV = T.IDGV";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+
+                dataAdapter.Fill(dataTable);
+
+                return dataTable;
+            }
+        }
+        public DataTable GetListGVFormChiDinhGV(int IDMonHoc, int KYHOC)
+        {
+            string query = "SELECT T.IDGV, T.TenGV FROM TEACHERS T WHERE T.IDGV NOT IN (SELECT MG.IDGV FROM MonHoc_GiangVien MG WHERE MG.IDMonHoc = @IDMonHoc AND MG.IDKyHoc = @IDKyHoc)";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@IDMonHoc", IDMonHoc);
+                    cmd.Parameters.AddWithValue("@IDKyHoc", KYHOC);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
+                    }
+                }
+            }
+        }
+        public DataTable GetListGVFormChiDinhLop(string IDLop, int KYHOC)
+        {
+            string query = @"SELECT T.IDGV, T.TenGV FROM TEACHERS T 
+                            WHERE T.IDGV NOT IN (SELECT CT.IDGV FROM Class_Teacher CT WHERE CT.IDLop = @IDLop AND CT.IDKyHoc = @IDKyHoc)
+                            AND T.IDGV IN (SELECT MG.IDGV FROM MonHoc_GiangVien MG WHERE MG.IDKyHoc = @IDKyHoc)";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDLop", IDLop);
+                    cmd.Parameters.AddWithValue("@IDKyHoc", KYHOC);
 
                     using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
                     {
@@ -1300,7 +1350,20 @@ namespace DAL_QL
         }
         public DataTable GetListMonHocFormChiDinhGV()
         {
-            string query = "SELECT IDMonHoc, TenMon FROM MonHoc";
+            string query = "SELECT MH.IDMonHoc, MH.TenMon FROM MonHoc MH JOIN MonHoc_KyHoc MK ON MH.IDMonHoc = MK.IDMonHoc JOIN KyHoc K ON MK.IDKyHoc = K.IDKyHoc WHERE K.Trangthai = 1";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+
+                dataAdapter.Fill(dataTable);
+
+                return dataTable;
+            }
+        }
+        public DataTable GetListLopHocFormChiDinhGV()
+        {
+            string query = "SELECT IDLop, ClassName FROM CLASSES";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
@@ -1358,6 +1421,41 @@ namespace DAL_QL
                 return false;
             }
         }
+        public bool InsertChiDinhGVtoLopHoc(int IDKyhoc, string IDLop, string IDGV, DateTime Ngaychot, out string message)
+        {
+            try
+            {
+                string query = "INSERT INTO Class_Teacher (IDKyHoc, IDLop, IDGV, NgayChotLop) VALUES (@IDKyHoc, @IDLop, @IDGV, @NgayChotLop)";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDKyHoc", IDKyhoc);
+                        cmd.Parameters.AddWithValue("@IDLop", IDLop);
+                        cmd.Parameters.AddWithValue("@IDGV", IDGV);
+                        cmd.Parameters.AddWithValue("@NgayChotLop", Ngaychot);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin phân công đã được lưu thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có dữ liệu nào được thêm.";
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Lỗi khi thêm phân công: " + ex.Message;
+                return false;
+            }
+        }
         public bool UpdateChiDinhGVtoMonHoc(int IDMonHoc, out string message)
         {
             try
@@ -1374,6 +1472,38 @@ namespace DAL_QL
                         if (rowsAffected > 0)
                         {
                             message = "Thông tin của môn học đã được cập nhật thành công! Vui lòng chọn lại giảng viên muốn phân công";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có dữ liệu nào được cập nhật.";
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Lỗi khi cập nhật phân công: " + ex.Message;
+                return false;
+            }
+        }
+        public bool UpdateChiDinhGVtoLopHoc(string IDLop, out string message)
+        {
+            try
+            {
+                string Deletequery = "DELETE FROM Class_Teacher WHERE IDLop = @IDLop";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(Deletequery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDLop", IDLop);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin của lớp học đã được cập nhật thành công! Vui lòng chọn lại giảng viên muốn phân công";
                             return true;
                         }
                         else

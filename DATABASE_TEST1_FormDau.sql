@@ -73,6 +73,24 @@ CREATE TABLE CBDT (
 );
 GO
 
+-- Bảng kỳ học
+CREATE TABLE KyHoc (
+    IDKyHoc INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    TenKy NVARCHAR(50),
+	NamBatDau DATE,
+	NamKetThuc DATE,
+    Trangthai BIT
+);
+GO
+
+-- Bảng Môn học
+CREATE TABLE MonHoc (
+    IDMonHoc INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    TenMon NVARCHAR(50),
+    SoTiet INT
+);
+GO
+
 -- Bảng TEACHERS
 CREATE TABLE TEACHERS (
     IDGV NVARCHAR(50) NOT NULL PRIMARY KEY,
@@ -92,10 +110,8 @@ CREATE TABLE CLASSES (
     IDLop NVARCHAR(50) NOT NULL PRIMARY KEY,
     ClassName NVARCHAR(50),
     SiSo INT, -- Số lượng học sinh trong lớp
-    IDGV NVARCHAR(50), -- Giáo viên phụ trách lớp
 	BuoiHoc BIT,
-	Trangthai BIT,
-    FOREIGN KEY (IDGV) REFERENCES TEACHERS(IDGV)
+	Trangthai BIT
 );
 GO
 
@@ -115,21 +131,28 @@ CREATE TABLE STUDENTS (
 );
 GO
 
--- Bảng kỳ học
-CREATE TABLE KyHoc (
-    IDKyHoc INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-    TenKy NVARCHAR(50),
-	NamBatDau DATE,
-	NamKetThuc DATE,
-    Trangthai BIT
+-- Bảng trung gian để thể hiện mối quan hệ nhiều - nhiều giữa Lớp học và Giáo viên
+CREATE TABLE Class_Teacher (
+    IDKyHoc INT NOT NULL,
+    IDLop NVARCHAR(50) NOT NULL,
+    IDGV NVARCHAR(50) NOT NULL,
+	NgayChotLop DATE NOT NULL,
+    PRIMARY KEY (IDKyHoc, IDLop, IDGV),
+    FOREIGN KEY (IDKyHoc) REFERENCES KyHoc(IDKyHoc),
+    FOREIGN KEY (IDLop) REFERENCES CLASSES(IDLop),
+    FOREIGN KEY (IDGV) REFERENCES TEACHERS(IDGV)
 );
 GO
 
--- Bảng Môn học
-CREATE TABLE MonHoc (
-    IDMonHoc INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-    TenMon NVARCHAR(50),
-    SoTiet INT
+-- Bảng trung gian để thể hiện mối quan hệ nhiều - nhiều giữa Lớp học và Giáo viên
+CREATE TABLE Class_Student (
+    IDKyHoc INT NOT NULL,
+    IDLop NVARCHAR(50) NOT NULL,
+    IDSV NVARCHAR(50) NOT NULL,
+    PRIMARY KEY (IDKyHoc, IDLop, IDSV),
+    FOREIGN KEY (IDKyHoc) REFERENCES KyHoc(IDKyHoc),
+    FOREIGN KEY (IDLop) REFERENCES CLASSES(IDLop),
+    FOREIGN KEY (IDSV) REFERENCES STUDENTS(IDSV)
 );
 GO
 
@@ -160,9 +183,11 @@ GO
 -- Bảng điểm
 CREATE TABLE Diem (
     IDDiem INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	IDKyHoc INT NOT NULL,
     IDSV NVARCHAR(50) NOT NULL,
 	IDMonHoc INT NOT NULL,
     Diem float,
+    FOREIGN KEY (IDKyHoc) REFERENCES KyHoc(IDKyHoc),
     FOREIGN KEY (IDSV) REFERENCES STUDENTS(IDSV),
     FOREIGN KEY (IDMonHoc) REFERENCES MonHoc(IDMonHoc)
 );
@@ -211,6 +236,21 @@ CREATE TABLE LichHoc (
 );
 GO
 
+-- Bảng Điểm Danh
+CREATE TABLE DIEMDANH (
+    IDDiemDanh INT IDENTITY(1,1) PRIMARY KEY,
+    IDLichHoc INT NOT NULL,
+    IDGV NVARCHAR(50) NOT NULL,
+    IDSV NVARCHAR(50) NOT NULL,
+    ThoiGianDiemDanh DATETIME NOT NULL,
+    TrangThai BIT NOT NULL,
+    GhiChu NVARCHAR(255),
+    FOREIGN KEY (IDSV) REFERENCES STUDENTS(IDSV),
+    FOREIGN KEY (IDGV) REFERENCES TEACHERS(IDGV),
+    FOREIGN KEY (IDLichHoc) REFERENCES LichHoc(IDLichHoc)
+);
+GO
+
 -- Thêm dữ liệu vào bảng ROLES
 INSERT INTO ROLES (IDRole, Role)
 VALUES 
@@ -235,7 +275,14 @@ VALUES
 
 ('A07', 'GV', HASHBYTES('SHA2_256', 'GV'), 'R04', 0),
 ('A08', 'GV2', HASHBYTES('SHA2_256', 'GV2'), 'R04', 0),
-('A09', 'GV3', HASHBYTES('SHA2_256', 'GV3'), 'R04', 0);
+('A09', 'GV3', HASHBYTES('SHA2_256', 'GV3'), 'R04', 0),
+
+('A10', 'SV', HASHBYTES('SHA2_256', 'SV'), 'R05', 0),
+('A11', 'SV1', HASHBYTES('SHA2_256', 'SV1'), 'R05', 0),
+('A12', 'SV2', HASHBYTES('SHA2_256', 'SV2'), 'R05', 0),
+('A13', 'SV3', HASHBYTES('SHA2_256', 'SV3'), 'R05', 0),
+('A14', 'SV4', HASHBYTES('SHA2_256', 'SV4'), 'R05', 0),
+('A15', 'SV5', HASHBYTES('SHA2_256', 'SV5'), 'R05', 0);
 GO
 
 -- Thêm dữ liệu vào bảng TEACHERS
@@ -252,24 +299,24 @@ VALUES
 GO
 
 -- Thêm dữ liệu vào bảng CLASSES
-INSERT INTO CLASSES (IDLop, ClassName, IDGV, BuoiHoc, Trangthai)
+INSERT INTO CLASSES (IDLop, ClassName, BuoiHoc, Trangthai)
 VALUES 
-('L00', N'Chưa phân lớp', NULL, 0, 0),
-('L01', N'Lớp Toán A', 'GV01', 1, 0),
-('L02', N'Lớp Văn B', 'GV02', 1, 0),
-('L03', N'Lớp Anh C', NULL, 0, 0);
+('L00', N'Chưa phân lớp', 0, 0),
+('L01', N'Lớp Toán A', 1, 0),
+('L02', N'Lớp Văn B', 1, 0),
+('L03', N'Lớp Anh C', 0, 0);
 GO
 
 -- Thêm dữ liệu vào bảng STUDENTS với tổng 60 sinh viên, sắp xếp IDSV tăng dần
 INSERT INTO STUDENTS (IDSV, IDLop, TenSV, IdAcc, Email, SoDT, Gioitinh, Diachi, Hinh)
 VALUES 
 -- 12 sinh viên chưa phân lớp (L00)
-('SV01', 'L00', N'Nguyễn Văn A', NULL, 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
-('SV02', 'L00', N'Lê Thị B', NULL, 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
-('SV03', 'L00', N'Phạm Văn C', NULL, 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
-('SV04', 'L00', N'Trần Thị D', NULL, 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
-('SV05', 'L00', N'Hoàng Văn E', NULL, 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
-('SV06', 'L00', N'Vũ Thị F', NULL, 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
+('SV01', 'L00', N'Nguyễn Văn A', 'A10', 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
+('SV02', 'L00', N'Lê Thị B', 'A11', 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
+('SV03', 'L00', N'Phạm Văn C', 'A12', 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
+('SV04', 'L00', N'Trần Thị D', 'A13', 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
+('SV05', 'L00', N'Hoàng Văn E', 'A14', 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
+('SV06', 'L00', N'Vũ Thị F', 'A15', 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
 ('SV07', 'L00', N'Đặng Văn G', NULL, 'dangvang@gmail.com', '0967890123', 1, N'Nha Trang', NULL),
 ('SV08', 'L00', N'Phan Thị H', NULL, 'phanthih@gmail.com', '0978901234', 0, N'Đà Lạt', NULL),
 ('SV09', 'L00', N'Ngô Văn I', NULL, 'ngovani@gmail.com', '0989012345', 1, N'Huế', NULL),
@@ -320,12 +367,12 @@ VALUES
 ('SV48', 'L03', N'Phan Thị H1', NULL, 'phanthih1@gmail.com', '0954321654', 0, N'Đà Nẵng', NULL);
 
 -- Thêm dữ liệu vào bảng KyHoc
-INSERT INTO KyHoc (TenKy, NamBatDau, NamKetThuc)
+INSERT INTO KyHoc (TenKy, NamBatDau, NamKetThuc, Trangthai)
 VALUES 
-(N'Học kỳ 1', '2024-09-01', '2025-01-31'),
-(N'Học kỳ 2', '2025-02-01', '2025-06-30'),
-(N'Học kỳ 3', '2025-09-01', '2026-01-31'),
-(N'Học kỳ 4', '2026-02-01', '2026-06-30');
+(N'Học kỳ 1', '2024-09-01', '2025-01-31', 1),
+(N'Học kỳ 2', '2025-02-01', '2025-06-30', 0),
+(N'Học kỳ 3', '2025-09-01', '2026-01-31', 0),
+(N'Học kỳ 4', '2026-02-01', '2026-06-30', 0);
 
 -- Thêm dữ liệu vào bảng MonHoc
 INSERT INTO MonHoc (TenMon, SoTiet)
@@ -337,14 +384,14 @@ VALUES
 (N'Hóa', 3);
 
 -- Thêm điểm cho nửa còn lại sinh viên ở các lớp L01, L02, L03
-INSERT INTO DIEM (IDSV, IDMonHoc, Diem)
+INSERT INTO DIEM (IDSV, IDKyHoc, IDMonHoc, Diem)
 VALUES 
-('SV13', 1, 7.5), ('SV13', 2, 8.0), ('SV13', 3, 6.5),
-('SV14', 1, 8.5), ('SV14', 2, 7.0), ('SV14', 3, 7.5),
-('SV15', 1, 6.0), ('SV15', 2, 7.5), ('SV15', 3, 8.0),
-('SV16', 1, 7.5), ('SV16', 2, 6.5), ('SV16', 3, 8.5),
-('SV17', 1, 8.0), ('SV17', 2, 9.0), ('SV17', 3, 7.0),
-('SV18', 1, 6.5), ('SV18', 2, 7.0), ('SV18', 3, 8.0);
+('SV13', 1, 1, 7.5), ('SV13', 1, 2, 8.0), ('SV13', 1, 3, 6.5),
+('SV14', 1, 1, 8.5), ('SV14', 1, 2, 7.0), ('SV14', 1, 3, 7.5),
+('SV15', 1, 1, 6.0), ('SV15', 1, 2, 7.5), ('SV15', 1, 3, 8.0),
+('SV16', 1, 1, 7.5), ('SV16', 1, 2, 6.5), ('SV16', 1, 3, 8.5),
+('SV17', 1, 1, 8.0), ('SV17', 1, 2, 9.0), ('SV17', 1, 3, 7.0),
+('SV18', 1, 1, 6.5), ('SV18', 1, 2, 7.0), ('SV18', 1, 3, 8.0);
 GO
 
 -- Tạo Trigger INSERT
@@ -385,10 +432,27 @@ BEGIN
 END;
 GO
 
--- Xóa bảng phụ thuộc trước để tránh lỗi ràng buộc khóa ngoại
-DROP TABLE IF EXISTS Diem, MonHoc_KyHoc, MonHoc_GiangVien, LichHoc;
-DROP TABLE IF EXISTS STUDENTS, CLASSES, TEACHERS, CBDT, CBQL, NEWS, LoginHistory, IT;
-DROP TABLE IF EXISTS ACCOUNTS, ROLES, KyHoc, MonHoc, PhongBan;
+-- Xóa các bảng có khóa ngoại trước
+DROP TABLE IF EXISTS DIEMDANH;
+DROP TABLE IF EXISTS LichHoc;
+DROP TABLE IF EXISTS PhongBan;
+DROP TABLE IF EXISTS CBQL;
+DROP TABLE IF EXISTS Diem;
+DROP TABLE IF EXISTS MonHoc_KyHoc;
+DROP TABLE IF EXISTS MonHoc_GiangVien;
+DROP TABLE IF EXISTS Class_Student;
+DROP TABLE IF EXISTS Class_Teacher;
+DROP TABLE IF EXISTS STUDENTS;
+DROP TABLE IF EXISTS CLASSES;
+DROP TABLE IF EXISTS TEACHERS;
+DROP TABLE IF EXISTS MonHoc;
+DROP TABLE IF EXISTS KyHoc;
+DROP TABLE IF EXISTS CBDT;
+DROP TABLE IF EXISTS NEWS;
+DROP TABLE IF EXISTS LoginHistory;
+DROP TABLE IF EXISTS IT;
+DROP TABLE IF EXISTS ACCOUNTS;
+DROP TABLE IF EXISTS ROLES;
 
 -- Xóa trigger nếu có (tùy vào database của bạn)
 DROP TRIGGER IF EXISTS trg_Insert_KyHoc_TrangThai;

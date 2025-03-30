@@ -141,9 +141,9 @@ namespace BUS_QL
         {
             return QlThongTin.GetListSubjectFormLich();
         }
-        public DataTable LoadDsGvBoMon(string IdMonHoc)
+        public DataTable LoadDsGvBoMon(int IdMonHoc, string IDLop, int IDKyHoc)
         {
-            return QlThongTin.GetListTeacherOfSubjectFormLich(IdMonHoc);
+            return QlThongTin.GetListTeacherOfSubjectFormLich(IdMonHoc, IDLop, IDKyHoc);
         }
         public bool ThemLichHoc(DTO_CBDT_LICHHOC LICH, out string message)
         {
@@ -215,13 +215,25 @@ namespace BUS_QL
         {
             return QlThongTin.GetListMonHocGV();
         }
+        public DataTable LoadDsLopHocGV()
+        {
+            return QlThongTin.GetListLopHocGV();
+        }
         public DataTable LoadDsMonHocFormChiDinhGV()
         {
             return QlThongTin.GetListMonHocFormChiDinhGV();
         }
-        public DataTable LoadDsGVFormChiDinhGV(int IDMonHoc)
+        public DataTable LoadDsLopHocFormChiDinhGV()
         {
-            return QlThongTin.GetListGVFormChiDinhGV(IDMonHoc);
+            return QlThongTin.GetListLopHocFormChiDinhGV();
+        }
+        public DataTable LoadDsGVFormChiDinhGV(int IDMonHoc, int KYHOC)
+        {
+            return QlThongTin.GetListGVFormChiDinhGV(IDMonHoc, KYHOC);
+        }
+        public DataTable LoadDsGVFormChiDinhLop(string IDLop, int KYHOC)
+        {
+            return QlThongTin.GetListGVFormChiDinhLop(IDLop, KYHOC);
         }
         public DateTime? LayNamBatDauKyHoc()
         {
@@ -231,9 +243,17 @@ namespace BUS_QL
         {
             return QlThongTin.InsertChiDinhGVtoMonHoc(IDKyhoc, IDMonHoc, IDGV, Ngaychot, out message);
         }
+        public bool ThemChiDinhGVtoLopHoc(int IDKyhoc, string IDLop, string IDGV, DateTime Ngaychot, out string message)
+        {
+            return QlThongTin.InsertChiDinhGVtoLopHoc(IDKyhoc, IDLop, IDGV, Ngaychot, out message);
+        }
         public bool SuaChiDinhGVtoMonHoc(int IDMonHoc, out string message)
         {
             return QlThongTin.UpdateChiDinhGVtoMonHoc(IDMonHoc, out message);
+        }
+        public bool SuaChiDinhGVtoLopHoc(string IDLopHoc, out string message)
+        {
+            return QlThongTin.UpdateChiDinhGVtoLopHoc(IDLopHoc, out message);
         }
     }
 }
