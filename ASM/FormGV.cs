@@ -75,18 +75,18 @@ namespace ASM
         {
             idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
             tabMain.Controls.Clear();
-            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(username, IDACC, idkyhoc);
+            FormQuanLySVDaCoDiem GV = new FormQuanLySVDaCoDiem(IDACC, idkyhoc);
             GV.TopLevel = false;
             GV.FormBorderStyle = FormBorderStyle.None;
             GV.Dock = DockStyle.Fill;
             tabMain.Controls.Add(GV);
             GV.Show();
         }
-        private void btnMenuDiemDanhSV_Click(object sender, EventArgs e)
+        private void btnMenuGvXemLichDaySV_Click(object sender, EventArgs e)
         {
             idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
             tabMain.Controls.Clear();
-            FormDiemDanhSV GV = new FormDiemDanhSV(IDACC, idkyhoc);
+            FormGVXemLichDay GV = new FormGVXemLichDay(IDACC, idkyhoc);
             GV.TopLevel = false;
             GV.FormBorderStyle = FormBorderStyle.None;
             GV.Dock = DockStyle.Fill;
@@ -97,6 +97,18 @@ namespace ASM
         {
             tabMain.Controls.Clear();
             FormDanhSachHienThi GV = new FormDanhSachHienThi(username);
+            GV.TopLevel = false;
+            GV.FormBorderStyle = FormBorderStyle.None;
+            GV.Dock = DockStyle.Fill;
+            tabMain.Controls.Add(GV);
+            GV.Show();
+        }
+
+        private void btnMenuTraCuuSV_Click(object sender, EventArgs e)
+        {
+            idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
+            tabMain.Controls.Clear();
+            FormGvTraCuuSv GV = new FormGvTraCuuSv(idkyhoc);
             GV.TopLevel = false;
             GV.FormBorderStyle = FormBorderStyle.None;
             GV.Dock = DockStyle.Fill;

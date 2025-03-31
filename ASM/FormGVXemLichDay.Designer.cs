@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnDiemDanhAll = new System.Windows.Forms.Button();
-            this.btnHuyDiemDanhAll = new System.Windows.Forms.Button();
-            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.rdbNgaythi = new System.Windows.Forms.RadioButton();
+            this.rdbNgayhoc = new System.Windows.Forms.RadioButton();
+            this.btnDiemDanh = new System.Windows.Forms.Button();
             this.cboMonHoc = new System.Windows.Forms.ComboBox();
             this.cboLopHoc = new System.Windows.Forms.ComboBox();
             this.dtpNgayDiemDanh = new System.Windows.Forms.DateTimePicker();
@@ -41,16 +40,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDanhSachSinhVien = new System.Windows.Forms.DataGridView();
+            this.pMain = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSinhVien)).BeginInit();
+            this.pMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnLuu);
-            this.groupBox1.Controls.Add(this.btnDiemDanhAll);
-            this.groupBox1.Controls.Add(this.btnHuyDiemDanhAll);
-            this.groupBox1.Controls.Add(this.btnBaoCao);
+            this.groupBox1.Controls.Add(this.rdbNgaythi);
+            this.groupBox1.Controls.Add(this.rdbNgayhoc);
+            this.groupBox1.Controls.Add(this.btnDiemDanh);
             this.groupBox1.Controls.Add(this.cboMonHoc);
             this.groupBox1.Controls.Add(this.cboLopHoc);
             this.groupBox1.Controls.Add(this.dtpNgayDiemDanh);
@@ -60,46 +60,42 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 30);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(863, 100);
+            this.groupBox1.Size = new System.Drawing.Size(863, 98);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin lịch dạy";
             // 
-            // btnLuu
+            // rdbNgaythi
             // 
-            this.btnLuu.Location = new System.Drawing.Point(637, 63);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(97, 23);
-            this.btnLuu.TabIndex = 0;
-            this.btnLuu.Text = "Lưu điểm danh";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.rdbNgaythi.AutoSize = true;
+            this.rdbNgaythi.Location = new System.Drawing.Point(559, 66);
+            this.rdbNgaythi.Name = "rdbNgaythi";
+            this.rdbNgaythi.Size = new System.Drawing.Size(64, 17);
+            this.rdbNgaythi.TabIndex = 7;
+            this.rdbNgaythi.TabStop = true;
+            this.rdbNgaythi.Text = "Ngày thi";
+            this.rdbNgaythi.UseVisualStyleBackColor = true;
             // 
-            // btnDiemDanhAll
+            // rdbNgayhoc
             // 
-            this.btnDiemDanhAll.Location = new System.Drawing.Point(328, 63);
-            this.btnDiemDanhAll.Name = "btnDiemDanhAll";
-            this.btnDiemDanhAll.Size = new System.Drawing.Size(97, 23);
-            this.btnDiemDanhAll.TabIndex = 0;
-            this.btnDiemDanhAll.Text = "Có mặt tất cả";
-            this.btnDiemDanhAll.UseVisualStyleBackColor = true;
+            this.rdbNgayhoc.AutoSize = true;
+            this.rdbNgayhoc.Location = new System.Drawing.Point(428, 66);
+            this.rdbNgayhoc.Name = "rdbNgayhoc";
+            this.rdbNgayhoc.Size = new System.Drawing.Size(71, 17);
+            this.rdbNgayhoc.TabIndex = 8;
+            this.rdbNgayhoc.TabStop = true;
+            this.rdbNgayhoc.Text = "Ngày học";
+            this.rdbNgayhoc.UseVisualStyleBackColor = true;
             // 
-            // btnHuyDiemDanhAll
+            // btnDiemDanh
             // 
-            this.btnHuyDiemDanhAll.Location = new System.Drawing.Point(431, 63);
-            this.btnHuyDiemDanhAll.Name = "btnHuyDiemDanhAll";
-            this.btnHuyDiemDanhAll.Size = new System.Drawing.Size(97, 23);
-            this.btnHuyDiemDanhAll.TabIndex = 0;
-            this.btnHuyDiemDanhAll.Text = "Vắng tất cả";
-            this.btnHuyDiemDanhAll.UseVisualStyleBackColor = true;
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.Location = new System.Drawing.Point(534, 63);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(97, 23);
-            this.btnBaoCao.TabIndex = 0;
-            this.btnBaoCao.Text = "Báo cáo";
-            this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnDiemDanh.Location = new System.Drawing.Point(731, 32);
+            this.btnDiemDanh.Name = "btnDiemDanh";
+            this.btnDiemDanh.Size = new System.Drawing.Size(97, 49);
+            this.btnDiemDanh.TabIndex = 0;
+            this.btnDiemDanh.Text = "Điểm danh";
+            this.btnDiemDanh.UseVisualStyleBackColor = true;
+            this.btnDiemDanh.Click += new System.EventHandler(this.btnDiemDanh_Click);
             // 
             // cboMonHoc
             // 
@@ -173,10 +169,21 @@
             this.dgvDanhSachSinhVien.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDanhSachSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachSinhVien.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvDanhSachSinhVien.Location = new System.Drawing.Point(0, 136);
+            this.dgvDanhSachSinhVien.Location = new System.Drawing.Point(0, 134);
             this.dgvDanhSachSinhVien.Name = "dgvDanhSachSinhVien";
-            this.dgvDanhSachSinhVien.Size = new System.Drawing.Size(863, 341);
+            this.dgvDanhSachSinhVien.Size = new System.Drawing.Size(863, 343);
             this.dgvDanhSachSinhVien.TabIndex = 6;
+            this.dgvDanhSachSinhVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachSinhVien_CellClick);
+            // 
+            // pMain
+            // 
+            this.pMain.BackColor = System.Drawing.SystemColors.Control;
+            this.pMain.Controls.Add(this.dgvDanhSachSinhVien);
+            this.pMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pMain.Location = new System.Drawing.Point(0, 0);
+            this.pMain.Name = "pMain";
+            this.pMain.Size = new System.Drawing.Size(863, 477);
+            this.pMain.TabIndex = 8;
             // 
             // FormGVXemLichDay
             // 
@@ -185,12 +192,13 @@
             this.ClientSize = new System.Drawing.Size(863, 477);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvDanhSachSinhVien);
+            this.Controls.Add(this.pMain);
             this.Name = "FormGVXemLichDay";
             this.Text = "FormGVXemLichDay";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSinhVien)).EndInit();
+            this.pMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -198,10 +206,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnDiemDanhAll;
-        private System.Windows.Forms.Button btnHuyDiemDanhAll;
-        private System.Windows.Forms.Button btnBaoCao;
+        private System.Windows.Forms.Button btnDiemDanh;
         private System.Windows.Forms.ComboBox cboMonHoc;
         private System.Windows.Forms.ComboBox cboLopHoc;
         private System.Windows.Forms.DateTimePicker dtpNgayDiemDanh;
@@ -210,5 +215,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvDanhSachSinhVien;
+        private System.Windows.Forms.RadioButton rdbNgaythi;
+        private System.Windows.Forms.RadioButton rdbNgayhoc;
+        private System.Windows.Forms.Panel pMain;
     }
 }

@@ -73,6 +73,7 @@
             this.btnLuu.TabIndex = 0;
             this.btnLuu.Text = "Lưu điểm danh";
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnDiemDanhAll
             // 
@@ -82,6 +83,7 @@
             this.btnDiemDanhAll.TabIndex = 0;
             this.btnDiemDanhAll.Text = "Có mặt tất cả";
             this.btnDiemDanhAll.UseVisualStyleBackColor = true;
+            this.btnDiemDanhAll.Click += new System.EventHandler(this.btnDiemDanhAll_Click);
             // 
             // btnHuyDiemDanhAll
             // 
@@ -91,6 +93,7 @@
             this.btnHuyDiemDanhAll.TabIndex = 0;
             this.btnHuyDiemDanhAll.Text = "Vắng tất cả";
             this.btnHuyDiemDanhAll.UseVisualStyleBackColor = true;
+            this.btnHuyDiemDanhAll.Click += new System.EventHandler(this.btnHuyDiemDanhAll_Click);
             // 
             // btnBaoCao
             // 
@@ -100,6 +103,7 @@
             this.btnBaoCao.TabIndex = 0;
             this.btnBaoCao.Text = "Báo cáo";
             this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
             // 
             // cboMonHoc
             // 
@@ -109,7 +113,6 @@
             this.cboMonHoc.Name = "cboMonHoc";
             this.cboMonHoc.Size = new System.Drawing.Size(187, 21);
             this.cboMonHoc.TabIndex = 2;
-            this.cboMonHoc.SelectedIndexChanged += new System.EventHandler(this.cboMonHoc_SelectedIndexChanged);
             // 
             // cboLopHoc
             // 
@@ -119,7 +122,6 @@
             this.cboLopHoc.Name = "cboLopHoc";
             this.cboLopHoc.Size = new System.Drawing.Size(187, 21);
             this.cboLopHoc.TabIndex = 1;
-            this.cboLopHoc.SelectedIndexChanged += new System.EventHandler(this.cboLopHoc_SelectedIndexChanged);
             // 
             // dtpNgayDiemDanh
             // 
@@ -129,7 +131,6 @@
             this.dtpNgayDiemDanh.Name = "dtpNgayDiemDanh";
             this.dtpNgayDiemDanh.Size = new System.Drawing.Size(200, 20);
             this.dtpNgayDiemDanh.TabIndex = 3;
-            this.dtpNgayDiemDanh.ValueChanged += new System.EventHandler(this.dtpNgayDiemDanh_ValueChanged);
             // 
             // label4
             // 
@@ -190,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDanhSachSinhVien);
             this.Name = "FormDiemDanhSV";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDiemDanhSV";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

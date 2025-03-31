@@ -27,9 +27,17 @@ namespace BUS_QL
         }
 
         //Form Quản Lý Điểm
-        public DataTable LoadDsSinhVien(string Malop, string IdGv)
+        public DataTable LoadDsSinhVien(string IdGv, string IDLop, int IDMonHoc)
         {
-            return QlGiaoVien.GetListStudent(Malop, IdGv);
+            return QlGiaoVien.GetListStudent(IdGv, IDLop, IDMonHoc);
+        }
+        public DataTable LoadDsLop(string IdGv)
+        {
+            return QlGiaoVien.GetMaLopFormQuanLyDiem(IdGv);
+        }
+        public DataTable LoadDsMonHoc(string IdGv)
+        {
+            return QlGiaoVien.GetMaMonHocFormQuanLyDiem(IdGv);
         }
         public DataTable GetStudentsByPage(string Malop, string IdGv, int pageIndex, int pageSize)
         {
@@ -39,13 +47,13 @@ namespace BUS_QL
         {
             return QlGiaoVien.GetIdGvFromIdAcc(Idacc);
         }
-        public int GetIdMonhocFromIdGv(string IdGv)
+        public int GetIdMonhocFromIdGv_IDlop(string IdGv, string IDLop)
         {
-            return QlGiaoVien.GetIdMonhocFromIdGv(IdGv);
+            return QlGiaoVien.GetIdMonhocFromIdGv_IDlop(IdGv, IDLop);
         }
-        public int GetTotalStudent(string Malop)
+        public int GetTotalStudent(string maLop, string idGV)
         {
-            return QlGiaoVien.GetTotalStudent(Malop);
+            return QlGiaoVien.GetTotalStudent(maLop, idGV);
         }
         public bool KtSvDaCoDiemChua(string maHs)
         {
@@ -68,10 +76,10 @@ namespace BUS_QL
             return QlGiaoVien.DeleteGrade(DiemSV, out message);
         }
 
-        //Form Điểm danh
-        public DataTable LoadDsSinhVienDiemDanh(string IDLop, int lichhoc, DateTime ngaydiemdanh)
+        //Form lịch dạy
+        public DataTable LayDsLichDay(string IDGV)
         {
-            return QlGiaoVien.GetListSinhVienDiemDanh(IDLop, lichhoc, ngaydiemdanh);
+            return QlGiaoVien.GetListLichDay(IDGV);
         }
         public DataTable LoadDsLopGvDangDay(string IDGV)
         {
@@ -81,6 +89,11 @@ namespace BUS_QL
         {
             return QlGiaoVien.GetListSubjectOfTeacher(IDGV, IDLOP);
         }
+        //Form Điểm danh
+        public DataTable LoadDsSinhVienDiemDanh(string IDLop, int lichhoc, DateTime ngaydiemdanh)
+        {
+            return QlGiaoVien.GetListSinhVienDiemDanh(IDLop, lichhoc, ngaydiemdanh);
+        }
         public int LayIDLichHOC(string IDLop, int IDmonhoc, string IDGV, int idkyhoc)
         {
             return QlGiaoVien.GetIDLichHoc(IDLop, IDmonhoc, IDGV, idkyhoc);
@@ -88,6 +101,36 @@ namespace BUS_QL
         public DateTime? LayNgayDiemdanh(int IDLichhoc)
         {
             return QlGiaoVien.GetNgayDiemdanh(IDLichhoc);
+        }
+        public string GetTenLop(int IDLop)
+        {
+            return QlGiaoVien.GetTenLop(IDLop);
+        }
+        public string GetTenMon(int IDMonHoc)
+        {
+            return QlGiaoVien.GetTenMon(IDMonHoc);
+        }
+        public bool XoaDiemDanhCu(DTO_GV_DIEMDANH d, out string errorMessage)
+        {
+            return QlGiaoVien.XoaDiemDanhCu(d, out errorMessage);
+        }
+        public bool ThemDiemDanh(DTO_GV_DIEMDANH d, out string errorMessage)
+        {
+            return QlGiaoVien.ThemDiemDanh(d, out errorMessage);
+        }
+        public DataTable LoadDsBaoCaoDiemDanh(int idLichHoc, DateTime Ngay)
+        {
+            return QlGiaoVien.GetListBaoCaoDiemDanh(idLichHoc, Ngay);
+        }
+
+        //Form Tra cứu sv
+        public DataTable LoadDsThongTinSinhVien(string IDSV)
+        {
+            return QlGiaoVien.GetInfoSv(IDSV);
+        }
+        public DataTable GetListDiem(string IDSV)
+        {
+            return QlGiaoVien.GetListDiem(IDSV);
         }
     }
 }

@@ -24,29 +24,61 @@ namespace ASM
         bool IsAdding = false;
         int currentindex = -1;
         int max;
-        string Malop;
         string IdGv;
-        int IdMonhoc;
         int idkyhoc;
-        public FormQuanLySVDaCoDiem(string Tk, string Idacc, int IDKYHOC)
+        public FormQuanLySVDaCoDiem(string Idacc, int IDKYHOC)
         {
             InitializeComponent();
-            idkyhoc = IDKYHOC;
-            Malop = QlGiangVien.GetMaLop(Tk);
-            max = QlGiangVien.GetTotalStudent(Malop);
+
             IdGv = QlGiangVien.GetIdGvFromIdAcc(Idacc);
-            IdMonhoc = QlGiangVien.GetIdMonhocFromIdGv(IdGv);
+            cbLop.SelectedIndexChanged += cbLop_SelectedIndexChanged;
+            cbTenMon.SelectedIndexChanged += cbTenMon_SelectedIndexChanged;
+
+            LoadDsLop();
+            LoadDsMonHoc();
             LoadDsSv();
             LockControl();
-            
+
+            idkyhoc = IDKYHOC;
+            max = QlGiangVien.GetTotalStudent(cbLop.SelectedValue.ToString(), IdGv);
             dgvDanhSachSV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         public void LoadDsSv()
         {
-            dt = QlGiangVien.LoadDsSinhVien(Malop, IdGv);
-            dgvDanhSachSV.DataSource = QlGiangVien.LoadDsSinhVien(Malop,IdGv);
+            int idMonHoc;
+            if (cbTenMon.SelectedValue is DataRowView drv)
+            {
+                idMonHoc = Convert.ToInt32(drv["IDMonHoc"]);
+            }
+            else
+            {
+                idMonHoc = Convert.ToInt32(cbTenMon.SelectedValue);
+            }
+
+            dt = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
+            dgvDanhSachSV.DataSource = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
+        }
+        public void LoadDsLop()
+        {
+            cbLop.DataSource = QlGiangVien.LoadDsLop(IdGv);
+            cbLop.DisplayMember = "ClassName";
+            cbLop.ValueMember = "IDLop";
+        }
+        public void LoadDsMonHoc()
+        {
+            cbTenMon.DataSource = QlGiangVien.LoadDsMonHoc(IdGv);
+            cbTenMon.DisplayMember = "TenMon";
+            cbTenMon.ValueMember = "IDMonHoc";
+        }
+        private void cbLop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDsSv();
         }
 
+        private void cbTenMon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDsSv();
+        }
         public void LoadTrangThaiDulieu()
         {
             if (txtDiem.Text.Trim().Equals("Chưa nhập", StringComparison.OrdinalIgnoreCase))
@@ -91,7 +123,7 @@ namespace ASM
                 DataRow row = dt.Rows[index];
                 txtMasvDiemtb.Text = row["IDSV"].ToString();
                 lbTenSV.Text = row["TenSV"].ToString();
-                txtTenMon.Text = row["TenMon"].ToString();
+                cbTenMon.Text = row["TenMon"].ToString();
                 txtDiem.Text = row["Diem"].ToString();
 
                 dgvDanhSachSV.ClearSelection();
@@ -102,7 +134,6 @@ namespace ASM
         public void LockControl()
         {
             txtDiem.Enabled = false;
-            txtTenMon.Enabled = false;
 
             btnNew.Enabled = true;
             btnUpdate.Enabled = false;
@@ -135,7 +166,7 @@ namespace ASM
 
             try
             {
-                DataTable result = QlGiangVien.TimKiemSinhVien(Malop, IdGv, txtMasv.Text);
+                DataTable result = QlGiangVien.TimKiemSinhVien(cbLop.SelectedValue.ToString(), IdGv, txtMasv.Text);
                 if (result.Rows.Count > 0)
                 {
                     dgvDanhSachSV.DataSource = result;
@@ -196,7 +227,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
+                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
                 if (QlGiangVien.ThemDiem(Diemsv, out message))
                 {
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -216,7 +247,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc, txtDiem.Text);
+                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật điểm không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
@@ -240,7 +271,7 @@ namespace ASM
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string message;
-            DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, IdMonhoc);
+            DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue));
             DialogResult s = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (s == DialogResult.Yes)
             {
@@ -296,7 +327,8 @@ namespace ASM
 
                 txtMasvDiemtb.Text = dgvDanhSachSV.CurrentRow.Cells["IDSV"]?.Value?.ToString();
                 lbTenSV.Text = dgvDanhSachSV.CurrentRow.Cells["TenSV"]?.Value?.ToString();
-                txtTenMon.Text = dgvDanhSachSV.CurrentRow.Cells["TenMon"]?.Value?.ToString();
+                cbLop.SelectedValue = dgvDanhSachSV.CurrentRow.Cells["IDLop"]?.Value?.ToString();
+                cbTenMon.SelectedValue = dgvDanhSachSV.CurrentRow.Cells["IDMonHoc"]?.Value?.ToString();
                 txtDiem.Text = dgvDanhSachSV.CurrentRow.Cells["Diem"]?.Value?.ToString();
 
                 LoadTrangThaiDulieu();

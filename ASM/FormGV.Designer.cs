@@ -36,17 +36,17 @@
             this.UserNameThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.RoleThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnMenuTraCuuSV = new System.Windows.Forms.Button();
+            this.btnMenuGvXemLichDaySV = new System.Windows.Forms.Button();
             this.btnMenuQlyDanhSach = new System.Windows.Forms.Button();
             this.btnMenuQlyDiem = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage = new System.Windows.Forms.TabControl();
             this.tabMain = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMarquee = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMenuDiemDanhSV = new System.Windows.Forms.Button();
-            this.btnMenuTraCuuSV = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.tabPage.SuspendLayout();
             this.tabMain.SuspendLayout();
@@ -103,7 +103,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnMenuTraCuuSV);
-            this.groupBox2.Controls.Add(this.btnMenuDiemDanhSV);
+            this.groupBox2.Controls.Add(this.btnMenuGvXemLichDaySV);
             this.groupBox2.Controls.Add(this.btnMenuQlyDanhSach);
             this.groupBox2.Controls.Add(this.btnMenuQlyDiem);
             this.groupBox2.Controls.Add(this.textBox1);
@@ -114,6 +114,28 @@
             this.groupBox2.Size = new System.Drawing.Size(218, 363);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
+            // 
+            // btnMenuTraCuuSV
+            // 
+            this.btnMenuTraCuuSV.Location = new System.Drawing.Point(1, 267);
+            this.btnMenuTraCuuSV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenuTraCuuSV.Name = "btnMenuTraCuuSV";
+            this.btnMenuTraCuuSV.Size = new System.Drawing.Size(213, 41);
+            this.btnMenuTraCuuSV.TabIndex = 2;
+            this.btnMenuTraCuuSV.Text = "Tra cứu sinh viên";
+            this.btnMenuTraCuuSV.UseVisualStyleBackColor = true;
+            this.btnMenuTraCuuSV.Click += new System.EventHandler(this.btnMenuTraCuuSV_Click);
+            // 
+            // btnMenuGvXemLichDaySV
+            // 
+            this.btnMenuGvXemLichDaySV.Location = new System.Drawing.Point(1, 203);
+            this.btnMenuGvXemLichDaySV.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenuGvXemLichDaySV.Name = "btnMenuGvXemLichDaySV";
+            this.btnMenuGvXemLichDaySV.Size = new System.Drawing.Size(213, 41);
+            this.btnMenuGvXemLichDaySV.TabIndex = 2;
+            this.btnMenuGvXemLichDaySV.Text = "Xem lịch dạy học";
+            this.btnMenuGvXemLichDaySV.UseVisualStyleBackColor = true;
+            this.btnMenuGvXemLichDaySV.Click += new System.EventHandler(this.btnMenuGvXemLichDaySV_Click);
             // 
             // btnMenuQlyDanhSach
             // 
@@ -174,6 +196,15 @@
             this.tabMain.Text = "Main";
             this.tabMain.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(17, 97);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1011, 302);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblMarquee
             // 
             this.lblMarquee.AutoSize = true;
@@ -190,36 +221,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 97);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1011, 302);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnMenuDiemDanhSV
-            // 
-            this.btnMenuDiemDanhSV.Location = new System.Drawing.Point(1, 203);
-            this.btnMenuDiemDanhSV.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuDiemDanhSV.Name = "btnMenuDiemDanhSV";
-            this.btnMenuDiemDanhSV.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuDiemDanhSV.TabIndex = 2;
-            this.btnMenuDiemDanhSV.Text = "Điểm danh sinh viên";
-            this.btnMenuDiemDanhSV.UseVisualStyleBackColor = true;
-            this.btnMenuDiemDanhSV.Click += new System.EventHandler(this.btnMenuDiemDanhSV_Click);
-            // 
-            // btnMenuTraCuuSV
-            // 
-            this.btnMenuTraCuuSV.Location = new System.Drawing.Point(1, 266);
-            this.btnMenuTraCuuSV.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuTraCuuSV.Name = "btnMenuTraCuuSV";
-            this.btnMenuTraCuuSV.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuTraCuuSV.TabIndex = 2;
-            this.btnMenuTraCuuSV.Text = "Tra cứu sinh viên";
-            this.btnMenuTraCuuSV.UseVisualStyleBackColor = true;
             // 
             // FormGV
             // 
@@ -261,7 +262,7 @@
         private System.Windows.Forms.TabPage tabMain;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnMenuQlyDanhSach;
-        private System.Windows.Forms.Button btnMenuDiemDanhSV;
+        private System.Windows.Forms.Button btnMenuGvXemLichDaySV;
         private System.Windows.Forms.Button btnMenuTraCuuSV;
     }
 }

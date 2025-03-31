@@ -76,6 +76,12 @@
     <Compile Include="FormAdminQuanLyTaiKhoanADMIN.Designer.cs">
       <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBaoCaoDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoCaoDiemDanh.Designer.cs">
+      <DependentUpon>FormBaoCaoDiemDanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCBDT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="FormGV.Designer.cs">
       <DependentUpon>FormGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGvTraCuuSv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGvTraCuuSv.Designer.cs">
+      <DependentUpon>FormGvTraCuuSv.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGVXemLichDay.cs">
       <SubType>Form</SubType>
@@ -213,6 +225,9 @@
     <EmbeddedResource Include="FormAdminQuanLyTaiKhoanADMIN.resx">
       <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBaoCaoDiemDanh.resx">
+      <DependentUpon>FormBaoCaoDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCBDT.resx">
       <DependentUpon>FormCBDT.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGV.resx">
       <DependentUpon>FormGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGvTraCuuSv.resx">
+      <DependentUpon>FormGvTraCuuSv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGVXemLichDay.resx">
       <DependentUpon>FormGVXemLichDay.cs</DependentUpon>

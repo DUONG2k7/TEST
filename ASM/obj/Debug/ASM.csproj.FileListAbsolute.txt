@@ -1328,3 +1328,5 @@ C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormGVXemLichDay.resources
 C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormSvXemDiem.resources
 C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormSvXemLichHoc.resources
 C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormSvXemLichThi.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormGvTraCuuSv.resources
+C:\GIT_PRO231_3layer\TEST-main\ASM\obj\Debug\ASM.FormBaoCaoDiemDanh.resources
