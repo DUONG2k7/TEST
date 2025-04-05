@@ -28,7 +28,40 @@ namespace ASM
 
             dgvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        
+        public void LoadDsGV()
+        {
+            dgvData.DataSource = QlGiaoVien.LoadDsGiaoVien();
+        }
+        private void LoadPictureBox()
+        {
+            if (image != null && image.Length > 0)
+            {
+                try
+                {
+                    using (MemoryStream ms = new MemoryStream(image))
+                    {
+                        if (pbPicGV.Image != null)
+                        {
+                            pbPicGV.Image.Dispose();
+                        }
+
+                        pbPicGV.Image = Image.FromStream(ms);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                if (pbPicGV.Image != null)
+                {
+                    pbPicGV.Image.Dispose();
+                    pbPicGV.Image = null;
+                }
+            }
+        }
         public void LockControl()
         {
             txtMaGv.Enabled = false;
@@ -39,10 +72,10 @@ namespace ASM
             rdbNam.Enabled = false;
             rdbNu.Enabled = false;
             pbPicGV.Enabled = false;
+            dgvData.Enabled = true;
 
             btnSave.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
         }
         public void ClearForm()
         {
@@ -87,41 +120,6 @@ namespace ASM
             string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, pattern);
         }
-        public void LoadDsGV()
-        {
-            dgvData.DataSource = QlGiaoVien.LoadDsGiaoVien();
-        }
-        private void LoadPictureBox()
-        {
-            if (image != null && image.Length > 0)
-            {
-                try
-                {
-                    using (MemoryStream ms = new MemoryStream(image))
-                    {
-                        if (pbPicGV.Image != null)
-                        {
-                            pbPicGV.Image.Dispose();
-                        }
-
-                        pbPicGV.Image = Image.FromStream(ms);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Lỗi: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                if (pbPicGV.Image != null)
-                {
-                    pbPicGV.Image.Dispose();
-                    pbPicGV.Image = null;
-                }
-            }
-        }
-
         private void pbPicGV_Click(object sender, EventArgs e)
         {
             try
@@ -159,7 +157,6 @@ namespace ASM
 
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             dgvData.Enabled = false;
 
             ClearForm();
@@ -181,41 +178,8 @@ namespace ASM
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             dgvData.Enabled = false;
         }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (QlGiaoVien.KtTKDaChiDinh(txtMaGv.Text))
-                {
-                    MessageBox.Show("Không thể xóa giảng viên vì đã có tài khoản được chỉ định.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (result == DialogResult.Yes)
-                {
-                    if (QlGiaoVien.XoaGiaoVien(txtMaGv.Text))
-                    {
-                        MessageBox.Show("Xóa sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ClearForm();
-                        LoadDsGV();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không tìm thấy sinh viên để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi xóa sinh viên: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -228,7 +192,6 @@ namespace ASM
                 try
                 {
                     btnUpdate.Enabled = true;
-                    btnDelete.Enabled = true;
 
                     txtMaGv.Text = dgvData.CurrentRow.Cells["IDGV"]?.Value?.ToString() ?? string.Empty;
                     txtHoten.Text = dgvData.CurrentRow.Cells["TenGV"]?.Value?.ToString() ?? string.Empty;
@@ -281,13 +244,8 @@ namespace ASM
                     MessageBox.Show("Email không hợp lệ. Vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (QlGiaoVien.KtGvDaTonTai(txtMaGv.Text))
-                {
-                    MessageBox.Show("Mã học sinh đã tồn tại. Vui lòng nhập mã khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
 
-                DTO_CBDT_GV Giaovien = new DTO_CBDT_GV(txtMaGv.Text, txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
+                DTO_CBQL_GV Giaovien = new DTO_CBQL_GV(txtMaGv.Text, txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
                 if (QlGiaoVien.ThemGiaoVien(Giaovien, out message))
                 {
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -310,10 +268,10 @@ namespace ASM
                     return;
                 }
 
-                DTO_CBDT_GV Giaovien = new DTO_CBDT_GV(txtMaGv.Text, txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
+                DTO_CBQL_GV Giaovien = new DTO_CBQL_GV(txtMaGv.Text, txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
 
 
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật giảng viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
                     if (QlGiaoVien.CapNhatGiaoVien(Giaovien, out message))

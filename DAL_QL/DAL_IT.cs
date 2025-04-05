@@ -75,108 +75,22 @@ namespace DAL_QL
                 }
             }
         }
-        public bool KtTkDaCapGvChua(string IdAcc)
+        public DataTable GetListAccount(string IDRole)
         {
-            string query = "SELECT COUNT(*) FROM TEACHERS WHERE IdAcc = @IdAcc";
+            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = @IDRole";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
-                try
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    cmd.Parameters.AddWithValue("@IDRole", IDRole);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
                     {
-                        cmd.Parameters.AddWithValue("@IdAcc", IdAcc);
-                        int count = (int)cmd.ExecuteScalar();
-                        return count > 0;
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
                     }
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-        }
-        public DataTable GetListAccountIT()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R01'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public DataTable GetListAccountCBDT()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R02'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public DataTable GetListAccountCBQL()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R03'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public DataTable GetListAccountGV()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R04'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public DataTable GetListAccountSV()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R05'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public DataTable GetListAccountGLOBALBAN()
-        {
-            string query = "SELECT R.IDRole, A.IdAcc, A.Username, R.Role, CASE WHEN A.Trangthai = 1 THEN N'Khóa' ELSE N'Đang sử dụng' END AS TrangThai FROM ACCOUNTS A JOIN ROLES R ON A.IDRole = R.IDRole WHERE R.IDRole = 'R06'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
                 }
             }
         }
@@ -193,69 +107,42 @@ namespace DAL_QL
                 return dataTable;
             }
         }
-        public DataTable GetListITChuaCoTaiKhoan()
+        public DataTable GetListChuaCoTaiKhoan(string Role)
         {
-            string query = "SELECT IDIT, TenIT FROM IT I LEFT JOIN ACCOUNTS A ON I.IdAcc = A.IdAcc WHERE I.IdAcc IS NULL";
+            string query = @"SELECT 
+                                Users.ID, 
+                                CASE 
+                                    WHEN Users.Role = 'IT' THEN Users.Name
+                                    WHEN Users.Role = 'CBDT' THEN Users.Name
+                                    WHEN Users.Role = 'CBQL' THEN Users.Name
+                                    WHEN Users.Role = 'GV' THEN Users.Name
+                                    WHEN Users.Role = 'SV' THEN Users.Name
+                                END AS RoleName
+                            FROM (
+                                SELECT IDIT AS ID, TenIT AS Name, 'IT' AS Role, IDAcc FROM IT
+                                UNION ALL
+                                SELECT IDCBDT AS ID, TenCBDT AS Name, 'CBDT' AS Role, IDAcc FROM CBDT
+                                UNION ALL
+                                SELECT IDCBQL AS ID, TenCBQL AS Name, 'CBQL' AS Role, IDAcc FROM CBQL
+                                UNION ALL
+                                SELECT IDGV AS ID, TenGV AS Name, 'GV' AS Role, IDAcc FROM TEACHERS
+                                UNION ALL
+                                SELECT IDSV AS ID, TenSV AS Name, 'SV' AS Role, IDAcc FROM STUDENTS
+                            ) AS Users 
+                            LEFT JOIN ACCOUNTS A ON Users.IdAcc = A.IdAcc
+                            WHERE Users.IdAcc IS NULL AND Users.Role = @Role";
+
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-
-                dataAdapter.Fill(dataTable);
-                return dataTable;
-            }
-        }
-        public DataTable GetListCBDTChuaCoTaiKhoan()
-        {
-            string query = "SELECT IDCBDT, TenCBDT FROM CBDT C LEFT JOIN ACCOUNTS A ON C.IdAcc = A.IdAcc WHERE C.IdAcc IS NULL";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-
-                dataAdapter.Fill(dataTable);
-                return dataTable;
-            }
-        }
-        public DataTable GetListCBQLChuaCoTaiKhoan()
-        {
-            string query = "SELECT IDCBQL, TenCBQL FROM CBQL C LEFT JOIN ACCOUNTS A ON C.IdAcc = A.IdAcc WHERE C.IdAcc IS NULL";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-
-                dataAdapter.Fill(dataTable);
-                return dataTable;
-            }
-        }
-        public DataTable GetListGiaoVienChuaCoTaiKhoan()
-        {
-            string query = "SELECT IDGV, TenGV FROM TEACHERS T LEFT JOIN ACCOUNTS A ON T.IdAcc = A.IdAcc WHERE T.IdAcc IS NULL";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-
-                dataAdapter.Fill(dataTable);
-                return dataTable;
-            }
-        }
-        public DataTable GetListSinhVienChuaCoTaiKhoan()
-        {
-            string query = "SELECT IDSV, TenSV FROM STUDENTS S LEFT JOIN ACCOUNTS A ON S.IdAcc = A.IdAcc WHERE S.IdAcc IS NULL";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-
-                dataAdapter.Fill(dataTable);
-                return dataTable;
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Role", Role);
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+                    return dataTable;
+                }
             }
         }
         public DataTable GetListHistory(string idAcc)
@@ -273,7 +160,7 @@ namespace DAL_QL
                 }
             }
         }
-        public bool InsertAccount(DTO_IT taikhoan, out string message)
+        public bool InsertAccount(DTO_IT_IT taikhoan, out string message)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
@@ -363,7 +250,7 @@ namespace DAL_QL
             }
             return Role;
         }
-        public bool UpdateAccount(DTO_IT taikhoan, out string message)
+        public bool UpdateAccount(DTO_IT_IT taikhoan, out string message)
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
@@ -489,6 +376,182 @@ namespace DAL_QL
             }
 
             return prefix + nextNumber.ToString("D" + Math.Max(2, nextNumber.ToString().Length));
+        }
+
+        //Form Quản lý tin tức
+        public DataTable GetListNews()
+        {
+            string query = "SELECT N.IDTin, N.Title, N.Content, N.NgayDang, N.Hinh, CASE WHEN N.Trangthai = 1 THEN N'Đang sử dụng' ELSE N'Khóa' END AS Trangthai FROM NEWS N";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+
+                dataAdapter.Fill(dataTable);
+
+                return dataTable;
+            }
+        }
+        public bool InsertNews(DTO_IT_TINTUC New, out string message)
+        {
+            string insertQuery = "INSERT INTO NEWS (Title, Content, NgayDang, Hinh, Trangthai) VALUES (@Title, @Content, @NgayDang, @Hinh, @Trangthai)";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Title", New.Title);
+                        cmd.Parameters.AddWithValue("@Content", New.Content);
+                        cmd.Parameters.AddWithValue("@NgayDang", New.NgayDang);
+                        cmd.Parameters.AddWithValue("@Hinh", New.Hinh);
+                        cmd.Parameters.AddWithValue("@Trangthai", New.Trangthai ? 1 : 0);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Tin tức đã được duyệt thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có tin tức nào được thêm.";
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    message = "Lỗi khi thêm tin tức: " + ex.Message;
+                    return false;
+                }
+            }
+        }
+        public bool UpdateNews(DTO_IT_TINTUC New, out string message)
+        {
+            string updateQuery = "UPDATE NEWS SET Title = @Title, Content = @Content, NgayDang = @NgayDang, Hinh = @Hinh WHERE IDTin = @IDTin";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDTin", New.IDTin);
+                        cmd.Parameters.AddWithValue("@Title", New.Title);
+                        cmd.Parameters.AddWithValue("@Content", New.Content);
+                        cmd.Parameters.AddWithValue("@NgayDang", New.NgayDang);
+                        cmd.Parameters.AddWithValue("@Hinh", New.Hinh);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin tin tức đã được cập nhật thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có tin tức nào được cập nhật.";
+                            return false;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    message = "Lỗi khi cập nhật tin tức: " + ex.Message;
+                    return false;
+                }
+            }
+        }
+        public bool LockOrUnlockNews(int IDTin)
+        {
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                string updateQuery = "UPDATE NEWS SET Trangthai = CASE WHEN Trangthai = 1 THEN 0 ELSE 1 END WHERE IDTin = @IDTin";
+                using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@IDTin", IDTin);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
+            }
+        }
+        public string CreateNewIdTinTuc(string prefix)
+        {
+            List<int> numbers = new List<int>();
+
+            string query = "SELECT IDTin FROM NEWS WHERE IDTin LIKE @prefix + '%'";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@prefix", prefix);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string id = reader["IDTin"].ToString();
+                            if (id.Length > prefix.Length)
+                            {
+                                string numberPart = id.Substring(prefix.Length);
+                                if (int.TryParse(numberPart, out int num))
+                                {
+                                    numbers.Add(num);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            numbers.Sort();
+            int nextNumber = 1;
+            foreach (int num in numbers)
+            {
+                if (num == nextNumber)
+                {
+                    nextNumber++;
+                }
+                else if (num > nextNumber)
+                {
+                    break;
+                }
+            }
+
+            return prefix + nextNumber.ToString("D" + Math.Max(2, nextNumber.ToString().Length));
+        }
+
+        //Form hiện tin tức
+        public int GetTotalNews()
+        {
+            string query = @"SELECT COUNT(*) FROM NEWS";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    return (int)cmd.ExecuteScalar();
+                }
+            }
+        }
+        public DataTable GetListNewsFormID(int ID)
+        {
+            string query = "SELECT N.IDTin, N.Title, N.Content, N.NgayDang, N.Hinh, " +
+                           "CASE WHEN N.Trangthai = 1 THEN N'Đang sử dụng' ELSE N'Khóa' END AS Trangthai " +
+                           "FROM NEWS N WHERE N.IDTin = @IDTin AND N.Trangthai = 1";
+
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                SqlCommand command = new SqlCommand(query, conn);
+                command.Parameters.AddWithValue("@IDTin", ID);
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+                return dataTable;
+            }
         }
     }
 }

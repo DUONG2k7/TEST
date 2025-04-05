@@ -79,6 +79,7 @@ namespace ASM
 
                     this.Hide();
                     Form form = null;
+                    FormTinTuc formTinTuc = new FormTinTuc();
                     switch (role)
                     {
                         case "R05":
@@ -87,17 +88,33 @@ namespace ASM
                         case "R04":
                             form = new FormGV(txtUsername.Text, role, idAcc);
                             break;
+                        case "R03":
+                            form = new FormCBQL(txtUsername.Text, role);
+                            break;
                         case "R02":
                             form = new FormCBDT(txtUsername.Text, role);
                             break;
                         case "R01":
-                            form = new FormADMIN(txtUsername.Text, role);
+                            form = new FormIT(txtUsername.Text, role);
                             break;
                     }
                     if (form != null)
                     {
-                        form.ShowDialog();
+                        form.FormClosed += (s, args) => formTinTuc.Close();
+                        form.FormClosed += (s1, e1) =>
+                        {
+                            Application.OpenForms["FormMain"]?.Show();
+                        };
+                        form.LocationChanged += (s, e1) =>
+                        {
+                            formTinTuc.Location = new Point(form.Location.X + form.Width, form.Location.Y);
+                        };
+
+                        form.Show();
+                        formTinTuc.Location = new Point(form.Location.X + form.Width, form.Location.Y);
+                        formTinTuc.Show();
                     }
+                    this.Close();
                 }
             }
             else

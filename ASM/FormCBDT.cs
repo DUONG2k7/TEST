@@ -49,7 +49,23 @@ namespace ASM
         {
             this.Close();
         }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            xPosition -= 5; // Giảm vị trí X để chữ chạy từ phải sang trái
 
+            if (xPosition < -lblMarquee.Width) // Khi chữ ra khỏi màn hình, đặt lại vị trí
+            {
+                xPosition = this.Width;
+            }
+
+            lblMarquee.Left = xPosition; // Cập nhật vị trí Label
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            index = (index + 1) % images.Length; // Lặp lại khi hết ảnh
+            pictureBox1.Image = Image.FromFile(images[index]);
+        }
         private void btnMenuQlySV_Click(object sender, EventArgs e)
         {
             tabMain.Controls.Clear();
@@ -60,18 +76,6 @@ namespace ASM
             tabMain.Controls.Add(QlSV);
             QlSV.Show();
         }
-
-        private void btnMenuQlyGiangVien_Click(object sender, EventArgs e)
-        {
-            tabMain.Controls.Clear();
-            FormQuanLyGV QlGV = new FormQuanLyGV();
-            QlGV.TopLevel = false;
-            QlGV.FormBorderStyle = FormBorderStyle.None;
-            QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
-            QlGV.Show();
-        }
-
         private void btnMenuQlyLop_Click(object sender, EventArgs e)
         {
             tabMain.Controls.Clear();
@@ -124,22 +128,16 @@ namespace ASM
             tabMain.Controls.Add(Qlviec);
             Qlviec.Show();
         }
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            xPosition -= 5; // Giảm vị trí X để chữ chạy từ phải sang trái
 
-            if (xPosition < -lblMarquee.Width) // Khi chữ ra khỏi màn hình, đặt lại vị trí
-            {
-                xPosition = this.Width;
-            }
-
-            lblMarquee.Left = xPosition; // Cập nhật vị trí Label
-        }
-        
-        private void timer1_Tick_1(object sender, EventArgs e)
+        private void btnMenuQlyGiangVien_Click(object sender, EventArgs e)
         {
-            index = (index + 1) % images.Length; // Lặp lại khi hết ảnh
-            pictureBox1.Image = Image.FromFile(images[index]);
+            tabMain.Controls.Clear();
+            FormQuanLyGV QlGV = new FormQuanLyGV();
+            QlGV.TopLevel = false;
+            QlGV.FormBorderStyle = FormBorderStyle.None;
+            QlGV.Dock = DockStyle.Fill;
+            tabMain.Controls.Add(QlGV);
+            QlGV.Show();
         }
     }
 }

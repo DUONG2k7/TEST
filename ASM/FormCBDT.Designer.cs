@@ -40,16 +40,16 @@
             this.RoleThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnMenuQlyMonHoc = new System.Windows.Forms.Button();
+            this.btnMenuQlyGiangVien = new System.Windows.Forms.Button();
             this.btnMenyQlyKyHoc = new System.Windows.Forms.Button();
+            this.btnMenuQlyPhanChiaViec = new System.Windows.Forms.Button();
             this.btnMenuQlyLichhoc = new System.Windows.Forms.Button();
             this.btnMenuQlyLop = new System.Windows.Forms.Button();
-            this.btnMenuQlyGiangVien = new System.Windows.Forms.Button();
             this.btnMenuQlySV = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblMarquee = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.btnMenuQlyPhanChiaViec = new System.Windows.Forms.Button();
             this.tabPage.SuspendLayout();
             this.tabMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,11 +140,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnMenuQlyMonHoc);
+            this.groupBox2.Controls.Add(this.btnMenuQlyGiangVien);
             this.groupBox2.Controls.Add(this.btnMenyQlyKyHoc);
             this.groupBox2.Controls.Add(this.btnMenuQlyPhanChiaViec);
             this.groupBox2.Controls.Add(this.btnMenuQlyLichhoc);
             this.groupBox2.Controls.Add(this.btnMenuQlyLop);
-            this.groupBox2.Controls.Add(this.btnMenuQlyGiangVien);
             this.groupBox2.Controls.Add(this.btnMenuQlySV);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Location = new System.Drawing.Point(0, 53);
@@ -167,6 +167,18 @@
             this.btnMenuQlyMonHoc.UseVisualStyleBackColor = true;
             this.btnMenuQlyMonHoc.Click += new System.EventHandler(this.btnMenuQlyMonHoc_Click);
             // 
+            // btnMenuQlyGiangVien
+            // 
+            this.btnMenuQlyGiangVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuQlyGiangVien.Location = new System.Drawing.Point(2, 206);
+            this.btnMenuQlyGiangVien.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenuQlyGiangVien.Name = "btnMenuQlyGiangVien";
+            this.btnMenuQlyGiangVien.Size = new System.Drawing.Size(213, 41);
+            this.btnMenuQlyGiangVien.TabIndex = 2;
+            this.btnMenuQlyGiangVien.Text = "Quản lý giảng viên";
+            this.btnMenuQlyGiangVien.UseVisualStyleBackColor = true;
+            this.btnMenuQlyGiangVien.Click += new System.EventHandler(this.btnMenuQlyGiangVien_Click);
+            // 
             // btnMenyQlyKyHoc
             // 
             this.btnMenyQlyKyHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,6 +190,18 @@
             this.btnMenyQlyKyHoc.Text = "Quản lý kỳ học";
             this.btnMenyQlyKyHoc.UseVisualStyleBackColor = true;
             this.btnMenyQlyKyHoc.Click += new System.EventHandler(this.btnMenyQlyKyHoc_Click);
+            // 
+            // btnMenuQlyPhanChiaViec
+            // 
+            this.btnMenuQlyPhanChiaViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenuQlyPhanChiaViec.Location = new System.Drawing.Point(2, 461);
+            this.btnMenuQlyPhanChiaViec.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMenuQlyPhanChiaViec.Name = "btnMenuQlyPhanChiaViec";
+            this.btnMenuQlyPhanChiaViec.Size = new System.Drawing.Size(213, 41);
+            this.btnMenuQlyPhanChiaViec.TabIndex = 2;
+            this.btnMenuQlyPhanChiaViec.Text = "Quản lý công việc";
+            this.btnMenuQlyPhanChiaViec.UseVisualStyleBackColor = true;
+            this.btnMenuQlyPhanChiaViec.Click += new System.EventHandler(this.btnMenuQlyPhanChiaViec_Click);
             // 
             // btnMenuQlyLichhoc
             // 
@@ -194,7 +218,7 @@
             // btnMenuQlyLop
             // 
             this.btnMenuQlyLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyLop.Location = new System.Drawing.Point(2, 206);
+            this.btnMenuQlyLop.Location = new System.Drawing.Point(2, 148);
             this.btnMenuQlyLop.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenuQlyLop.Name = "btnMenuQlyLop";
             this.btnMenuQlyLop.Size = new System.Drawing.Size(213, 41);
@@ -202,18 +226,6 @@
             this.btnMenuQlyLop.Text = "Quản lý lớp";
             this.btnMenuQlyLop.UseVisualStyleBackColor = true;
             this.btnMenuQlyLop.Click += new System.EventHandler(this.btnMenuQlyLop_Click);
-            // 
-            // btnMenuQlyGiangVien
-            // 
-            this.btnMenuQlyGiangVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyGiangVien.Location = new System.Drawing.Point(2, 148);
-            this.btnMenuQlyGiangVien.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyGiangVien.Name = "btnMenuQlyGiangVien";
-            this.btnMenuQlyGiangVien.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyGiangVien.TabIndex = 2;
-            this.btnMenuQlyGiangVien.Text = "Quản lý giảng viên";
-            this.btnMenuQlyGiangVien.UseVisualStyleBackColor = true;
-            this.btnMenuQlyGiangVien.Click += new System.EventHandler(this.btnMenuQlyGiangVien_Click);
             // 
             // btnMenuQlySV
             // 
@@ -260,18 +272,6 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // btnMenuQlyPhanChiaViec
-            // 
-            this.btnMenuQlyPhanChiaViec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyPhanChiaViec.Location = new System.Drawing.Point(2, 461);
-            this.btnMenuQlyPhanChiaViec.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyPhanChiaViec.Name = "btnMenuQlyPhanChiaViec";
-            this.btnMenuQlyPhanChiaViec.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyPhanChiaViec.TabIndex = 2;
-            this.btnMenuQlyPhanChiaViec.Text = "Quản lý công việc";
-            this.btnMenuQlyPhanChiaViec.UseVisualStyleBackColor = true;
-            this.btnMenuQlyPhanChiaViec.Click += new System.EventHandler(this.btnMenuQlyPhanChiaViec_Click);
-            // 
             // FormCBDT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -283,7 +283,7 @@
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormCBDT";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormCBDT";
             this.tabPage.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
@@ -305,7 +305,6 @@
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnMenuQlyLop;
-        private System.Windows.Forms.Button btnMenuQlyGiangVien;
         private System.Windows.Forms.Button btnMenuQlySV;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem ThongTinTaiKhoan;
@@ -320,5 +319,6 @@
         private System.Windows.Forms.Button btnMenyQlyKyHoc;
         private System.Windows.Forms.Button btnMenuQlyMonHoc;
         private System.Windows.Forms.Button btnMenuQlyPhanChiaViec;
+        private System.Windows.Forms.Button btnMenuQlyGiangVien;
     }
 }

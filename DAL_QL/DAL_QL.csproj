@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_CBDT.cs" />
+    <Compile Include="DAL_CBQL.cs" />
     <Compile Include="DAL_GUI.cs" />
     <Compile Include="DAL_GV.cs" />
     <Compile Include="DAL_IT.cs" />

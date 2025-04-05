@@ -40,29 +40,50 @@ namespace ASM
             LockControl();
 
             idkyhoc = IDKYHOC;
-            max = QlGiangVien.GetTotalStudent(cbLop.SelectedValue.ToString(), IdGv);
+            try
+            {
+                max = QlGiangVien.GetTotalStudent(cbLop.SelectedValue.ToString(), IdGv);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể lấy tổng sinh viên vì giảng viên chưa được phân lớp", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             dgvDanhSachSV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         public void LoadDsSv()
         {
-            int idMonHoc;
-            if (cbTenMon.SelectedValue is DataRowView drv)
+            try
             {
-                idMonHoc = Convert.ToInt32(drv["IDMonHoc"]);
-            }
-            else
-            {
-                idMonHoc = Convert.ToInt32(cbTenMon.SelectedValue);
-            }
+                int idMonHoc;
+                if (cbTenMon.SelectedValue is DataRowView drv)
+                {
+                    idMonHoc = Convert.ToInt32(drv["IDMonHoc"]);
+                }
+                else
+                {
+                    idMonHoc = Convert.ToInt32(cbTenMon.SelectedValue);
+                }
 
-            dt = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
-            dgvDanhSachSV.DataSource = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
+                dt = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
+                dgvDanhSachSV.DataSource = QlGiangVien.LoadDsSinhVien(IdGv, cbLop.SelectedValue.ToString(), idMonHoc);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể lấy danh sách sinh viên vì giảng viên chưa được chỉ định lớp", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         public void LoadDsLop()
         {
-            cbLop.DataSource = QlGiangVien.LoadDsLop(IdGv);
-            cbLop.DisplayMember = "ClassName";
-            cbLop.ValueMember = "IDLop";
+            try
+            {
+                cbLop.DataSource = QlGiangVien.LoadDsLop(IdGv);
+                cbLop.DisplayMember = "ClassName";
+                cbLop.ValueMember = "IDLop";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Không thể lọc sinh viên theo lớp vì giảng viên chưa được chỉ định lớp", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         public void LoadDsMonHoc()
         {
@@ -227,7 +248,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
+                DTO_GV_DIEM Diemsv = new DTO_GV_DIEM(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
                 if (QlGiangVien.ThemDiem(Diemsv, out message))
                 {
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -247,7 +268,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
+                DTO_GV_DIEM Diemsv = new DTO_GV_DIEM(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue), txtDiem.Text);
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật điểm không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
@@ -271,7 +292,7 @@ namespace ASM
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string message;
-            DTO_GV Diemsv = new DTO_GV(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue));
+            DTO_GV_DIEM Diemsv = new DTO_GV_DIEM(idkyhoc, txtMasvDiemtb.Text, Convert.ToInt32(cbTenMon.SelectedValue));
             DialogResult s = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (s == DialogResult.Yes)
             {

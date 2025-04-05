@@ -233,7 +233,7 @@
             this.Controls.Add(this.tabPage);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormGV";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormGV";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

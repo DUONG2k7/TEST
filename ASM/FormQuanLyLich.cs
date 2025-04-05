@@ -77,12 +77,21 @@ namespace ASM
             cbMonhoc.DisplayMember = "TenMon";
             cbMonhoc.ValueMember = "IDMonHoc";
 
+            if (cbMonhoc == null)
+            {
+                MessageBox.Show("Không có giáo viên nào được phân công cho lớp học này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         public void LoadDsGvBoMon()
         {
             cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(Convert.ToInt32(cbMonhoc.SelectedValue), cbLop.SelectedValue.ToString(), idkyhoc);
             cbGvMonhoc.DisplayMember = "TenGV";
             cbGvMonhoc.ValueMember = "IDGV";
+
+            if(cbGvMonhoc == null)
+            {
+                MessageBox.Show("Không có giáo viên nào được phân công cho môn học này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void LoadCaHoc()
         {

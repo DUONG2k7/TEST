@@ -63,15 +63,15 @@ namespace BUS_QL
         {
             return QlGiaoVien.SearchByID(maLop, maGV, maSV);
         }
-        public bool ThemDiem(DTO_GV DiemSV, out string message)
+        public bool ThemDiem(DTO_GV_DIEM DiemSV, out string message)
         {
             return QlGiaoVien.InsertGrade(DiemSV, out message);
         }
-        public bool CapNhattDiem(DTO_GV DiemSV, out string message)
+        public bool CapNhattDiem(DTO_GV_DIEM DiemSV, out string message)
         {
             return QlGiaoVien.UpdateGrade(DiemSV, out message);
         }
-        public bool XoaDiem(DTO_GV DiemSV, out string message)
+        public bool XoaDiem(DTO_GV_DIEM DiemSV, out string message)
         {
             return QlGiaoVien.DeleteGrade(DiemSV, out message);
         }

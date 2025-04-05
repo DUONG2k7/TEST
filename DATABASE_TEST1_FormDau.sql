@@ -12,6 +12,13 @@ CREATE TABLE ROLES (
 );
 GO
 
+-- Bảng phòng ban
+CREATE TABLE PhongBan (
+    IDPhong INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    TenPhong NVARCHAR(100),
+);
+GO
+
 -- Bảng ACCOUNTS
 CREATE TABLE ACCOUNTS (
     IDAcc NVARCHAR(50) PRIMARY KEY NOT NULL,
@@ -27,6 +34,7 @@ GO
 -- Bảng IT
 CREATE TABLE IT (
     IDIT NVARCHAR(50) NOT NULL PRIMARY KEY,
+    IDPhong INT,
     IdAcc NVARCHAR(50),
     TenIT NVARCHAR(50),
     Email NVARCHAR(50),
@@ -34,6 +42,7 @@ CREATE TABLE IT (
     GioiTinh BIT,
     Diachi NVARCHAR(50),
     Hinh VARBINARY(MAX),
+    FOREIGN KEY (IDPhong) REFERENCES PhongBan(IDPhong),
     FOREIGN KEY (IdAcc) REFERENCES ACCOUNTS(IdAcc)
 );
 GO
@@ -49,12 +58,12 @@ GO
 
 -- Bảng Tin tức
 CREATE TABLE NEWS (
-    IDTin NVARCHAR(50) NOT NULL PRIMARY KEY,
+    IDTin INT IDENTITY(1,1) PRIMARY KEY,
     Title NVARCHAR(255),
     Content NVARCHAR(MAX),
     NgayDang DATETIME,
-    IdAcc NVARCHAR(50),
-    FOREIGN KEY (IdAcc) REFERENCES ACCOUNTS(IdAcc)
+    Hinh VARBINARY(MAX),
+	Trangthai BIT
 );
 GO
 
@@ -62,6 +71,7 @@ GO
 -- Bảng CBDT
 CREATE TABLE CBDT (
     IDCBDT NVARCHAR(50) NOT NULL PRIMARY KEY,
+    IDPhong INT,
     TenCBDT NVARCHAR(50),
     IdAcc NVARCHAR(50),
     Email NVARCHAR(50),
@@ -69,6 +79,7 @@ CREATE TABLE CBDT (
     GioiTinh BIT,
     Diachi NVARCHAR(50),
     Hinh VARBINARY(MAX),
+    FOREIGN KEY (IDPhong) REFERENCES PhongBan(IDPhong),
     FOREIGN KEY (IdAcc) REFERENCES ACCOUNTS(IdAcc)
 );
 GO
@@ -144,18 +155,6 @@ CREATE TABLE Class_Teacher (
 );
 GO
 
--- Bảng trung gian để thể hiện mối quan hệ nhiều - nhiều giữa Lớp học và Giáo viên
-CREATE TABLE Class_Student (
-    IDKyHoc INT NOT NULL,
-    IDLop NVARCHAR(50) NOT NULL,
-    IDSV NVARCHAR(50) NOT NULL,
-    PRIMARY KEY (IDKyHoc, IDLop, IDSV),
-    FOREIGN KEY (IDKyHoc) REFERENCES KyHoc(IDKyHoc),
-    FOREIGN KEY (IDLop) REFERENCES CLASSES(IDLop),
-    FOREIGN KEY (IDSV) REFERENCES STUDENTS(IDSV)
-);
-GO
-
 -- Bảng trung gian để thể hiện mối quan hệ nhiều - nhiều giữa Môn học và Giảng viên và kỳ học
 CREATE TABLE MonHoc_GiangVien (
     IDKyHoc INT NOT NULL,
@@ -196,6 +195,7 @@ GO
 -- Bảng CBQL
 CREATE TABLE CBQL (
     IDCBQL NVARCHAR(50) NOT NULL PRIMARY KEY,
+    IDPhong INT,
     TenCBQL NVARCHAR(50),
     IdAcc NVARCHAR(50),
     Email NVARCHAR(50),
@@ -203,18 +203,8 @@ CREATE TABLE CBQL (
     GioiTinh BIT,
     Diachi NVARCHAR(50),
     Hinh VARBINARY(MAX),
+    FOREIGN KEY (IDPhong) REFERENCES PhongBan(IDPhong),
     FOREIGN KEY (IdAcc) REFERENCES ACCOUNTS(IdAcc)
-);
-GO
-
--- Bảng phòng ban
-CREATE TABLE PhongBan (
-    IDPhong INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-    TenPhong NVARCHAR(100),
-	IDCBQL NVARCHAR(50),
-    IDRole NVARCHAR(50),
-    FOREIGN KEY (IDRole) REFERENCES ROLES(IDRole),
-    FOREIGN KEY (IDCBQL) REFERENCES CBQL(IDCBQL)
 );
 GO
 
@@ -262,6 +252,14 @@ VALUES
 ('R06', 'GLOBALBAN');
 GO
 
+-- Thêm dữ liệu vào bảng PhongBan
+INSERT INTO PhongBan(TenPhong)
+VALUES 
+('IT'),
+('CBDT'),
+('CBQL');
+GO
+
 -- Thêm dữ liệu vào bảng ACCOUNTS
 INSERT INTO ACCOUNTS (IdAcc, Username, Password, IDRole, Trangthai)
 VALUES 
@@ -269,33 +267,22 @@ VALUES
 ('A02', 'ADMIN2', HASHBYTES('SHA2_256', 'ADMIN2'), 'R01', 0),
 ('A03', 'ADMIN3', HASHBYTES('SHA2_256', 'ADMIN3'), 'R01', 0),
 
-('A04', 'CB', HASHBYTES('SHA2_256', 'CB'), 'R02', 0),
+('A04', 'DT', HASHBYTES('SHA2_256', 'DT'), 'R02', 0),
 ('A05', 'CBDT2', HASHBYTES('SHA2_256', 'CBDT2'), 'R02', 0),
 ('A06', 'CBDT3', HASHBYTES('SHA2_256', 'CBDT3'), 'R02', 0),
 
-('A07', 'GV', HASHBYTES('SHA2_256', 'GV'), 'R04', 0),
-('A08', 'GV2', HASHBYTES('SHA2_256', 'GV2'), 'R04', 0),
-('A09', 'GV3', HASHBYTES('SHA2_256', 'GV3'), 'R04', 0),
+('A07', 'QL', HASHBYTES('SHA2_256', 'QL'), 'R03', 0),
 
-('A10', 'SV', HASHBYTES('SHA2_256', 'SV'), 'R05', 0),
-('A11', 'SV1', HASHBYTES('SHA2_256', 'SV1'), 'R05', 0),
-('A12', 'SV2', HASHBYTES('SHA2_256', 'SV2'), 'R05', 0),
-('A13', 'SV3', HASHBYTES('SHA2_256', 'SV3'), 'R05', 0),
-('A14', 'SV4', HASHBYTES('SHA2_256', 'SV4'), 'R05', 0),
-('A15', 'SV5', HASHBYTES('SHA2_256', 'SV5'), 'R05', 0);
-GO
+('A08', 'GV', HASHBYTES('SHA2_256', 'GV'), 'R04', 0),
+('A09', 'GV2', HASHBYTES('SHA2_256', 'GV2'), 'R04', 0),
+('A10', 'GV3', HASHBYTES('SHA2_256', 'GV3'), 'R04', 0),
 
--- Thêm dữ liệu vào bảng TEACHERS
-INSERT INTO TEACHERS (IDGV, TenGV, IdAcc, Email, SoDT, Gioitinh, Diachi, Hinh)
-VALUES 
-('GV01', N'Nguyễn Văn A', 'A07', 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
-('GV02', N'Lê Thị B', 'A08', 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
-('GV03', N'Phạm Văn C', 'A09', 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
-('GV04', N'Trần Thị D', NULL, 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
-('GV05', N'Hoàng Văn E', NULL, 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
-('GV06', N'Vũ Thị F', NULL, 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
-('GV07', N'Đặng Văn G', NULL, 'dangvang@gmail.com', '0967890123', 1, N'Nha Trang', NULL),
-('GV08', N'Phan Thị H', NULL, 'phanthih@gmail.com', '0978901234', 0, N'Đà Lạt', NULL);
+('A11', 'SV', HASHBYTES('SHA2_256', 'SV'), 'R05', 0),
+('A12', 'SV1', HASHBYTES('SHA2_256', 'SV1'), 'R05', 0),
+('A13', 'SV2', HASHBYTES('SHA2_256', 'SV2'), 'R05', 0),
+('A14', 'SV3', HASHBYTES('SHA2_256', 'SV3'), 'R05', 0),
+('A15', 'SV4', HASHBYTES('SHA2_256', 'SV4'), 'R05', 0),
+('A16', 'SV5', HASHBYTES('SHA2_256', 'SV5'), 'R05', 0);
 GO
 
 -- Thêm dữ liệu vào bảng CLASSES
@@ -307,16 +294,42 @@ VALUES
 ('L03', N'Lớp Anh C', 0, 0);
 GO
 
+-- Thêm dữ liệu vào bảng IT
+INSERT INTO IT (IDIT, IDPhong, TenIT, IdAcc, Email, SoDT, GioiTinh, Diachi, Hinh)
+VALUES ('IT01', 1, N'Trần Thị C', 'A01', 'c@example.com', '0987654321', 0, N'TP.HCM', NULL);
+
+-- Thêm dữ liệu vào bảng CBDT
+INSERT INTO CBDT (IDCBDT, IDPhong, TenCBDT, IdAcc, Email, SoDT, GioiTinh, Diachi, Hinh)
+VALUES ('DT01', 2, N'Trần Thị B', 'A04', 'b@example.com', '0987654321', 0, N'TP.HCM', NULL);
+
+-- Thêm dữ liệu vào bảng CBQL
+INSERT INTO CBQL (IDCBQL, IDPhong, TenCBQL, IdAcc, Email, SoDT, GioiTinh, Diachi, Hinh)
+VALUES ('QL01', 3, N'Nguyễn Văn A', 'A07', 'a@example.com', '0123456789', 1, N'Hà Nội', NULL);
+
+-- Thêm dữ liệu vào bảng TEACHERS
+INSERT INTO TEACHERS (IDGV, TenGV, IdAcc, Email, SoDT, Gioitinh, Diachi, Hinh)
+VALUES 
+('GV01', N'Nguyễn Văn A', 'A08', 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
+('GV02', N'Lê Thị B', 'A09', 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
+('GV03', N'Phạm Văn C', 'A10', 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
+('GV04', N'Trần Thị D', NULL, 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
+('GV05', N'Hoàng Văn E', NULL, 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
+('GV06', N'Vũ Thị F', NULL, 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
+('GV07', N'Đặng Văn G', NULL, 'dangvang@gmail.com', '0967890123', 1, N'Nha Trang', NULL),
+('GV08', N'Phan Thị H', NULL, 'phanthih@gmail.com', '0978901234', 0, N'Đà Lạt', NULL);
+GO
+
+
 -- Thêm dữ liệu vào bảng STUDENTS với tổng 60 sinh viên, sắp xếp IDSV tăng dần
 INSERT INTO STUDENTS (IDSV, IDLop, TenSV, IdAcc, Email, SoDT, Gioitinh, Diachi, Hinh)
 VALUES 
 -- 12 sinh viên chưa phân lớp (L00)
-('SV01', 'L00', N'Nguyễn Văn A', 'A10', 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
-('SV02', 'L00', N'Lê Thị B', 'A11', 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
-('SV03', 'L00', N'Phạm Văn C', 'A12', 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
-('SV04', 'L00', N'Trần Thị D', 'A13', 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
-('SV05', 'L00', N'Hoàng Văn E', 'A14', 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
-('SV06', 'L00', N'Vũ Thị F', 'A15', 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
+('SV01', 'L00', N'Nguyễn Văn A', 'A11', 'nguyenvana@gmail.com', '0987654321', 1, N'Hà Nội', NULL),
+('SV02', 'L00', N'Lê Thị B', 'A12', 'lethib@gmail.com', '0912345678', 0, N'Hồ Chí Minh', NULL),
+('SV03', 'L00', N'Phạm Văn C', 'A13', 'phamvanc@gmail.com', '0923456789', 1, N'Đà Nẵng', NULL),
+('SV04', 'L00', N'Trần Thị D', 'A14', 'tranthid@gmail.com', '0934567890', 0, N'Cần Thơ', NULL),
+('SV05', 'L00', N'Hoàng Văn E', 'A15', 'hoangvane@gmail.com', '0945678901', 1, N'Hải Phòng', NULL),
+('SV06', 'L00', N'Vũ Thị F', 'A16', 'vuthif@gmail.com', '0956789012', 0, N'Bình Dương', NULL),
 ('SV07', 'L00', N'Đặng Văn G', NULL, 'dangvang@gmail.com', '0967890123', 1, N'Nha Trang', NULL),
 ('SV08', 'L00', N'Phan Thị H', NULL, 'phanthih@gmail.com', '0978901234', 0, N'Đà Lạt', NULL),
 ('SV09', 'L00', N'Ngô Văn I', NULL, 'ngovani@gmail.com', '0989012345', 1, N'Huế', NULL),
@@ -440,7 +453,6 @@ DROP TABLE IF EXISTS CBQL;
 DROP TABLE IF EXISTS Diem;
 DROP TABLE IF EXISTS MonHoc_KyHoc;
 DROP TABLE IF EXISTS MonHoc_GiangVien;
-DROP TABLE IF EXISTS Class_Student;
 DROP TABLE IF EXISTS Class_Teacher;
 DROP TABLE IF EXISTS STUDENTS;
 DROP TABLE IF EXISTS CLASSES;
@@ -453,7 +465,3 @@ DROP TABLE IF EXISTS LoginHistory;
 DROP TABLE IF EXISTS IT;
 DROP TABLE IF EXISTS ACCOUNTS;
 DROP TABLE IF EXISTS ROLES;
-
--- Xóa trigger nếu có (tùy vào database của bạn)
-DROP TRIGGER IF EXISTS trg_Insert_KyHoc_TrangThai;
-DROP TRIGGER IF EXISTS trg_Update_KyHoc_TrangThai;

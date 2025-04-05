@@ -15,7 +15,7 @@ namespace ASM
     {
         private string[] images;
         private int index = 0;
-        FormLogin formLogin = new FormLogin();
+        FormLogin formLogin;
         public FormMain()
         {
             InitializeComponent();
@@ -34,10 +34,10 @@ namespace ASM
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formLogin = new FormLogin();
             this.Hide();
+            formLogin = new FormLogin();
+            formLogin.FormClosed += (s, args) => this.Hide();
             formLogin.ShowDialog();
-            this.Show();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)

@@ -256,6 +256,180 @@ namespace DAL_QL
             return prefix + nextNumber.ToString("D" + Math.Max(2, nextNumber.ToString().Length));
         }
 
+        //Giáo viên
+        public DataTable GetListTeacher()
+        {
+            string query = "SELECT T.IDGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, " +
+                            "CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, " +
+                            "T.Diachi, T.Hinh, " +
+                            "ISNULL(C.ClassName, N'Chưa có lớp') AS TenLop " +
+                            "FROM TEACHERS T " +
+                            "LEFT JOIN Class_Teacher CT ON T.IDGV = CT.IDGV " +
+                            "LEFT JOIN CLASSES C ON CT.IDLop = C.IDLop";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                DataTable dt = new DataTable();
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
+                {
+                    adapter.Fill(dt);
+                    return dt;
+                }
+            }
+        }
+        public bool InsertTeacher(DTO_CBQL_GV GiaoVien, out string message)
+        {
+            try
+            {
+                string insertQuery = "INSERT INTO TEACHERS (IDGV, TenGV, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@IDGV, @TenGV, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
+                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
+                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
+                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
+                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
+                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin giảng viên đã được lưu thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có dữ liệu nào được thêm.";
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Lỗi khi thêm giảng viên: " + ex.Message;
+                return false;
+            }
+        }
+        public bool UpdateTeacher(DTO_CBQL_GV GiaoVien, out string message)
+        {
+            try
+            {
+                string updateQuery = "UPDATE TEACHERS SET TenGV = @TenGV, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE IDGV = @IDGV";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
+                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
+                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
+                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
+                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
+                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
+                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            message = "Thông tin giảng viên đã được cập nhật thành công!";
+                            return true;
+                        }
+                        else
+                        {
+                            message = "Không có giảng viên nào được cập nhật.";
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                message = "Lỗi khi cập nhật giảng viên: " + ex.Message;
+                return false;
+            }
+        }
+        public bool DeleteTeacher(string magv)
+        {
+            try
+            {
+                string deleteQuery = "DELETE FROM TEACHERS WHERE IDGV = @IDGV";
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(deleteQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IDGV", magv);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        //prefix là tiền tố cho id
+        //ví dụ: A001 --> A + 001 || A là tiền tố
+        public string CreateNewTeacherId(string prefix)
+        {
+            List<int> numbers = new List<int>();
+
+            string query = "SELECT IDGV FROM TEACHERS WHERE IDGV LIKE @prefix + '%'";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@prefix", prefix);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string id = reader["IDGV"].ToString();
+                            if (id.Length > prefix.Length)
+                            {
+                                string numberPart = id.Substring(prefix.Length);
+                                if (int.TryParse(numberPart, out int num))
+                                {
+                                    numbers.Add(num);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            numbers.Sort();
+            int nextNumber = 1;
+            foreach (int num in numbers)
+            {
+                if (num == nextNumber)
+                {
+                    nextNumber++;
+                }
+                else if (num > nextNumber)
+                {
+                    break;
+                }
+            }
+
+            return prefix + nextNumber.ToString("D" + Math.Max(2, nextNumber.ToString().Length));
+        }
+
         //Class
         public DataTable GetListClass()
         {
@@ -486,229 +660,6 @@ namespace DAL_QL
                         while (reader.Read())
                         {
                             string id = reader["IDLop"].ToString();
-                            if (id.Length > prefix.Length)
-                            {
-                                string numberPart = id.Substring(prefix.Length);
-                                if (int.TryParse(numberPart, out int num))
-                                {
-                                    numbers.Add(num);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            numbers.Sort();
-            int nextNumber = 1;
-            foreach (int num in numbers)
-            {
-                if (num == nextNumber)
-                {
-                    nextNumber++;
-                }
-                else if (num > nextNumber)
-                {
-                    break;
-                }
-            }
-
-            return prefix + nextNumber.ToString("D" + Math.Max(2, nextNumber.ToString().Length));
-        }
-
-        //Giáo viên
-
-        public DataTable GetListTeacher()
-        {
-            string query =  "SELECT T.IDGV, T.TenGV, T.IdAcc, T.Email, T.SoDT, " +
-                            "CASE WHEN T.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, " +
-                            "T.Diachi, T.Hinh, " +
-                            "ISNULL(C.ClassName, N'Chưa có lớp') AS TenLop " +
-                            "FROM TEACHERS T " +
-                            "LEFT JOIN Class_Teacher CT ON T.IDGV = CT.IDGV " +
-                            "LEFT JOIN CLASSES C ON CT.IDLop = C.IDLop";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
-                {
-                    adapter.Fill(dt);
-                    return dt;
-                }
-            }
-        }
-        public bool KtGvDaTonTai(string maGV)
-        {
-            string query = "SELECT COUNT(*) FROM TEACHERS WHERE IDGV = @IDGV";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                try
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IDGV", maGV);
-                        int count = (int)cmd.ExecuteScalar();
-                        return count > 0;
-                    }
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-        }
-        public bool KtTKDaChiDinh(string IDGV)
-        {
-            string query = "SELECT IdAcc FROM TEACHERS WHERE IDGV = @IDGV";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                try
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IDGV", IDGV);
-                        object result = cmd.ExecuteScalar();
-
-                        if (result != null && result != DBNull.Value)
-                        {
-                            string IdAcc = result.ToString().Trim();
-                            return !string.IsNullOrEmpty(IdAcc);
-                        }
-                        return false;
-                    }
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-            }
-        }
-        public bool InsertTeacher(DTO_CBDT_GV GiaoVien, out string message)
-        {
-            try
-            {
-                string insertQuery = "INSERT INTO TEACHERS (IDGV, TenGV, Email, SoDT, Gioitinh, Diachi, Hinh) VALUES (@IDGV, @TenGV, @Email, @SoDT, @Gioitinh, @Diachi, @Hinh)";
-                using (SqlConnection conn = new SqlConnection(ConnectionString))
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
-                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
-                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
-                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
-                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
-                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            message = "Thông tin giảng viên đã được lưu thành công!";
-                            return true;
-                        }
-                        else
-                        {
-                            message = "Không có dữ liệu nào được thêm.";
-                            return false;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                message = "Lỗi khi thêm giảng viên: " + ex.Message;
-                return false;
-            }
-        }
-        public bool UpdateTeacher(DTO_CBDT_GV GiaoVien, out string message)
-        {
-            try
-            {
-                string updateQuery = "UPDATE TEACHERS SET TenGV = @TenGV, Email = @Email, SoDT = @SoDT, Gioitinh = @Gioitinh, Diachi = @Diachi, Hinh = @Hinh WHERE IDGV = @IDGV";
-                using (SqlConnection conn = new SqlConnection(ConnectionString))
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(updateQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IDGV", GiaoVien._MaGV);
-                        cmd.Parameters.AddWithValue("@TenGV", GiaoVien._TenGV);
-                        cmd.Parameters.AddWithValue("@Email", GiaoVien._Email);
-                        cmd.Parameters.AddWithValue("@SoDT", GiaoVien._SoDT);
-                        cmd.Parameters.AddWithValue("@Gioitinh", GiaoVien._Gioitinh ? 1 : 0);
-                        cmd.Parameters.AddWithValue("@Diachi", GiaoVien._Diachi);
-                        cmd.Parameters.AddWithValue("@Hinh", GiaoVien._Hinh);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            message = "Thông tin giảng viên đã được cập nhật thành công!";
-                            return true;
-                        }
-                        else
-                        {
-                            message = "Không có giảng viên nào được cập nhật.";
-                            return false;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                message = "Lỗi khi cập nhật giảng viên: " + ex.Message;
-                return false;
-            }
-        }
-        public bool DeleteTeacher(string magv)
-        {
-            try
-            {
-                string deleteQuery = "DELETE FROM TEACHERS WHERE IDGV = @IDGV";
-                using (SqlConnection conn = new SqlConnection(ConnectionString))
-                {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(deleteQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@IDGV", magv);
-
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-        //prefix là tiền tố cho id
-        //ví dụ: A001 --> A + 001 || A là tiền tố
-        public string CreateNewTeacherId(string prefix)
-        {
-            List<int> numbers = new List<int>();
-
-            string query = "SELECT IDGV FROM TEACHERS WHERE IDGV LIKE @prefix + '%'";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
-            {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@prefix", prefix);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            string id = reader["IDGV"].ToString();
                             if (id.Length > prefix.Length)
                             {
                                 string numberPart = id.Substring(prefix.Length);

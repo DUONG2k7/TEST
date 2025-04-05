@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_CBDT.cs" />
+    <Compile Include="BUS_CBQL.cs" />
     <Compile Include="BUS_GUI.cs" />
     <Compile Include="BUS_GV.cs" />
     <Compile Include="BUS_IT.cs" />

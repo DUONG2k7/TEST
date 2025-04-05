@@ -46,35 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormADMIN.cs">
+    <Compile Include="FormIT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormADMIN.Designer.cs">
-      <DependentUpon>FormADMIN.cs</DependentUpon>
+    <Compile Include="FormIT.Designer.cs">
+      <DependentUpon>FormIT.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanCBDT.cs">
+    <Compile Include="FormITQuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanCBDT.Designer.cs">
-      <DependentUpon>FormAdminQuanLyTaiKhoanCBDT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanZeros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanZeros.Designer.cs">
-      <DependentUpon>FormAdminQuanLyTaiKhoanZeros.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanGV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanGV.Designer.cs">
-      <DependentUpon>FormAdminQuanLyTaiKhoanGV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanADMIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAdminQuanLyTaiKhoanADMIN.Designer.cs">
-      <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
+    <Compile Include="FormITQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>FormITQuanLyTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBaoCaoDiemDanh.cs">
       <SubType>Form</SubType>
@@ -87,6 +69,12 @@
     </Compile>
     <Compile Include="FormCBDT.Designer.cs">
       <DependentUpon>FormCBDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCBQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCBQL.Designer.cs">
+      <DependentUpon>FormCBQL.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDanhSachHienThi.cs">
       <SubType>Form</SubType>
@@ -118,11 +106,29 @@
     <Compile Include="FormGVXemLichDay.Designer.cs">
       <DependentUpon>FormGVXemLichDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQuanLyCBDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyCBDT.Designer.cs">
+      <DependentUpon>FormQuanLyCBDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyCBQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyCBQL.Designer.cs">
+      <DependentUpon>FormQuanLyCBQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQuanLyCongViec.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormQuanLyCongViec.Designer.cs">
       <DependentUpon>FormQuanLyCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyIT.Designer.cs">
+      <DependentUpon>FormQuanLyIT.cs</DependentUpon>
     </Compile>
     <Compile Include="FormQuanLyLich.cs">
       <SubType>Form</SubType>
@@ -160,6 +166,12 @@
     <Compile Include="FormQuanLyMonHoc.Designer.cs">
       <DependentUpon>FormQuanLyMonHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQuanLyPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyPhongBan.Designer.cs">
+      <DependentUpon>FormQuanLyPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQuanLySVDaCoDiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +195,12 @@
     </Compile>
     <Compile Include="FormQuanLySV.Designer.cs">
       <DependentUpon>FormQuanLySV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyTinTuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyTinTuc.Designer.cs">
+      <DependentUpon>FormQuanLyTinTuc.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSV.cs">
       <SubType>Form</SubType>
@@ -208,28 +226,28 @@
     <Compile Include="FormSvXemLichThi.Designer.cs">
       <DependentUpon>FormSvXemLichThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTinTuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTinTuc.Designer.cs">
+      <DependentUpon>FormTinTuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormADMIN.resx">
-      <DependentUpon>FormADMIN.cs</DependentUpon>
+    <EmbeddedResource Include="FormIT.resx">
+      <DependentUpon>FormIT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanCBDT.resx">
-      <DependentUpon>FormAdminQuanLyTaiKhoanCBDT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanZeros.resx">
-      <DependentUpon>FormAdminQuanLyTaiKhoanZeros.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanGV.resx">
-      <DependentUpon>FormAdminQuanLyTaiKhoanGV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormAdminQuanLyTaiKhoanADMIN.resx">
-      <DependentUpon>FormAdminQuanLyTaiKhoanADMIN.cs</DependentUpon>
+    <EmbeddedResource Include="FormITQuanLyTaiKhoan.resx">
+      <DependentUpon>FormITQuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBaoCaoDiemDanh.resx">
       <DependentUpon>FormBaoCaoDiemDanh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCBDT.resx">
       <DependentUpon>FormCBDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCBQL.resx">
+      <DependentUpon>FormCBQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDanhSachHienThi.resx">
       <DependentUpon>FormDanhSachHienThi.cs</DependentUpon>
@@ -246,8 +264,17 @@
     <EmbeddedResource Include="FormGVXemLichDay.resx">
       <DependentUpon>FormGVXemLichDay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyCBDT.resx">
+      <DependentUpon>FormQuanLyCBDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyCBQL.resx">
+      <DependentUpon>FormQuanLyCBQL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLyCongViec.resx">
       <DependentUpon>FormQuanLyCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyIT.resx">
+      <DependentUpon>FormQuanLyIT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLyKyHoc.resx">
       <DependentUpon>FormQuanLyKyHoc.cs</DependentUpon>
@@ -267,6 +294,9 @@
     <EmbeddedResource Include="FormQuanLyMonHoc.resx">
       <DependentUpon>FormQuanLyMonHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyPhongBan.resx">
+      <DependentUpon>FormQuanLyPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormQuanLySVDaCoDiem.resx">
       <DependentUpon>FormQuanLySVDaCoDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -279,6 +309,9 @@
     <EmbeddedResource Include="FormQuanLySV.resx">
       <DependentUpon>FormQuanLySV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLyTinTuc.resx">
+      <DependentUpon>FormQuanLyTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSV.resx">
       <DependentUpon>FormSV.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSvXemLichThi.resx">
       <DependentUpon>FormSvXemLichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTinTuc.resx">
+      <DependentUpon>FormTinTuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

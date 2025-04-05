@@ -14,45 +14,17 @@ namespace BUS_QL
     {
         DAL_IT TruyVanTaiKhoan = new DAL_IT();
 
-        public DataTable LoadDsTkIT()
+        public DataTable LoadDsTk(string IDRole)
         {
-            return TruyVanTaiKhoan.GetListAccountIT();
-        }
-        public DataTable LoadDsTkCBDT()
-        {
-            return TruyVanTaiKhoan.GetListAccountCBDT();
-        }
-        public DataTable LoadDsTkGV()
-        {
-            return TruyVanTaiKhoan.GetListAccountGV();
-        }
-        public DataTable LoadDsTkGLOBALBAN()
-        {
-            return TruyVanTaiKhoan.GetListAccountGLOBALBAN();
+            return TruyVanTaiKhoan.GetListAccount(IDRole);
         }
         public DataTable LoadDsRole()
         {
             return TruyVanTaiKhoan.GetListRole();
         }
-        public DataTable LoadDsITChuaCoTaiKhoan()
+        public DataTable LoadDsChuaCoTaiKhoan(string ROLE)
         {
-            return TruyVanTaiKhoan.GetListITChuaCoTaiKhoan();
-        }
-        public DataTable LoadDsCBDTChuaCoTaiKhoan()
-        {
-            return TruyVanTaiKhoan.GetListCBDTChuaCoTaiKhoan();
-        }
-        public DataTable LoadDsCBQLChuaCoTaiKhoan()
-        {
-            return TruyVanTaiKhoan.GetListCBQLChuaCoTaiKhoan();
-        }
-        public DataTable LoadDsGiaoVienChuaCoTaiKhoan()
-        {
-            return TruyVanTaiKhoan.GetListGiaoVienChuaCoTaiKhoan();
-        }
-        public DataTable LoadDsSinhVienChuaCoTaiKhoan()
-        {
-            return TruyVanTaiKhoan.GetListSinhVienChuaCoTaiKhoan();
+            return TruyVanTaiKhoan.GetListChuaCoTaiKhoan(ROLE);
         }
         public DataTable LoadLichSu(string idAcc)
         {
@@ -62,11 +34,11 @@ namespace BUS_QL
         {
             return TruyVanTaiKhoan.GetRole(mataikhoan);
         }
-        public bool AddNewAccount(DTO_IT taikhoan, out string message)
+        public bool AddNewAccount(DTO_IT_IT taikhoan, out string message)
         {
             return TruyVanTaiKhoan.InsertAccount(taikhoan, out message);
         }
-        public bool UpdateAccount(DTO_IT taikhoan, out string message)
+        public bool UpdateAccount(DTO_IT_IT taikhoan, out string message)
         {
             return TruyVanTaiKhoan.UpdateAccount(taikhoan, out message);
         }
@@ -82,13 +54,41 @@ namespace BUS_QL
         {
             return TruyVanTaiKhoan.CreateNewId(prefix);
         }
-        public bool KtTkDaCapGvChua(string idAcc)
-        {
-            return TruyVanTaiKhoan.KtTkDaCapGvChua(idAcc);
-        }
         public bool KtTkDaTonTai(string maTk)
         {
             return TruyVanTaiKhoan.KtTkDaTonTai(maTk);
+        }
+
+        //Form quản lý tin tức
+        public DataTable LoadDsTinTuc()
+        {
+            return TruyVanTaiKhoan.GetListNews();
+        }
+        public bool ThemTinTuc(DTO_IT_TINTUC tinTuc, out string message)
+        {
+            return TruyVanTaiKhoan.InsertNews(tinTuc, out message);
+        }
+        public bool CapNhatTinTuc(DTO_IT_TINTUC tinTuc, out string message)
+        {
+            return TruyVanTaiKhoan.UpdateNews(tinTuc, out message);
+        }
+        public bool LockOrUnlockNews(int IDTin)
+        {
+            return TruyVanTaiKhoan.LockOrUnlockNews(IDTin);
+        }
+        public string CreateIDTinTuc(string prefix)
+        {
+            return TruyVanTaiKhoan.CreateNewIdTinTuc(prefix);
+        }
+
+        //Form hiện tin tức
+        public int GetTotalNews()
+        {
+            return TruyVanTaiKhoan.GetTotalNews();
+        }
+        public DataTable LayDsTinTucTheoID(int ID)
+        {
+            return TruyVanTaiKhoan.GetListNewsFormID(ID);
         }
     }
 }

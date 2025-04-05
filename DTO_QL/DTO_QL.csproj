@@ -42,14 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO_CBDT_CLASS.cs" />
-    <Compile Include="DTO_CBDT_GV.cs" />
+    <Compile Include="DTO_CBQL_CBDT.cs" />
+    <Compile Include="DTO_CBQL_CBQL.cs" />
+    <Compile Include="DTO_CBQL_GV.cs" />
     <Compile Include="DTO_CBDT_KYHOC.cs" />
     <Compile Include="DTO_CBDT_LICHHOC.cs" />
     <Compile Include="DTO_CBDT_MONHOC.cs" />
     <Compile Include="DTO_CBDT_SV.cs" />
-    <Compile Include="DTO_GV.cs" />
-    <Compile Include="DTO_IT.cs" />
+    <Compile Include="DTO_CBQL_IT.cs" />
+    <Compile Include="DTO_GV_DIEM.cs" />
+    <Compile Include="DTO_IT_IT.cs" />
     <Compile Include="DTO_GV_DIEMDANH.cs" />
+    <Compile Include="DTO_IT_TINTUC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

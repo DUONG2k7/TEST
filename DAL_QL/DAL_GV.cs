@@ -238,7 +238,7 @@ namespace DAL_QL
             }
             return dtSinhVien;
         }
-        public bool InsertGrade(DTO_GV DiemSV, out string message)
+        public bool InsertGrade(DTO_GV_DIEM DiemSV, out string message)
         {
             string query = "INSERT INTO Diem (IDKyHoc, IDSV, IDMonHoc, Diem) VALUES (@IDKyHoc, @IDSV, @IDMonHoc, @Diem)";
 
@@ -274,7 +274,7 @@ namespace DAL_QL
                 }
             }
         }
-        public bool UpdateGrade(DTO_GV DiemSV, out string message)
+        public bool UpdateGrade(DTO_GV_DIEM DiemSV, out string message)
         {
             string query = "UPDATE Diem SET Diem = @Diem WHERE IDKyHoc = @IDKyHoc AND IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
 
@@ -310,7 +310,7 @@ namespace DAL_QL
                 }
             }
         }
-        public bool DeleteGrade(DTO_GV DiemSV, out string message)
+        public bool DeleteGrade(DTO_GV_DIEM DiemSV, out string message)
         {
             string Deletequery = "DELETE FROM Diem WHERE IDKyHoc = @IDKyHoc AND IDSV = @IDSV AND IDMonHoc = @IDMonHoc";
             using (SqlConnection conn = new SqlConnection(ConnectionString))

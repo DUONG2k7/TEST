@@ -52,6 +52,25 @@ namespace BUS_QL
             return QlThongTin.CreateNewStudentId(prefix);
         }
 
+
+        //Giáo viên
+        public DataTable LoadDsGiaoVien()
+        {
+            return QlThongTin.GetListTeacher();
+        }
+        public bool ThemGiaoVien(DTO_CBQL_GV GiaoVien, out string message)
+        {
+            return QlThongTin.InsertTeacher(GiaoVien, out message);
+        }
+        public bool CapNhatGiaoVien(DTO_CBQL_GV GiaoVien, out string message)
+        {
+            return QlThongTin.UpdateTeacher(GiaoVien, out message);
+        }
+        public string CreateNewTeacherId(string prefix)
+        {
+            return QlThongTin.CreateNewTeacherId(prefix);
+        }
+
         //Lớp
         public DataTable LoadDsLop()
         {
@@ -88,36 +107,6 @@ namespace BUS_QL
         public string CreateNewClassId(string prefix)
         {
             return QlThongTin.CreateNewClassId(prefix);
-        }
-
-        //Giáo viên
-        public DataTable LoadDsGiaoVien()
-        {
-            return QlThongTin.GetListTeacher();
-        }
-        public bool KtGvDaTonTai(string maGV)
-        {
-            return QlThongTin.KtGvDaTonTai(maGV);
-        }
-        public bool KtTKDaChiDinh(string MaGV)
-        {
-            return QlThongTin.KtTKDaChiDinh(MaGV);
-        }
-        public bool ThemGiaoVien(DTO_CBDT_GV GiaoVien, out string message)
-        {
-            return QlThongTin.InsertTeacher(GiaoVien, out message);
-        }
-        public bool CapNhatGiaoVien(DTO_CBDT_GV GiaoVien, out string message)
-        {
-            return QlThongTin.UpdateTeacher(GiaoVien, out message);
-        }
-        public bool XoaGiaoVien(string magv)
-        {
-            return QlThongTin.DeleteTeacher(magv);
-        }
-        public string CreateNewTeacherId(string prefix)
-        {
-            return QlThongTin.CreateNewTeacherId(prefix);
         }
 
         //Lịch học
