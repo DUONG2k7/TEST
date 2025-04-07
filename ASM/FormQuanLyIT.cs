@@ -70,7 +70,7 @@ namespace ASM
         }
         public void LockControl()
         {
-            txtMaIT.Enabled = false;
+            txtHoten.Enabled = false;
             txtHoten.Enabled = false;
             txtEmail.Enabled = false;
             txtSodt.Enabled = false;
@@ -85,7 +85,7 @@ namespace ASM
         }
         public void ClearForm()
         {
-            txtMaIT.Clear();
+            txtHoten.Clear();
             txtHoten.Clear();
             txtEmail.Clear();
             txtDiachi.Clear();
@@ -96,7 +96,7 @@ namespace ASM
         }
         private bool CheckInput()
         {
-            if (string.IsNullOrWhiteSpace(txtMaIT.Text) ||
+            if (string.IsNullOrWhiteSpace(txtHoten.Text) ||
                 string.IsNullOrWhiteSpace(txtHoten.Text) ||
                 string.IsNullOrWhiteSpace(txtEmail.Text) ||
                 string.IsNullOrWhiteSpace(txtSodt.Text) ||
@@ -168,7 +168,7 @@ namespace ASM
             ClearForm();
 
             string tiento = "IT"; //tiền tố
-            txtMaIT.Text = QlIT.CreateNewItId(tiento);
+            txtHoten.Text = QlIT.CreateNewItId(tiento);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -194,7 +194,7 @@ namespace ASM
                 {
                     btnUpdate.Enabled = true;
 
-                    txtMaIT.Text = dgvData.CurrentRow.Cells["IDIT"]?.Value?.ToString() ?? string.Empty;
+                    txtHoten.Text = dgvData.CurrentRow.Cells["IDIT"]?.Value?.ToString() ?? string.Empty;
                     cbPhongBan.SelectedValue = dgvData.CurrentRow.Cells["IDPhong"]?.Value?.ToString() ?? string.Empty;
                     txtHoten.Text = dgvData.CurrentRow.Cells["TenIT"]?.Value?.ToString() ?? string.Empty;
                     txtEmail.Text = dgvData.CurrentRow.Cells["Email"]?.Value?.ToString() ?? string.Empty;
@@ -247,7 +247,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_CBQL_IT IT = new DTO_CBQL_IT(txtMaIT.Text, Convert.ToInt32(cbPhongBan.SelectedValue), txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
+                DTO_CBQL_IT IT = new DTO_CBQL_IT(txtHoten.Text, Convert.ToInt32(cbPhongBan.SelectedValue), txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
                 if (QlIT.ThemIT(IT, out message))
                 {
                     MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -270,7 +270,7 @@ namespace ASM
                     return;
                 }
 
-                DTO_CBQL_IT IT = new DTO_CBQL_IT(txtMaIT.Text, Convert.ToInt32(cbPhongBan.SelectedValue), txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
+                DTO_CBQL_IT IT = new DTO_CBQL_IT(txtHoten.Text, Convert.ToInt32(cbPhongBan.SelectedValue), txtHoten.Text, txtEmail.Text, txtSodt.Text, rdbNam.Checked, txtDiachi.Text, image);
 
 
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn cập nhật cán bộ này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

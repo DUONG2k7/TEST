@@ -93,8 +93,10 @@ namespace ASM
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormBaoCaoDiemDanh baoCaoDiemDanh = new FormBaoCaoDiemDanh(IDLICHHOC, NGAYDIEMDANH);
             baoCaoDiemDanh.ShowDialog();
+            this.Show();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)

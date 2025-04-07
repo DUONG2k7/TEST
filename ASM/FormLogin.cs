@@ -42,6 +42,10 @@ namespace ASM
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+            this.FormClosed += (s1, e1) =>
+            {
+                Application.OpenForms["FormMain"]?.Show();
+            };
         }
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -130,12 +134,12 @@ namespace ASM
             {
                 txtPassword.PasswordChar = '\0';
                 txtPassword.UseSystemPasswordChar = false;
-                pbHienMk.Image = Properties.Resources.eye;
+                //pbHienMk.Image = Properties.Resources.eye;
             }
             else
             {
                 txtPassword.UseSystemPasswordChar = true;
-                pbHienMk.Image = Properties.Resources.hidden;
+                //pbHienMk.Image = Properties.Resources.hidden;
             }
         }
     }

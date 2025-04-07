@@ -21,9 +21,10 @@ namespace ASM
         public FormCBQL(string User, string IDrole)
         {
             InitializeComponent();
-            ThongTinTaiKhoan.Text = "Chào " + User;
-            UserNameThongTinTaiKhoan.Text = "Username: " + User;
-            RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+            //ThongTinTaiKhoan.Text = "Chào " + User;
+            //UserNameThongTinTaiKhoan.Text = "Username: " + User;
+            //RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string resourcePath = Path.Combine(basePath, "CBDTPIC");
             images = Directory.GetFiles(resourcePath, "*.*")
@@ -66,44 +67,44 @@ namespace ASM
 
         private void btnMenuQlyCBDT_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyCBDT QlGV = new FormQuanLyCBDT();
             QlGV.TopLevel = false;
             QlGV.FormBorderStyle = FormBorderStyle.None;
             QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
+            PnMain.Controls.Add(QlGV);
             QlGV.Show();
         }
 
         private void btnMenuQlyCBQL_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyCBQL QlGV = new FormQuanLyCBQL();
             QlGV.TopLevel = false;
             QlGV.FormBorderStyle = FormBorderStyle.None;
             QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
+            PnMain.Controls.Add(QlGV);
             QlGV.Show();
         }
         private void btnMenuQlyIT_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyIT QlGV = new FormQuanLyIT();
             QlGV.TopLevel = false;
             QlGV.FormBorderStyle = FormBorderStyle.None;
             QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
+            PnMain.Controls.Add(QlGV);
             QlGV.Show();
         }
 
         private void btnMenuQlyPhongBan_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyPhongBan QlGV = new FormQuanLyPhongBan();
             QlGV.TopLevel = false;
             QlGV.FormBorderStyle = FormBorderStyle.None;
             QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
+            PnMain.Controls.Add(QlGV);
             QlGV.Show();
         }
     }

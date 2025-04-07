@@ -37,7 +37,6 @@ namespace ASM
 
             btnSave.Enabled = false;
             btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
             btnLoU.Enabled = false;
         }
         public void ClearForm()
@@ -54,13 +53,11 @@ namespace ASM
                 if (trangThai == "Khóa")
                 {
                     btnNew.Enabled = false;
-                    btnDelete.Enabled = false;
                     btnUpdate.Enabled = false;
                 }
                 else
                 {
                     btnNew.Enabled = true;
-                    btnDelete.Enabled = true;
                     btnUpdate.Enabled = true;
                 }
             }
@@ -89,7 +86,6 @@ namespace ASM
 
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             btnLoU.Enabled = false;
             dgvData.Enabled = false;
 
@@ -106,7 +102,6 @@ namespace ASM
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             btnLoU.Enabled = false;
             dgvData.Enabled = false;
         }
@@ -156,7 +151,6 @@ namespace ASM
                 try
                 {
                     btnUpdate.Enabled = true;
-                    btnDelete.Enabled = true;
 
                     txtMaLop.Text = dgvData.CurrentRow.Cells["IDLop"]?.Value?.ToString() ?? string.Empty;
                     txtTenlop.Text = dgvData.CurrentRow.Cells["ClassName"]?.Value?.ToString() ?? string.Empty;
@@ -252,7 +246,6 @@ namespace ASM
 
             btnNew.Enabled = true;
             btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
             dgvData.Enabled = true;
         }
     }

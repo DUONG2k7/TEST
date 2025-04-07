@@ -22,10 +22,15 @@ namespace ASM
 
             Malop = QlDAnhSach.GetMaLop(TK);
             cbDanhSach.SelectedIndex = 0;
-
+            cbDanhSach.SelectedIndexChanged += cbDanhSach_SelectedIndexChanged;
             dgvDanhSach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
-        private void btnShow_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void cbDanhSach_SelectedIndexChanged(object sender, EventArgs e)
         {
             string query = "";
             switch (cbDanhSach.SelectedItem.ToString())
@@ -109,11 +114,6 @@ namespace ASM
                     MessageBox.Show("Giáo viên này chưa được phân lớp!");
                 }
             }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

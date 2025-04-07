@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,12 +27,25 @@ namespace ASM
             if (dt.Rows.Count > 0)
             {
                 DataRow row = dt.Rows[0];
-                lbHoTen.Text = $"Họ tên: {row["TenSV"]}";
-                lbIDLop.Text = $"Lớp: {row["IDLop"]}";
-                lbEmail.Text = $"Email: {row["Email"]}";
-                lbSDT.Text = $"Số ĐT: {row["SoDT"]}";
-                lbDiaChi.Text = $"Địa chỉ: {row["Diachi"]}";
-                lbGioiTinh.Text = $"Giới tính: {(row["GioiTinh"].ToString() == "1" ? "Nam" : "Nữ")}";
+                txtHoTen.Text = row["TenSV"].ToString();
+                txtIDLop.Text = row["IDLop"].ToString();
+                txtEmail.Text = row["Email"].ToString();
+                txtSDT.Text = row["SoDT"].ToString();
+                txtDiaChi.Text = row["Diachi"].ToString();
+                txtGioiTinh.Text = row["GioiTinh"].ToString() == "1" ? "Nam" : "Nữ";
+                byte[] image = row["Hinh"] as byte[];
+                if (image != null && image.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(image))
+                    {
+                        pbAnhSv.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    pbAnhSv.Image = null;
+                    pbAnhSv.Visible = false;
+                }
                 return true;
             }
             else
@@ -50,12 +64,13 @@ namespace ASM
             else
             {
                 dgvDiem.DataSource = null;
-                lbHoTen.Text = "";
-                lbIDLop.Text = "";
-                lbEmail.Text = "";
-                lbSDT.Text = "";
-                lbDiaChi.Text = "";
-                lbGioiTinh.Text = "";
+                pbAnhSv.Image = null;
+                txtHoTen.Text = "";
+                txtIDLop.Text = "";
+                txtEmail.Text = "";
+                txtSDT.Text = "";
+                txtDiaChi.Text = "";
+                txtGioiTinh.Text = "";
             }
         }
     }

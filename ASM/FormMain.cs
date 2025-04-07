@@ -26,7 +26,7 @@ namespace ASM
                               .ToArray();
             if (images.Length > 0)
             {
-                pictureBox1.Image = Image.FromFile(images[index]);
+                pbAnh.Image = Image.FromFile(images[index]);
             }
             timer1.Interval = 2000; // Đặt thời gian mặc định là 3 giây
             timer1.Start();
@@ -51,7 +51,7 @@ namespace ASM
         private void timer1_Tick(object sender, EventArgs e)
         {
             index = (index + 1) % images.Length; // Lặp lại khi hết ảnh
-            pictureBox1.Image = Image.FromFile(images[index]);
+            pbAnh.Image = Image.FromFile(images[index]);
         }
     }
 }

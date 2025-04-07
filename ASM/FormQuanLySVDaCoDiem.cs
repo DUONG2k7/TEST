@@ -106,13 +106,11 @@ namespace ASM
             {
                 btnNew.Enabled = true;
                 btnUpdate.Enabled = false;
-                btnDelete.Enabled = false;
             }
             else
             {
                 btnNew.Enabled = false;
                 btnUpdate.Enabled = true;
-                btnDelete.Enabled = true;
             }
         }
         private void LoadTrangThaiNutChuyenTrang()
@@ -159,7 +157,6 @@ namespace ASM
             btnNew.Enabled = true;
             btnUpdate.Enabled = false;
             btnSave.Enabled = false;
-            btnDelete.Enabled = false;
         }
         public void ClearForm()
         {
@@ -213,7 +210,6 @@ namespace ASM
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
 
             btnChangeAllLeft.Enabled = false;
             btnChangeAllRight.Enabled = false;
@@ -231,7 +227,6 @@ namespace ASM
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
 
             btnChangeAllLeft.Enabled = false;
             btnChangeAllRight.Enabled = false;

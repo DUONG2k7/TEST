@@ -25,10 +25,10 @@ namespace ASM
             InitializeComponent();
             IDACC = idacc;
             username = User;
-            ThongTinTaiKhoan.Text = "Chào " + User;
-            UserNameThongTinTaiKhoan.Text = "Username: " + User;
-            RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
-            LoadInfoSv();
+            //ThongTinTaiKhoan.Text = "Chào " + User;
+            //UserNameThongTinTaiKhoan.Text = "Username: " + User;
+            //RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+            //LoadInfoSv();
 
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string resourcePath = Path.Combine(basePath, "GVPIC");
@@ -52,25 +52,25 @@ namespace ASM
             timer2.Tick += timer2_Tick;
             timer2.Start();
         }
-        public void LoadInfoSv()
-        {
-            DataTable dt = Qlgiaodien.LayThongTinCoBanSv(IDACC);
-            if (dt.Rows.Count > 0)
-            {
-                DataRow row = dt.Rows[0];
-                lblMaSV.Text = $"Mã SV: {row["IDSV"]}";
-                lblHoTen.Text = $"Họ tên: {row["TenSV"]}";
-                lblLop.Text = $"Lớp: {row["IDLop"]}";
-                lblEmail.Text = $"Email: {row["Email"]}";
-                lblSoDT.Text = $"Số ĐT: {row["SoDT"]}";
-                lblDiaChi.Text = $"Địa chỉ: {row["Diachi"]}";
-                lblGioiTinh.Text = $"Giới tính: {(row["GioiTinh"].ToString() == "1" ? "Nam" : "Nữ")}";
-            }
-            else
-            {
-                MessageBox.Show("Không tìm thấy thông tin sinh viên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
+        //public void LoadInfoSv()
+        //{
+        //    DataTable dt = Qlgiaodien.LayThongTinCoBanSv(IDACC);
+        //    if (dt.Rows.Count > 0)
+        //    {
+        //        DataRow row = dt.Rows[0];
+        //        lblMaSV.Text = $"Mã SV: {row["IDSV"]}";
+        //        lblHoTen.Text = $"Họ tên: {row["TenSV"]}";
+        //        lblLop.Text = $"Lớp: {row["IDLop"]}";
+        //        lblEmail.Text = $"Email: {row["Email"]}";
+        //        lblSoDT.Text = $"Số ĐT: {row["SoDT"]}";
+        //        lblDiaChi.Text = $"Địa chỉ: {row["Diachi"]}";
+        //        lblGioiTinh.Text = $"Giới tính: {(row["GioiTinh"].ToString() == "1" ? "Nam" : "Nữ")}";
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Không tìm thấy thông tin sinh viên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //    }
+        //}
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -95,34 +95,34 @@ namespace ASM
 
         private void btnMenuXemLichHoc_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormSvXemLichHoc SV = new FormSvXemLichHoc(IDACC);
             SV.TopLevel = false;
             SV.FormBorderStyle = FormBorderStyle.None;
             SV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(SV);
+            PnMain.Controls.Add(SV);
             SV.Show();
         }
 
         private void btnMenuXemLichThi_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormSvXemLichThi SV = new FormSvXemLichThi(IDACC);
             SV.TopLevel = false;
             SV.FormBorderStyle = FormBorderStyle.None;
             SV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(SV);
+            PnMain.Controls.Add(SV);
             SV.Show();
         }
 
         private void btnMenuXemDiem_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormSvXemDiem SV = new FormSvXemDiem(IDACC);
             SV.TopLevel = false;
             SV.FormBorderStyle = FormBorderStyle.None;
             SV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(SV);
+            PnMain.Controls.Add(SV);
             SV.Show();
         }
     }

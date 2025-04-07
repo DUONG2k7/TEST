@@ -22,6 +22,7 @@ namespace ASM
         {
             InitializeComponent();
             LoadDsTinTuc();
+            LockControl();
 
             dgvDataTinTuc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
@@ -69,6 +70,7 @@ namespace ASM
             btnAdd.Enabled = true;
             btnUpdate.Enabled = false;
             btnDuyet.Enabled = false;
+            btnLoU.Enabled = false;
             dgvDataTinTuc.Enabled = true;
         }
         public void ClearForm()

@@ -84,11 +84,21 @@ namespace ASM
         }
         public void LoadDsGvBoMon()
         {
-            cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(Convert.ToInt32(cbMonhoc.SelectedValue), cbLop.SelectedValue.ToString(), idkyhoc);
+            if (cbMonhoc.SelectedValue is DataRowView drv)
+            {
+                int idMon = Convert.ToInt32(drv["IDMonHoc"]);
+                cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(idMon, cbLop.SelectedValue.ToString(), idkyhoc);
+            }
+            else
+            {
+                int idMon = Convert.ToInt32(cbMonhoc.SelectedValue);
+                cbGvMonhoc.DataSource = QlLich.LoadDsGvBoMon(idMon, cbLop.SelectedValue.ToString(), idkyhoc);
+            }
+
             cbGvMonhoc.DisplayMember = "TenGV";
             cbGvMonhoc.ValueMember = "IDGV";
 
-            if(cbGvMonhoc == null)
+            if (cbGvMonhoc.Items.Count == 0)
             {
                 MessageBox.Show("Không có giáo viên nào được phân công cho môn học này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -167,7 +177,7 @@ namespace ASM
             cbGvMonhoc.Enabled = false;
             dtpNgay.Enabled = false;
             rdbNgayhoc.Enabled = false;
-            rdbNgaythi.Enabled = false;
+            d.Enabled = false;
 
             btnNew.Enabled = true;
             btnUpdate.Enabled = false;
@@ -199,7 +209,7 @@ namespace ASM
             cbGvMonhoc.Enabled = true;
             dtpNgay.Enabled = true;
             rdbNgayhoc.Enabled = true;
-            rdbNgaythi.Enabled = true;
+            d.Enabled = true;
             dgvLichHoc.Enabled = false;
 
             btnNew.Enabled = false;
@@ -218,7 +228,7 @@ namespace ASM
             cbGvMonhoc.Enabled = true;
             dtpNgay.Enabled = true;
             rdbNgayhoc.Enabled = true;
-            rdbNgaythi.Enabled = true;
+            d.Enabled = true;
             dgvLichHoc.Enabled = false;
 
             btnNew.Enabled = false;

@@ -23,12 +23,8 @@ namespace ASM
 
             idkyhoc = idky;
             IdGv = QLLICHDAY.GetIdGvFromIdAcc(idacc);
-            cboLopHoc.Enabled = false;
-            cboMonHoc.Enabled = false;
-            dtpNgayDiemDanh.Enabled = false;
-            rdbNgayhoc.Enabled = false;
-            rdbNgaythi.Enabled = false;
 
+            LockControl();
             LoadDsLopGvDangDay();
             LoadDsMonHocGvDangDay();
             LayDsLichDay();
@@ -52,11 +48,39 @@ namespace ASM
             cboMonHoc.DisplayMember = "TenMon";
             cboMonHoc.ValueMember = "IDMonHoc";
         }
+        public void LockControl()
+        {
+            cboLopHoc.Enabled = false;
+            cboMonHoc.Enabled = false;
+            dtpNgayDiemDanh.Enabled = false;
+            rdbNgayhoc.Enabled = false;
+            rdbNgaythi.Enabled = false;
+            dgvDanhSachSinhVien.Enabled = true;
+
+            btnDiemDanh.Enabled = false;
+        }
+        public void ClearForm()
+        {
+            rdbNgayhoc.Checked = false;
+            rdbNgaythi.Checked = false;
+        }
         private void btnDiemDanh_Click(object sender, EventArgs e)
         {
+            if (dgvDanhSachSinhVien.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ngày dạy để điểm danh!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             int idlichhoc = Convert.ToInt32(dgvDanhSachSinhVien.CurrentRow.Cells["IDLichHoc"].Value);
             FormDiemDanhSV GV = new FormDiemDanhSV(cboLopHoc.SelectedValue.ToString(), Convert.ToInt32(cboMonHoc.SelectedValue), dtpNgayDiemDanh.Value, IdGv, idkyhoc, idlichhoc);
             GV.ShowDialog();
+
+            ClearForm();
+            LockControl();
+            LoadDsLopGvDangDay();
+            LoadDsMonHocGvDangDay();
+            LayDsLichDay();
         }
         private void dgvDanhSachSinhVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -64,6 +88,8 @@ namespace ASM
             {
                 try
                 {
+                    btnDiemDanh.Enabled = true;
+
                     cboLopHoc.SelectedValue = dgvDanhSachSinhVien.CurrentRow.Cells["IDLop"].Value;
                     cboMonHoc.SelectedValue = dgvDanhSachSinhVien.CurrentRow.Cells["IDMonHoc"].Value;
 

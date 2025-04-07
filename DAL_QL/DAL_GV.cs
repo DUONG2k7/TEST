@@ -601,7 +601,7 @@ namespace DAL_QL
         //Form Tra cứu SV
         public DataTable GetInfoSv(string IDSV)
         {
-            string query = "SELECT IDLop, TenSV, Email, SoDT, GioiTinh, Diachi FROM STUDENTS WHERE IDSV = @IDSV";
+            string query = "SELECT IDLop, TenSV, Email, SoDT, GioiTinh, Diachi, Hinh FROM STUDENTS WHERE IDSV = @IDSV";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))

@@ -24,9 +24,10 @@ namespace ASM
         public FormCBDT(string User, string IDrole)
         {
             InitializeComponent();
-            ThongTinTaiKhoan.Text = "Chào " + User;
-            UserNameThongTinTaiKhoan.Text = "Username: " + User;
-            RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+            //ThongTinTaiKhoan.Text = "Chào " + User;
+            //UserNameThongTinTaiKhoan.Text = "Username: " + User;
+            //RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string resourcePath = Path.Combine(basePath, "CBDTPIC");
             images = Directory.GetFiles(resourcePath, "*.*")
@@ -68,75 +69,75 @@ namespace ASM
         }
         private void btnMenuQlySV_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLySV QlSV = new FormQuanLySV();
             QlSV.TopLevel = false;
             QlSV.FormBorderStyle = FormBorderStyle.None;
             QlSV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlSV);
+            PnMain.Controls.Add(QlSV);
             QlSV.Show();
         }
         private void btnMenuQlyLop_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyLop QlLop = new FormQuanLyLop();
             QlLop.TopLevel = false;
             QlLop.FormBorderStyle = FormBorderStyle.None;
             QlLop.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlLop);
+            PnMain.Controls.Add(QlLop);
             QlLop.Show();
         }
         private void btnMenuQlyLichhoc_Click(object sender, EventArgs e)
         {
             idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyLich QlLich = new FormQuanLyLich(idkyhoc);
             QlLich.TopLevel = false;
             QlLich.FormBorderStyle = FormBorderStyle.None;
             QlLich.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlLich);
+            PnMain.Controls.Add(QlLich);
             QlLich.Show();
         }
         private void btnMenyQlyKyHoc_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyKyHoc QlKyHoc = new FormQuanLyKyHoc();
             QlKyHoc.TopLevel = false;
             QlKyHoc.FormBorderStyle = FormBorderStyle.None;
             QlKyHoc.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlKyHoc);
+            PnMain.Controls.Add(QlKyHoc);
             QlKyHoc.Show();
         }
         private void btnMenuQlyMonHoc_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyMonHoc QlMonHoc = new FormQuanLyMonHoc();
             QlMonHoc.TopLevel = false;
             QlMonHoc.FormBorderStyle = FormBorderStyle.None;
             QlMonHoc.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlMonHoc);
+            PnMain.Controls.Add(QlMonHoc);
             QlMonHoc.Show();
         }
         private void btnMenuQlyPhanChiaViec_Click(object sender, EventArgs e)
         {
             idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyCongViec Qlviec = new FormQuanLyCongViec(idkyhoc);
             Qlviec.TopLevel = false;
             Qlviec.FormBorderStyle = FormBorderStyle.None;
             Qlviec.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(Qlviec);
+            PnMain.Controls.Add(Qlviec);
             Qlviec.Show();
         }
 
         private void btnMenuQlyGiangVien_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyGV QlGV = new FormQuanLyGV();
             QlGV.TopLevel = false;
             QlGV.FormBorderStyle = FormBorderStyle.None;
             QlGV.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(QlGV);
+            PnMain.Controls.Add(QlGV);
             QlGV.Show();
         }
     }

@@ -18,9 +18,9 @@ namespace ASM
         public FormSvXemDiem(string idacc)
         {
             InitializeComponent();
+            idACC = idacc;
             LoadDsKyHoc();
             cbHocKy.SelectedValueChanged += cbHocKy_SelectedIndexChanged;
-            idACC = idacc;
             LoadDSDIEM(idACC, Convert.ToInt32(cbHocKy.SelectedValue));
         }
         public void LoadDsKyHoc()
@@ -36,8 +36,16 @@ namespace ASM
 
         private void cbHocKy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedKyHoc = Convert.ToInt32(cbHocKy.SelectedValue);
-            LoadDSDIEM(idACC, selectedKyHoc);
+            if (cbHocKy.SelectedValue is DataRowView rowView)
+            {
+                int selectedKyHoc = Convert.ToInt32(rowView["IDKyHoc"]); // Đổi "MaHocKy" thành tên cột thực tế
+                LoadDSDIEM(idACC, selectedKyHoc);
+            }
+            else
+            {
+                int selectedKyHoc = Convert.ToInt32(cbHocKy.SelectedValue);
+                LoadDSDIEM(idACC, selectedKyHoc);
+            }
         }
     }
 }

@@ -28,53 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvLichHoc = new System.Windows.Forms.DataGridView();
-            this.lblLichHoc = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvLichHoc = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichHoc)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLichHoc
             // 
-            this.dgvLichHoc.AllowUserToAddRows = false;
-            this.dgvLichHoc.AllowUserToDeleteRows = false;
-            this.dgvLichHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvLichHoc.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvLichHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLichHoc.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvLichHoc.Location = new System.Drawing.Point(12, 86);
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvLichHoc.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLichHoc.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvLichHoc.ColumnHeadersHeight = 4;
+            this.dgvLichHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLichHoc.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvLichHoc.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvLichHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvLichHoc.Location = new System.Drawing.Point(0, 71);
             this.dgvLichHoc.Name = "dgvLichHoc";
-            this.dgvLichHoc.RowHeadersWidth = 51;
-            this.dgvLichHoc.Size = new System.Drawing.Size(940, 460);
-            this.dgvLichHoc.TabIndex = 53;
+            this.dgvLichHoc.RowHeadersVisible = false;
+            this.dgvLichHoc.Size = new System.Drawing.Size(986, 700);
+            this.dgvLichHoc.TabIndex = 54;
+            this.dgvLichHoc.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvLichHoc.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvLichHoc.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvLichHoc.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvLichHoc.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvLichHoc.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvLichHoc.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvLichHoc.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgvLichHoc.ThemeStyle.ReadOnly = false;
+            this.dgvLichHoc.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvLichHoc.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvLichHoc.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLichHoc.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvLichHoc.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvLichHoc.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvLichHoc.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // lblLichHoc
+            // label2
             // 
-            this.lblLichHoc.AutoSize = true;
-            this.lblLichHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLichHoc.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblLichHoc.Location = new System.Drawing.Point(425, 9);
-            this.lblLichHoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblLichHoc.Name = "lblLichHoc";
-            this.lblLichHoc.Size = new System.Drawing.Size(128, 31);
-            this.lblLichHoc.TabIndex = 52;
-            this.lblLichHoc.Text = "Lịch Học";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(439, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 40);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Lịch Học";
+            // 
+            // Elipse
+            // 
+            this.Elipse.BorderRadius = 22;
+            this.Elipse.TargetControl = this;
             // 
             // FormSvXemLichHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 558);
+            this.ClientSize = new System.Drawing.Size(986, 771);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvLichHoc);
-            this.Controls.Add(this.lblLichHoc);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSvXemLichHoc";
             this.Text = "FormSvXemLichHoc";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLichHoc)).EndInit();
@@ -84,8 +121,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvLichHoc;
-        private System.Windows.Forms.Label lblLichHoc;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvLichHoc;
+        private Guna.UI2.WinForms.Guna2Elipse Elipse;
     }
 }

@@ -23,9 +23,9 @@ namespace ASM
         public FormIT(string Username, string IDrole)
         {
             InitializeComponent();
-            ThongTinTaiKhoan.Text = "Chào " + Username;
-            UserNameThongTinTaiKhoan.Text = "Username: " + Username;
-            RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
+            //ThongTinTaiKhoan.Text = "Chào " + Username;
+            //UserNameThongTinTaiKhoan.Text = "Username: " + Username;
+            //RoleThongTinTaiKhoan.Text = "Role: " + Qlgiaodien.GetRole(IDrole);
 
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string resourcePath = Path.Combine(basePath, "AdminPic");
@@ -35,7 +35,7 @@ namespace ASM
 
             if (images.Length > 0)
             {
-                pictureBox1.Image = Image.FromFile(images[index]);
+                guna2PictureBox1.Image = Image.FromFile(images[index]);
             }
 
             timer1.Interval = 2000; // Đặt thời gian mặc định là 2 giây
@@ -50,7 +50,7 @@ namespace ASM
         private void timer1_Tick(object sender, EventArgs e)
         {
             index = (index + 1) % images.Length; // Lặp lại khi hết ảnh
-            pictureBox1.Image = Image.FromFile(images[index]);
+            guna2PictureBox1.Image = Image.FromFile(images[index]);
         }
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -70,23 +70,23 @@ namespace ASM
 
         private void btnMenuQlyTk_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormITQuanLyTaiKhoan f2 = new FormITQuanLyTaiKhoan();
             f2.TopLevel = false;
             f2.FormBorderStyle = FormBorderStyle.None;
             f2.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(f2);
+            PnMain.Controls.Add(f2);
             f2.Show();
         }
 
         private void btnMenuQlyTinTuc_Click(object sender, EventArgs e)
         {
-            tabMain.Controls.Clear();
+            PnMain.Controls.Clear();
             FormQuanLyTinTuc f2 = new FormQuanLyTinTuc();
             f2.TopLevel = false;
             f2.FormBorderStyle = FormBorderStyle.None;
             f2.Dock = DockStyle.Fill;
-            tabMain.Controls.Add(f2);
+            PnMain.Controls.Add(f2);
             f2.Show();
         }
     }

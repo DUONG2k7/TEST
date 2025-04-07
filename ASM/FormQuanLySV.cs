@@ -31,7 +31,7 @@ namespace ASM
         }
         public void LockControl()
         {
-            txtMasv.Enabled = false;
+            txtMasv.ReadOnly = true;
             txtHoten.Enabled = false;
             txtEmail.Enabled = false;
             txtSodt.Enabled = false;
@@ -43,7 +43,6 @@ namespace ASM
 
             btnSave.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
         }
         public void ClearForm()
         {
@@ -167,7 +166,6 @@ namespace ASM
 
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             dgvData.Enabled = false;
 
             ClearForm();
@@ -190,7 +188,6 @@ namespace ASM
             btnSave.Enabled = true;
             btnNew.Enabled = false;
             btnUpdate.Enabled = false;
-            btnDelete.Enabled = false;
             dgvData.Enabled = false;
         }
         private void dgvData_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -200,7 +197,6 @@ namespace ASM
                 try
                 {
                     btnUpdate.Enabled = true;
-                    btnDelete.Enabled = true;
 
                     txtMasv.Text = dgvData.CurrentRow.Cells["IDSV"]?.Value?.ToString() ?? string.Empty;
                     txtHoten.Text = dgvData.CurrentRow.Cells["TenSV"]?.Value?.ToString() ?? string.Empty;
@@ -245,7 +241,7 @@ namespace ASM
         {
             try
             {
-                if (QlSinhVien.KiemTraSVDaCoDiemChua(txtMasv.Text))
+                if (QlSinhVien.KiemTraSVDaCoDiemChua(txtHoten.Text))
                 {
                     MessageBox.Show("Sinh viên đã có điểm, không thể xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -254,7 +250,7 @@ namespace ASM
                 DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sinh viên này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    if (QlSinhVien.XoaSinhVien(txtMasv.Text))
+                    if (QlSinhVien.XoaSinhVien(txtHoten.Text))
                     {
                         MessageBox.Show("Xóa sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ClearForm();
@@ -299,7 +295,7 @@ namespace ASM
                     return;
                 }
 
-                if (QlSinhVien.KtSvDaTonTai(txtMasv.Text))
+                if (QlSinhVien.KtSvDaTonTai(txtHoten.Text))
                 {
                     MessageBox.Show("Mã học sinh đã tồn tại. Vui lòng nhập mã khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -360,7 +356,6 @@ namespace ASM
 
             btnNew.Enabled = true;
             btnUpdate.Enabled = true;
-            btnDelete.Enabled = true;
             dgvData.Enabled = true;
         }
     }

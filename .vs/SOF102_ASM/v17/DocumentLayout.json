@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\GIT_PRO231_3layer\\TEST-main\\",
+  "WorkspaceRootPath": "C:\\GIT_PRO231_3layer\\TEST-main - Copy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\GIT_PRO231_3layer\\TEST-main\\asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main\\asm\\formit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|C:\\GIT_PRO231_3layer\\TEST-main\\bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|solutionrelative:bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|c:\\git_pro231_3layer\\test-main\\dal_ql\\dal_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dal_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\test-main - copy\\asm\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,55 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormIT.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormIT.cs",
-              "RelativeDocumentMoniker": "ASM\\FormIT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormIT.cs",
-              "RelativeToolTip": "ASM\\FormIT.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwDMAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T12:19:42.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormTinTuc.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormTinTuc.cs",
-              "RelativeDocumentMoniker": "ASM\\FormTinTuc.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\ASM\\FormTinTuc.cs",
-              "RelativeToolTip": "ASM\\FormTinTuc.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwFgAAAAQAAAAAAAAAA==",
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main - Copy\\ASM\\FormMain.cs",
+              "RelativeDocumentMoniker": "ASM\\FormMain.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main - Copy\\ASM\\FormMain.cs [Design]",
+              "RelativeToolTip": "ASM\\FormMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:36:45.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BUS_IT.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\BUS_QL\\BUS_IT.cs",
-              "RelativeDocumentMoniker": "BUS_QL\\BUS_IT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\BUS_QL\\BUS_IT.cs",
-              "RelativeToolTip": "BUS_QL\\BUS_IT.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAawFsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:32:59.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DAL_IT.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_IT.cs",
-              "RelativeDocumentMoniker": "DAL_QL\\DAL_IT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\TEST-main\\DAL_QL\\DAL_IT.cs",
-              "RelativeToolTip": "DAL_QL\\DAL_IT.cs",
-              "ViewState": "AgIAAPABAAAAAAAAAAAWwB0CAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:20:25.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T11:33:46.245Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

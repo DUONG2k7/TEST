@@ -18,6 +18,10 @@ namespace BUS_QL
         {
             return TruyVanTaiKhoan.GetListAccount(IDRole);
         }
+        public DataTable LoadDsRoleLocDuLieu()
+        {
+            return TruyVanTaiKhoan.GetListRoleLocDuLieu();
+        }
         public DataTable LoadDsRole()
         {
             return TruyVanTaiKhoan.GetListRole();

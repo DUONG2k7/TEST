@@ -72,11 +72,13 @@ namespace ASM
             btnAdd.Enabled = true;
             btnUpdate.Enabled = false;
             btnSave.Enabled = false;
+            btnUseKyHoc.Enabled = false;
             dgvDsKyHoc.Enabled = true;
 
             btnNew.Enabled = true;
             btnUpdateSetMHtoKyHoc.Enabled = false;
             btnSaveChiDinhMHtoKyhoc.Enabled = false;
+            btnLockOrUnlockMonHoc.Enabled = false;
             dgvDsKyHocMonHoc.Enabled = true;
         }
         public void ClearForm()

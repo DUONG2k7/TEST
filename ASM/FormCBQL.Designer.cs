@@ -32,216 +32,247 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblMarquee = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnMenuQlyPhongBan = new System.Windows.Forms.Button();
-            this.btnMenuQlyCBQL = new System.Windows.Forms.Button();
-            this.btnMenuQlyIT = new System.Windows.Forms.Button();
-            this.btnMenuQlyCBDT = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.RoleThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
-            this.UserNameThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabMain = new System.Windows.Forms.TabPage();
-            this.tabPage = new System.Windows.Forms.TabControl();
-            this.groupBox2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.PnMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.ElipseFormCBQL = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.PnInfo = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMenuQlyIT = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuQlyCBDT = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuQlyCBQL = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuQlyPhongBan = new Guna.UI2.WinForms.Guna2Button();
+            this.PnMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.dragFromCBQL = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabMain.SuspendLayout();
-            this.tabPage.SuspendLayout();
+            this.PnMain.SuspendLayout();
+            this.PnInfo.SuspendLayout();
+            this.PnMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMarquee
             // 
             this.lblMarquee.AutoSize = true;
-            this.lblMarquee.Location = new System.Drawing.Point(1243, 45);
+            this.lblMarquee.Location = new System.Drawing.Point(950, 12);
             this.lblMarquee.Name = "lblMarquee";
             this.lblMarquee.Size = new System.Drawing.Size(35, 13);
             this.lblMarquee.TabIndex = 16;
             this.lblMarquee.Text = "label1";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnMenuQlyPhongBan);
-            this.groupBox2.Controls.Add(this.btnMenuQlyCBQL);
-            this.groupBox2.Controls.Add(this.btnMenuQlyIT);
-            this.groupBox2.Controls.Add(this.btnMenuQlyCBDT);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(0, 64);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(218, 626);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            // 
-            // btnMenuQlyPhongBan
-            // 
-            this.btnMenuQlyPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyPhongBan.Location = new System.Drawing.Point(2, 276);
-            this.btnMenuQlyPhongBan.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyPhongBan.Name = "btnMenuQlyPhongBan";
-            this.btnMenuQlyPhongBan.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyPhongBan.TabIndex = 2;
-            this.btnMenuQlyPhongBan.Text = "Quản lý phòng ban";
-            this.btnMenuQlyPhongBan.UseVisualStyleBackColor = true;
-            this.btnMenuQlyPhongBan.Click += new System.EventHandler(this.btnMenuQlyPhongBan_Click);
-            // 
-            // btnMenuQlyCBQL
-            // 
-            this.btnMenuQlyCBQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyCBQL.Location = new System.Drawing.Point(2, 214);
-            this.btnMenuQlyCBQL.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyCBQL.Name = "btnMenuQlyCBQL";
-            this.btnMenuQlyCBQL.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyCBQL.TabIndex = 2;
-            this.btnMenuQlyCBQL.Text = "Quản lý CBQL";
-            this.btnMenuQlyCBQL.UseVisualStyleBackColor = true;
-            this.btnMenuQlyCBQL.Click += new System.EventHandler(this.btnMenuQlyCBQL_Click);
-            // 
-            // btnMenuQlyIT
-            // 
-            this.btnMenuQlyIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyIT.Location = new System.Drawing.Point(2, 87);
-            this.btnMenuQlyIT.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyIT.Name = "btnMenuQlyIT";
-            this.btnMenuQlyIT.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyIT.TabIndex = 2;
-            this.btnMenuQlyIT.Text = "Quản lý IT";
-            this.btnMenuQlyIT.UseVisualStyleBackColor = true;
-            this.btnMenuQlyIT.Click += new System.EventHandler(this.btnMenuQlyIT_Click);
-            // 
-            // btnMenuQlyCBDT
-            // 
-            this.btnMenuQlyCBDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuQlyCBDT.Location = new System.Drawing.Point(2, 153);
-            this.btnMenuQlyCBDT.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyCBDT.Name = "btnMenuQlyCBDT";
-            this.btnMenuQlyCBDT.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyCBDT.TabIndex = 2;
-            this.btnMenuQlyCBDT.Text = "Quản lý CBDT";
-            this.btnMenuQlyCBDT.UseVisualStyleBackColor = true;
-            this.btnMenuQlyCBDT.Click += new System.EventHandler(this.btnMenuQlyCBDT_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Blue;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(2, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 47);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "MENU";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // RoleThongTinTaiKhoan
-            // 
-            this.RoleThongTinTaiKhoan.Name = "RoleThongTinTaiKhoan";
-            this.RoleThongTinTaiKhoan.Size = new System.Drawing.Size(129, 22);
-            this.RoleThongTinTaiKhoan.Text = "Role";
-            // 
-            // UserNameThongTinTaiKhoan
-            // 
-            this.UserNameThongTinTaiKhoan.Name = "UserNameThongTinTaiKhoan";
-            this.UserNameThongTinTaiKhoan.Size = new System.Drawing.Size(129, 22);
-            this.UserNameThongTinTaiKhoan.Text = "UserName";
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
-            // 
-            // hệThốngToolStripMenuItem
-            // 
-            this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đăngXuấtToolStripMenuItem});
-            this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.hệThốngToolStripMenuItem.Text = "Hệ Thống";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hệThốngToolStripMenuItem,
-            this.ThongTinTaiKhoan});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1290, 24);
-            this.menuStrip1.TabIndex = 13;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // ThongTinTaiKhoan
-            // 
-            this.ThongTinTaiKhoan.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.ThongTinTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.UserNameThongTinTaiKhoan,
-            this.RoleThongTinTaiKhoan});
-            this.ThongTinTaiKhoan.Name = "ThongTinTaiKhoan";
-            this.ThongTinTaiKhoan.Size = new System.Drawing.Size(31, 20);
-            this.ThongTinTaiKhoan.Text = "Hi";
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(25, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 87);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1007, 569);
+            this.pictureBox1.Size = new System.Drawing.Size(883, 619);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // tabMain
+            // PnMain
             // 
-            this.tabMain.Controls.Add(this.pictureBox1);
-            this.tabMain.Location = new System.Drawing.Point(4, 22);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMain.Size = new System.Drawing.Size(1049, 600);
-            this.tabMain.TabIndex = 0;
-            this.tabMain.Text = "Main";
-            this.tabMain.UseVisualStyleBackColor = true;
+            this.PnMain.BackColor = System.Drawing.Color.Transparent;
+            this.PnMain.Controls.Add(this.pictureBox1);
+            this.PnMain.Controls.Add(this.lblMarquee);
+            this.PnMain.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PnMain.Location = new System.Drawing.Point(291, 0);
+            this.PnMain.Name = "PnMain";
+            this.PnMain.Size = new System.Drawing.Size(997, 887);
+            this.PnMain.TabIndex = 15;
+            this.PnMain.UseTransparentBackground = true;
             // 
-            // tabPage
+            // ElipseFormCBQL
             // 
-            this.tabPage.Controls.Add(this.tabMain);
-            this.tabPage.Location = new System.Drawing.Point(222, 64);
-            this.tabPage.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage.Name = "tabPage";
-            this.tabPage.SelectedIndex = 0;
-            this.tabPage.Size = new System.Drawing.Size(1057, 626);
-            this.tabPage.TabIndex = 15;
+            this.ElipseFormCBQL.BorderRadius = 30;
+            this.ElipseFormCBQL.TargetControl = this;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::ASM.Properties.Resources._2022_PTCD_White_01;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(67, 42);
+            this.guna2Button1.TabIndex = 1;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 644);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(67, 45);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // PnInfo
+            // 
+            this.PnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.PnInfo.Controls.Add(this.guna2Button2);
+            this.PnInfo.Controls.Add(this.guna2Button1);
+            this.PnInfo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnInfo.Location = new System.Drawing.Point(0, 0);
+            this.PnInfo.Name = "PnInfo";
+            this.PnInfo.Size = new System.Drawing.Size(94, 887);
+            this.PnInfo.TabIndex = 16;
+            // 
+            // btnMenuQlyIT
+            // 
+            this.btnMenuQlyIT.Animated = true;
+            this.btnMenuQlyIT.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyIT.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyIT.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyIT.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyIT.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyIT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyIT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyIT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyIT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyIT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyIT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyIT.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyIT.Location = new System.Drawing.Point(0, 28);
+            this.btnMenuQlyIT.Name = "btnMenuQlyIT";
+            this.btnMenuQlyIT.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyIT.TabIndex = 0;
+            this.btnMenuQlyIT.Text = "Quản lý IT";
+            this.btnMenuQlyIT.UseTransparentBackground = true;
+            this.btnMenuQlyIT.Click += new System.EventHandler(this.btnMenuQlyIT_Click);
+            // 
+            // btnMenuQlyCBDT
+            // 
+            this.btnMenuQlyCBDT.Animated = true;
+            this.btnMenuQlyCBDT.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyCBDT.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyCBDT.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyCBDT.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyCBDT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyCBDT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyCBDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyCBDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyCBDT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyCBDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyCBDT.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyCBDT.Location = new System.Drawing.Point(0, 102);
+            this.btnMenuQlyCBDT.Name = "btnMenuQlyCBDT";
+            this.btnMenuQlyCBDT.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyCBDT.TabIndex = 0;
+            this.btnMenuQlyCBDT.Text = "Quản lý CBDT";
+            this.btnMenuQlyCBDT.UseTransparentBackground = true;
+            this.btnMenuQlyCBDT.Click += new System.EventHandler(this.btnMenuQlyCBDT_Click);
+            // 
+            // btnMenuQlyCBQL
+            // 
+            this.btnMenuQlyCBQL.Animated = true;
+            this.btnMenuQlyCBQL.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyCBQL.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyCBQL.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyCBQL.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyCBQL.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyCBQL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyCBQL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyCBQL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyCBQL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyCBQL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyCBQL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyCBQL.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyCBQL.Location = new System.Drawing.Point(0, 174);
+            this.btnMenuQlyCBQL.Name = "btnMenuQlyCBQL";
+            this.btnMenuQlyCBQL.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyCBQL.TabIndex = 0;
+            this.btnMenuQlyCBQL.Text = "Quản lý CBQL";
+            this.btnMenuQlyCBQL.UseTransparentBackground = true;
+            this.btnMenuQlyCBQL.Click += new System.EventHandler(this.btnMenuQlyCBQL_Click);
+            // 
+            // btnMenuQlyPhongBan
+            // 
+            this.btnMenuQlyPhongBan.Animated = true;
+            this.btnMenuQlyPhongBan.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyPhongBan.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyPhongBan.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyPhongBan.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyPhongBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyPhongBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyPhongBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyPhongBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyPhongBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyPhongBan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyPhongBan.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyPhongBan.Location = new System.Drawing.Point(0, 248);
+            this.btnMenuQlyPhongBan.Name = "btnMenuQlyPhongBan";
+            this.btnMenuQlyPhongBan.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyPhongBan.TabIndex = 0;
+            this.btnMenuQlyPhongBan.Text = "Quản lý phòng ban";
+            this.btnMenuQlyPhongBan.UseTransparentBackground = true;
+            this.btnMenuQlyPhongBan.Click += new System.EventHandler(this.btnMenuQlyPhongBan_Click);
+            // 
+            // PnMenu
+            // 
+            this.PnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PnMenu.Controls.Add(this.btnMenuQlyPhongBan);
+            this.PnMenu.Controls.Add(this.btnMenuQlyCBQL);
+            this.PnMenu.Controls.Add(this.btnMenuQlyCBDT);
+            this.PnMenu.Controls.Add(this.btnMenuQlyIT);
+            this.PnMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnMenu.Location = new System.Drawing.Point(94, 0);
+            this.PnMenu.Name = "PnMenu";
+            this.PnMenu.Size = new System.Drawing.Size(201, 887);
+            this.PnMenu.TabIndex = 17;
+            // 
+            // dragFromCBQL
+            // 
+            this.dragFromCBQL.DockIndicatorTransparencyValue = 0.6D;
+            this.dragFromCBQL.TargetControl = this.PnMain;
+            this.dragFromCBQL.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.PnMenu;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.PnInfo;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // FormCBQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 701);
-            this.Controls.Add(this.lblMarquee);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.tabPage);
+            this.ClientSize = new System.Drawing.Size(1288, 887);
+            this.Controls.Add(this.PnMenu);
+            this.Controls.Add(this.PnInfo);
+            this.Controls.Add(this.PnMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCBQL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormCBQL";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabMain.ResumeLayout(false);
-            this.tabPage.ResumeLayout(false);
+            this.PnMain.ResumeLayout(false);
+            this.PnMain.PerformLayout();
+            this.PnInfo.ResumeLayout(false);
+            this.PnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -250,20 +281,19 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblMarquee;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnMenuQlyCBQL;
-        private System.Windows.Forms.Button btnMenuQlyIT;
-        private System.Windows.Forms.Button btnMenuQlyCBDT;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolStripMenuItem RoleThongTinTaiKhoan;
-        private System.Windows.Forms.ToolStripMenuItem UserNameThongTinTaiKhoan;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ThongTinTaiKhoan;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TabPage tabMain;
-        private System.Windows.Forms.TabControl tabPage;
-        private System.Windows.Forms.Button btnMenuQlyPhongBan;
+        private Guna.UI2.WinForms.Guna2Panel PnMain;
+        private Guna.UI2.WinForms.Guna2Elipse ElipseFormCBQL;
+        private Guna.UI2.WinForms.Guna2Panel PnMenu;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyPhongBan;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyCBQL;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyCBDT;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyIT;
+        private Guna.UI2.WinForms.Guna2Panel PnInfo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2DragControl dragFromCBQL;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

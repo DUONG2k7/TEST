@@ -46,7 +46,7 @@ namespace ASM
         }
         public void LoadroleLocDuLieu()
         {
-            cbLocDuLieu.DataSource = QlTaiKhoan.LoadDsRole();
+            cbLocDuLieu.DataSource = QlTaiKhoan.LoadDsRoleLocDuLieu();
             cbLocDuLieu.DisplayMember = "Role";
             cbLocDuLieu.ValueMember = "IDRole";
         }
@@ -174,7 +174,6 @@ namespace ASM
                     txtMaTk.Text = dgvDataTk.CurrentRow.Cells["IdAcc"]?.Value?.ToString() ?? string.Empty;
                     txtTk.Text = dgvDataTk.CurrentRow.Cells["Username"]?.Value?.ToString() ?? string.Empty;
                     cbRole.SelectedValue = dgvDataTk.CurrentRow.Cells["IDRole"]?.Value?.ToString() ?? string.Empty;
-                    txtTrangthai.Text = dgvDataTk.CurrentRow.Cells["TrangThai"]?.Value?.ToString() ?? string.Empty;
 
                     btnLoU.Enabled = true;
                     btnHis.Enabled = true;

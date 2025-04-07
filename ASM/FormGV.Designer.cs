@@ -29,39 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.UserNameThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.RoleThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnMenuTraCuuSV = new System.Windows.Forms.Button();
-            this.btnMenuGvXemLichDaySV = new System.Windows.Forms.Button();
-            this.btnMenuQlyDanhSach = new System.Windows.Forms.Button();
-            this.btnMenuQlyDiem = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage = new System.Windows.Forms.TabControl();
-            this.tabMain = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMarquee = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.groupBox2.SuspendLayout();
-            this.tabPage.SuspendLayout();
-            this.tabMain.SuspendLayout();
+            this.PnMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.PnInfo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.PnMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMenuTraCuuSV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuGvXemLichDaySV = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuQlyDanhSach = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMenuQlyDiem = new Guna.UI2.WinForms.Guna2Button();
+            this.ElipseFormGV = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.dragFromGV = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PnMain.SuspendLayout();
+            this.PnInfo.SuspendLayout();
+            this.PnMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1280, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // hệThốngToolStripMenuItem
             // 
@@ -100,107 +94,11 @@
             this.RoleThongTinTaiKhoan.Size = new System.Drawing.Size(129, 22);
             this.RoleThongTinTaiKhoan.Text = "Role";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnMenuTraCuuSV);
-            this.groupBox2.Controls.Add(this.btnMenuGvXemLichDaySV);
-            this.groupBox2.Controls.Add(this.btnMenuQlyDanhSach);
-            this.groupBox2.Controls.Add(this.btnMenuQlyDiem);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(2, 50);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(218, 363);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            // 
-            // btnMenuTraCuuSV
-            // 
-            this.btnMenuTraCuuSV.Location = new System.Drawing.Point(1, 267);
-            this.btnMenuTraCuuSV.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuTraCuuSV.Name = "btnMenuTraCuuSV";
-            this.btnMenuTraCuuSV.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuTraCuuSV.TabIndex = 2;
-            this.btnMenuTraCuuSV.Text = "Tra cứu sinh viên";
-            this.btnMenuTraCuuSV.UseVisualStyleBackColor = true;
-            this.btnMenuTraCuuSV.Click += new System.EventHandler(this.btnMenuTraCuuSV_Click);
-            // 
-            // btnMenuGvXemLichDaySV
-            // 
-            this.btnMenuGvXemLichDaySV.Location = new System.Drawing.Point(1, 203);
-            this.btnMenuGvXemLichDaySV.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuGvXemLichDaySV.Name = "btnMenuGvXemLichDaySV";
-            this.btnMenuGvXemLichDaySV.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuGvXemLichDaySV.TabIndex = 2;
-            this.btnMenuGvXemLichDaySV.Text = "Xem lịch dạy học";
-            this.btnMenuGvXemLichDaySV.UseVisualStyleBackColor = true;
-            this.btnMenuGvXemLichDaySV.Click += new System.EventHandler(this.btnMenuGvXemLichDaySV_Click);
-            // 
-            // btnMenuQlyDanhSach
-            // 
-            this.btnMenuQlyDanhSach.Location = new System.Drawing.Point(2, 145);
-            this.btnMenuQlyDanhSach.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyDanhSach.Name = "btnMenuQlyDanhSach";
-            this.btnMenuQlyDanhSach.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyDanhSach.TabIndex = 2;
-            this.btnMenuQlyDanhSach.Text = "Thống kê sinh viên";
-            this.btnMenuQlyDanhSach.UseVisualStyleBackColor = true;
-            this.btnMenuQlyDanhSach.Click += new System.EventHandler(this.btnMenuQlyDanhSach_Click);
-            // 
-            // btnMenuQlyDiem
-            // 
-            this.btnMenuQlyDiem.Location = new System.Drawing.Point(1, 88);
-            this.btnMenuQlyDiem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMenuQlyDiem.Name = "btnMenuQlyDiem";
-            this.btnMenuQlyDiem.Size = new System.Drawing.Size(213, 41);
-            this.btnMenuQlyDiem.TabIndex = 2;
-            this.btnMenuQlyDiem.Text = "Quản lý sv có điểm";
-            this.btnMenuQlyDiem.UseVisualStyleBackColor = true;
-            this.btnMenuQlyDiem.Click += new System.EventHandler(this.btnMenuQlyDiem_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Blue;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(2, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 47);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "MENU";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tabPage
-            // 
-            this.tabPage.Controls.Add(this.tabMain);
-            this.tabPage.Location = new System.Drawing.Point(221, 50);
-            this.tabPage.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage.Name = "tabPage";
-            this.tabPage.SelectedIndex = 0;
-            this.tabPage.Size = new System.Drawing.Size(1051, 530);
-            this.tabPage.TabIndex = 7;
-            // 
-            // tabMain
-            // 
-            this.tabMain.Controls.Add(this.pictureBox1);
-            this.tabMain.Location = new System.Drawing.Point(4, 22);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMain.Size = new System.Drawing.Size(1043, 504);
-            this.tabMain.TabIndex = 0;
-            this.tabMain.Text = "Main";
-            this.tabMain.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 97);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 179);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1011, 302);
+            this.pictureBox1.Size = new System.Drawing.Size(950, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -208,7 +106,7 @@
             // lblMarquee
             // 
             this.lblMarquee.AutoSize = true;
-            this.lblMarquee.Location = new System.Drawing.Point(1243, 35);
+            this.lblMarquee.Location = new System.Drawing.Point(939, 12);
             this.lblMarquee.Name = "lblMarquee";
             this.lblMarquee.Size = new System.Drawing.Size(35, 13);
             this.lblMarquee.TabIndex = 0;
@@ -222,47 +120,235 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // PnMain
+            // 
+            this.PnMain.BackColor = System.Drawing.Color.Transparent;
+            this.PnMain.Controls.Add(this.lblMarquee);
+            this.PnMain.Controls.Add(this.pictureBox1);
+            this.PnMain.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PnMain.Location = new System.Drawing.Point(294, 0);
+            this.PnMain.Name = "PnMain";
+            this.PnMain.Size = new System.Drawing.Size(1006, 849);
+            this.PnMain.TabIndex = 17;
+            this.PnMain.UseTransparentBackground = true;
+            // 
+            // PnInfo
+            // 
+            this.PnInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.PnInfo.Controls.Add(this.guna2Button2);
+            this.PnInfo.Controls.Add(this.guna2Button1);
+            this.PnInfo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnInfo.Location = new System.Drawing.Point(0, 0);
+            this.PnInfo.Name = "PnInfo";
+            this.PnInfo.Size = new System.Drawing.Size(94, 849);
+            this.PnInfo.TabIndex = 18;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 528);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(67, 45);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::ASM.Properties.Resources._2022_PTCD_White_01;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(67, 42);
+            this.guna2Button1.TabIndex = 1;
+            // 
+            // PnMenu
+            // 
+            this.PnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PnMenu.Controls.Add(this.btnMenuTraCuuSV);
+            this.PnMenu.Controls.Add(this.btnMenuGvXemLichDaySV);
+            this.PnMenu.Controls.Add(this.btnMenuQlyDanhSach);
+            this.PnMenu.Controls.Add(this.btnMenuQlyDiem);
+            this.PnMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PnMenu.Location = new System.Drawing.Point(94, 0);
+            this.PnMenu.Name = "PnMenu";
+            this.PnMenu.Size = new System.Drawing.Size(201, 849);
+            this.PnMenu.TabIndex = 19;
+            // 
+            // btnMenuTraCuuSV
+            // 
+            this.btnMenuTraCuuSV.Animated = true;
+            this.btnMenuTraCuuSV.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuTraCuuSV.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuTraCuuSV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuTraCuuSV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuTraCuuSV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuTraCuuSV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuTraCuuSV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuTraCuuSV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuTraCuuSV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuTraCuuSV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuTraCuuSV.ForeColor = System.Drawing.Color.White;
+            this.btnMenuTraCuuSV.Location = new System.Drawing.Point(0, 253);
+            this.btnMenuTraCuuSV.Name = "btnMenuTraCuuSV";
+            this.btnMenuTraCuuSV.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuTraCuuSV.TabIndex = 0;
+            this.btnMenuTraCuuSV.Text = "Tra cứu sinh viên";
+            this.btnMenuTraCuuSV.UseTransparentBackground = true;
+            this.btnMenuTraCuuSV.Click += new System.EventHandler(this.btnMenuTraCuuSV_Click);
+            // 
+            // btnMenuGvXemLichDaySV
+            // 
+            this.btnMenuGvXemLichDaySV.Animated = true;
+            this.btnMenuGvXemLichDaySV.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuGvXemLichDaySV.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuGvXemLichDaySV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuGvXemLichDaySV.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuGvXemLichDaySV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuGvXemLichDaySV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuGvXemLichDaySV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuGvXemLichDaySV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuGvXemLichDaySV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuGvXemLichDaySV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuGvXemLichDaySV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuGvXemLichDaySV.ForeColor = System.Drawing.Color.White;
+            this.btnMenuGvXemLichDaySV.Location = new System.Drawing.Point(0, 179);
+            this.btnMenuGvXemLichDaySV.Name = "btnMenuGvXemLichDaySV";
+            this.btnMenuGvXemLichDaySV.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuGvXemLichDaySV.TabIndex = 0;
+            this.btnMenuGvXemLichDaySV.Text = "Xem lịch dạy học";
+            this.btnMenuGvXemLichDaySV.UseTransparentBackground = true;
+            this.btnMenuGvXemLichDaySV.Click += new System.EventHandler(this.btnMenuGvXemLichDaySV_Click);
+            // 
+            // btnMenuQlyDanhSach
+            // 
+            this.btnMenuQlyDanhSach.Animated = true;
+            this.btnMenuQlyDanhSach.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyDanhSach.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyDanhSach.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyDanhSach.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyDanhSach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyDanhSach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyDanhSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyDanhSach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyDanhSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyDanhSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyDanhSach.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyDanhSach.Location = new System.Drawing.Point(0, 102);
+            this.btnMenuQlyDanhSach.Name = "btnMenuQlyDanhSach";
+            this.btnMenuQlyDanhSach.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyDanhSach.TabIndex = 0;
+            this.btnMenuQlyDanhSach.Text = "Thống kê sinh viên";
+            this.btnMenuQlyDanhSach.UseTransparentBackground = true;
+            this.btnMenuQlyDanhSach.Click += new System.EventHandler(this.btnMenuQlyDanhSach_Click);
+            // 
+            // btnMenuQlyDiem
+            // 
+            this.btnMenuQlyDiem.Animated = true;
+            this.btnMenuQlyDiem.BackColor = System.Drawing.Color.Transparent;
+            this.btnMenuQlyDiem.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMenuQlyDiem.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyDiem.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyDiem.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.btnMenuQlyDiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyDiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMenuQlyDiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMenuQlyDiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMenuQlyDiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMenuQlyDiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyDiem.ForeColor = System.Drawing.Color.White;
+            this.btnMenuQlyDiem.Location = new System.Drawing.Point(0, 28);
+            this.btnMenuQlyDiem.Name = "btnMenuQlyDiem";
+            this.btnMenuQlyDiem.Size = new System.Drawing.Size(201, 45);
+            this.btnMenuQlyDiem.TabIndex = 0;
+            this.btnMenuQlyDiem.Text = "Quản lý sinh viên có điểm";
+            this.btnMenuQlyDiem.UseTransparentBackground = true;
+            this.btnMenuQlyDiem.Click += new System.EventHandler(this.btnMenuQlyDiem_Click);
+            // 
+            // ElipseFormGV
+            // 
+            this.ElipseFormGV.BorderRadius = 30;
+            this.ElipseFormGV.TargetControl = this;
+            // 
+            // dragFromGV
+            // 
+            this.dragFromGV.DockIndicatorTransparencyValue = 0.6D;
+            this.dragFromGV.TargetControl = this.PnMain;
+            this.dragFromGV.UseTransparentDrag = true;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.PnMenu;
+            this.guna2DragControl2.UseTransparentDrag = true;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.PnInfo;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // FormGV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 585);
-            this.Controls.Add(this.lblMarquee);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.tabPage);
+            this.ClientSize = new System.Drawing.Size(1300, 849);
+            this.Controls.Add(this.PnMenu);
+            this.Controls.Add(this.PnInfo);
+            this.Controls.Add(this.PnMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormGV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormGV";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.tabPage.ResumeLayout(false);
-            this.tabMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PnMain.ResumeLayout(false);
+            this.PnMain.PerformLayout();
+            this.PnInfo.ResumeLayout(false);
+            this.PnMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnMenuQlyDiem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TabControl tabPage;
         private System.Windows.Forms.ToolStripMenuItem ThongTinTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem UserNameThongTinTaiKhoan;
         private System.Windows.Forms.ToolStripMenuItem RoleThongTinTaiKhoan;
         private System.Windows.Forms.Label lblMarquee;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TabPage tabMain;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnMenuQlyDanhSach;
-        private System.Windows.Forms.Button btnMenuGvXemLichDaySV;
-        private System.Windows.Forms.Button btnMenuTraCuuSV;
+        private Guna.UI2.WinForms.Guna2Panel PnMain;
+        private Guna.UI2.WinForms.Guna2Panel PnInfo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Panel PnMenu;
+        private Guna.UI2.WinForms.Guna2Button btnMenuTraCuuSV;
+        private Guna.UI2.WinForms.Guna2Button btnMenuGvXemLichDaySV;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyDanhSach;
+        private Guna.UI2.WinForms.Guna2Button btnMenuQlyDiem;
+        private Guna.UI2.WinForms.Guna2Elipse ElipseFormGV;
+        private Guna.UI2.WinForms.Guna2DragControl dragFromGV;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

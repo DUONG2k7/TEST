@@ -94,6 +94,19 @@ namespace DAL_QL
                 }
             }
         }
+        public DataTable GetListRoleLocDuLieu()
+        {
+            string query = "SELECT IDRole, Role FROM ROLES";
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
+                DataTable dataTable = new DataTable();
+
+                dataAdapter.Fill(dataTable);
+                return dataTable;
+            }
+        }
         public DataTable GetListRole()
         {
             string query = "SELECT IDRole, Role FROM ROLES WHERE Role <> 'GLOBALBAN'";
