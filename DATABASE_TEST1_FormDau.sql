@@ -244,6 +244,7 @@ GO
 -- Thêm dữ liệu vào bảng ROLES
 INSERT INTO ROLES (IDRole, Role)
 VALUES 
+('R00', 'ADMIN'),
 ('R01', 'IT'),
 ('R02', 'CBDT'),
 ('R03', 'CBQL'),
@@ -263,7 +264,9 @@ GO
 -- Thêm dữ liệu vào bảng ACCOUNTS
 INSERT INTO ACCOUNTS (IdAcc, Username, Password, IDRole, Trangthai)
 VALUES 
-('A01', 'A', HASHBYTES('SHA2_256', 'A'), 'R01', 0),
+('A00', 'A', HASHBYTES('SHA2_256', 'A'), 'R00', 0),
+
+('A01', 'I', HASHBYTES('SHA2_256', 'I'), 'R01', 0),
 ('A02', 'ADMIN2', HASHBYTES('SHA2_256', 'ADMIN2'), 'R01', 0),
 ('A03', 'ADMIN3', HASHBYTES('SHA2_256', 'ADMIN3'), 'R01', 0),
 

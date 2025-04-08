@@ -1,0 +1,11 @@
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\BUS_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\BUS_QL.pdb
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\DAL_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\DTO_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\DAL_QL.pdb
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\bin\Release\DTO_QL.pdb
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\obj\Release\BUS_QL.csproj.AssemblyReference.cache
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\obj\Release\BUS_QL.csproj.CoreCompileInputs.cache
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\obj\Release\BUS_QL.csproj.Up2Date
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\obj\Release\BUS_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\BUS_QL\obj\Release\BUS_QL.pdb

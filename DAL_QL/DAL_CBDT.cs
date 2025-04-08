@@ -14,7 +14,7 @@ namespace DAL_QL
         //Sinh Viên
         public DataTable GetListStudent()
         {
-            string query = "SELECT CL.IDLop, SV.IDSV, SV.TenSV, CL.ClassName, SV.Email, SV.SoDT, CASE WHEN SV.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS Gioitinh, SV.Diachi, SV.Hinh FROM STUDENTS SV JOIN CLASSES CL ON SV.IDLop = CL.IDLop";
+            string query = "SELECT CL.IDLop AS N'ID Lớp', SV.IDSV AS N'Mã Sinh Viên', SV.TenSV AS N'Tên Sinh Viên', CL.ClassName AS N'Tên Lớp', SV.Email AS N'Email', SV.SoDT AS N'Số Điện Thoại', CASE WHEN SV.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS N'Giới Tính', SV.Diachi AS N'Địa Chỉ', SV.Hinh AS N'Hình' FROM STUDENTS SV JOIN CLASSES CL ON SV.IDLop = CL.IDLop";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();

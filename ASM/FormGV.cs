@@ -95,20 +95,9 @@ namespace ASM
         }
         private void btnMenuQlyDanhSach_Click(object sender, EventArgs e)
         {
-            PnMain.Controls.Clear();
-            FormDanhSachHienThi GV = new FormDanhSachHienThi(username);
-            GV.TopLevel = false;
-            GV.FormBorderStyle = FormBorderStyle.None;
-            GV.Dock = DockStyle.Fill;
-            PnMain.Controls.Add(GV);
-            GV.Show();
-        }
-
-        private void btnMenuTraCuuSV_Click(object sender, EventArgs e)
-        {
             idkyhoc = Qlgiaodien.GetIdKyHocDangHoc();
             PnMain.Controls.Clear();
-            FormGvTraCuuSv GV = new FormGvTraCuuSv(idkyhoc);
+            FormGvThongkeTracuuSv GV = new FormGvThongkeTracuuSv(username, idkyhoc);
             GV.TopLevel = false;
             GV.FormBorderStyle = FormBorderStyle.None;
             GV.Dock = DockStyle.Fill;

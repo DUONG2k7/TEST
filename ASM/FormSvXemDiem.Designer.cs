@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbHocKy = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvDiem = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +89,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDiem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDiem.ColumnHeadersHeight = 4;
+            this.dgvDiem.ColumnHeadersHeight = 40;
             this.dgvDiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -103,10 +101,11 @@
             this.dgvDiem.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDiem.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvDiem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvDiem.Location = new System.Drawing.Point(0, 138);
+            this.dgvDiem.Location = new System.Drawing.Point(0, 267);
             this.dgvDiem.Name = "dgvDiem";
+            this.dgvDiem.ReadOnly = true;
             this.dgvDiem.RowHeadersVisible = false;
-            this.dgvDiem.Size = new System.Drawing.Size(986, 633);
+            this.dgvDiem.Size = new System.Drawing.Size(998, 565);
             this.dgvDiem.TabIndex = 60;
             this.dgvDiem.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDiem.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -120,8 +119,8 @@
             this.dgvDiem.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDiem.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvDiem.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvDiem.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgvDiem.ThemeStyle.ReadOnly = false;
+            this.dgvDiem.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgvDiem.ThemeStyle.ReadOnly = true;
             this.dgvDiem.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDiem.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDiem.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,16 +129,11 @@
             this.dgvDiem.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDiem.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Elipse
-            // 
-            this.Elipse.BorderRadius = 22;
-            this.Elipse.TargetControl = this;
-            // 
             // FormSvXemDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 771);
+            this.ClientSize = new System.Drawing.Size(998, 832);
             this.Controls.Add(this.dgvDiem);
             this.Controls.Add(this.cbHocKy);
             this.Controls.Add(this.label4);
@@ -159,6 +153,5 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvDiem;
         private Guna.UI2.WinForms.Guna2ComboBox cbHocKy;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2Elipse Elipse;
     }
 }

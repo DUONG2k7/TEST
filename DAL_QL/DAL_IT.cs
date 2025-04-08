@@ -109,7 +109,7 @@ namespace DAL_QL
         }
         public DataTable GetListRole()
         {
-            string query = "SELECT IDRole, Role FROM ROLES WHERE Role <> 'GLOBALBAN'";
+            string query = "SELECT IDRole, Role FROM ROLES WHERE Role <> 'GLOBALBAN' AND Role <> 'admin'";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 conn.Open();

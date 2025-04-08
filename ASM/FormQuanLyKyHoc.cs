@@ -343,5 +343,16 @@ namespace ASM
                 }
             }
         }
+
+        private void FormQuanLyKyHoc_Load(object sender, EventArgs e)
+        {
+            tpTaoMonHoc.Controls.Clear();
+            FormQuanLyMonHoc QlGV1 = new FormQuanLyMonHoc();
+            QlGV1.TopLevel = false;
+            QlGV1.FormBorderStyle = FormBorderStyle.None;
+            QlGV1.Dock = DockStyle.Fill;
+            tpTaoMonHoc.Controls.Add(QlGV1);
+            QlGV1.Show();
+        }
     }
 }

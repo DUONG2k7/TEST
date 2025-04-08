@@ -39,8 +39,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.PnInfo = new Guna.UI2.WinForms.Guna2Panel();
             this.btnMenuQlyIT = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMenuQlyCBDT = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMenuQlyCBQL = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenuQlyPhongBan = new Guna.UI2.WinForms.Guna2Button();
             this.PnMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.dragFromCBQL = new Guna.UI2.WinForms.Guna2DragControl(this.components);
@@ -117,7 +115,7 @@
             this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 644);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 830);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(67, 45);
             this.guna2Button2.TabIndex = 2;
@@ -147,60 +145,15 @@
             this.btnMenuQlyIT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuQlyIT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuQlyIT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyIT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyIT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuQlyIT.ForeColor = System.Drawing.Color.White;
             this.btnMenuQlyIT.Location = new System.Drawing.Point(0, 28);
             this.btnMenuQlyIT.Name = "btnMenuQlyIT";
             this.btnMenuQlyIT.Size = new System.Drawing.Size(201, 45);
             this.btnMenuQlyIT.TabIndex = 0;
-            this.btnMenuQlyIT.Text = "Quản lý IT";
+            this.btnMenuQlyIT.Text = "Quản lý nhân sự";
             this.btnMenuQlyIT.UseTransparentBackground = true;
             this.btnMenuQlyIT.Click += new System.EventHandler(this.btnMenuQlyIT_Click);
-            // 
-            // btnMenuQlyCBDT
-            // 
-            this.btnMenuQlyCBDT.Animated = true;
-            this.btnMenuQlyCBDT.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuQlyCBDT.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMenuQlyCBDT.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuQlyCBDT.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuQlyCBDT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuQlyCBDT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuQlyCBDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenuQlyCBDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenuQlyCBDT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyCBDT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMenuQlyCBDT.ForeColor = System.Drawing.Color.White;
-            this.btnMenuQlyCBDT.Location = new System.Drawing.Point(0, 102);
-            this.btnMenuQlyCBDT.Name = "btnMenuQlyCBDT";
-            this.btnMenuQlyCBDT.Size = new System.Drawing.Size(201, 45);
-            this.btnMenuQlyCBDT.TabIndex = 0;
-            this.btnMenuQlyCBDT.Text = "Quản lý CBDT";
-            this.btnMenuQlyCBDT.UseTransparentBackground = true;
-            this.btnMenuQlyCBDT.Click += new System.EventHandler(this.btnMenuQlyCBDT_Click);
-            // 
-            // btnMenuQlyCBQL
-            // 
-            this.btnMenuQlyCBQL.Animated = true;
-            this.btnMenuQlyCBQL.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuQlyCBQL.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMenuQlyCBQL.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuQlyCBQL.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuQlyCBQL.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuQlyCBQL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuQlyCBQL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuQlyCBQL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenuQlyCBQL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenuQlyCBQL.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyCBQL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMenuQlyCBQL.ForeColor = System.Drawing.Color.White;
-            this.btnMenuQlyCBQL.Location = new System.Drawing.Point(0, 174);
-            this.btnMenuQlyCBQL.Name = "btnMenuQlyCBQL";
-            this.btnMenuQlyCBQL.Size = new System.Drawing.Size(201, 45);
-            this.btnMenuQlyCBQL.TabIndex = 0;
-            this.btnMenuQlyCBQL.Text = "Quản lý CBQL";
-            this.btnMenuQlyCBQL.UseTransparentBackground = true;
-            this.btnMenuQlyCBQL.Click += new System.EventHandler(this.btnMenuQlyCBQL_Click);
             // 
             // btnMenuQlyPhongBan
             // 
@@ -214,9 +167,9 @@
             this.btnMenuQlyPhongBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuQlyPhongBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuQlyPhongBan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyPhongBan.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyPhongBan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuQlyPhongBan.ForeColor = System.Drawing.Color.White;
-            this.btnMenuQlyPhongBan.Location = new System.Drawing.Point(0, 248);
+            this.btnMenuQlyPhongBan.Location = new System.Drawing.Point(0, 111);
             this.btnMenuQlyPhongBan.Name = "btnMenuQlyPhongBan";
             this.btnMenuQlyPhongBan.Size = new System.Drawing.Size(201, 45);
             this.btnMenuQlyPhongBan.TabIndex = 0;
@@ -228,8 +181,6 @@
             // 
             this.PnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.PnMenu.Controls.Add(this.btnMenuQlyPhongBan);
-            this.PnMenu.Controls.Add(this.btnMenuQlyCBQL);
-            this.PnMenu.Controls.Add(this.btnMenuQlyCBDT);
             this.PnMenu.Controls.Add(this.btnMenuQlyIT);
             this.PnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnMenu.Location = new System.Drawing.Point(94, 0);
@@ -286,8 +237,6 @@
         private Guna.UI2.WinForms.Guna2Elipse ElipseFormCBQL;
         private Guna.UI2.WinForms.Guna2Panel PnMenu;
         private Guna.UI2.WinForms.Guna2Button btnMenuQlyPhongBan;
-        private Guna.UI2.WinForms.Guna2Button btnMenuQlyCBQL;
-        private Guna.UI2.WinForms.Guna2Button btnMenuQlyCBDT;
         private Guna.UI2.WinForms.Guna2Button btnMenuQlyIT;
         private Guna.UI2.WinForms.Guna2Panel PnInfo;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;

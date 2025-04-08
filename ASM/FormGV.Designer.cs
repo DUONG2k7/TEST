@@ -43,7 +43,6 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.PnMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnMenuTraCuuSV = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenuGvXemLichDaySV = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenuQlyDanhSach = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenuQlyDiem = new Guna.UI2.WinForms.Guna2Button();
@@ -156,7 +155,7 @@
             this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 528);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 792);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(67, 45);
             this.guna2Button2.TabIndex = 2;
@@ -182,7 +181,6 @@
             // PnMenu
             // 
             this.PnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PnMenu.Controls.Add(this.btnMenuTraCuuSV);
             this.PnMenu.Controls.Add(this.btnMenuGvXemLichDaySV);
             this.PnMenu.Controls.Add(this.btnMenuQlyDanhSach);
             this.PnMenu.Controls.Add(this.btnMenuQlyDiem);
@@ -191,28 +189,6 @@
             this.PnMenu.Name = "PnMenu";
             this.PnMenu.Size = new System.Drawing.Size(201, 849);
             this.PnMenu.TabIndex = 19;
-            // 
-            // btnMenuTraCuuSV
-            // 
-            this.btnMenuTraCuuSV.Animated = true;
-            this.btnMenuTraCuuSV.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuTraCuuSV.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMenuTraCuuSV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuTraCuuSV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuTraCuuSV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuTraCuuSV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuTraCuuSV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenuTraCuuSV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenuTraCuuSV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuTraCuuSV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMenuTraCuuSV.ForeColor = System.Drawing.Color.White;
-            this.btnMenuTraCuuSV.Location = new System.Drawing.Point(0, 253);
-            this.btnMenuTraCuuSV.Name = "btnMenuTraCuuSV";
-            this.btnMenuTraCuuSV.Size = new System.Drawing.Size(201, 45);
-            this.btnMenuTraCuuSV.TabIndex = 0;
-            this.btnMenuTraCuuSV.Text = "Tra cứu sinh viên";
-            this.btnMenuTraCuuSV.UseTransparentBackground = true;
-            this.btnMenuTraCuuSV.Click += new System.EventHandler(this.btnMenuTraCuuSV_Click);
             // 
             // btnMenuGvXemLichDaySV
             // 
@@ -227,7 +203,7 @@
             this.btnMenuGvXemLichDaySV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuGvXemLichDaySV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuGvXemLichDaySV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuGvXemLichDaySV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuGvXemLichDaySV.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuGvXemLichDaySV.ForeColor = System.Drawing.Color.White;
             this.btnMenuGvXemLichDaySV.Location = new System.Drawing.Point(0, 179);
             this.btnMenuGvXemLichDaySV.Name = "btnMenuGvXemLichDaySV";
@@ -249,13 +225,13 @@
             this.btnMenuQlyDanhSach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuQlyDanhSach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuQlyDanhSach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyDanhSach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyDanhSach.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuQlyDanhSach.ForeColor = System.Drawing.Color.White;
             this.btnMenuQlyDanhSach.Location = new System.Drawing.Point(0, 102);
             this.btnMenuQlyDanhSach.Name = "btnMenuQlyDanhSach";
             this.btnMenuQlyDanhSach.Size = new System.Drawing.Size(201, 45);
             this.btnMenuQlyDanhSach.TabIndex = 0;
-            this.btnMenuQlyDanhSach.Text = "Thống kê sinh viên";
+            this.btnMenuQlyDanhSach.Text = "Thống kê / Tra cứu sinh viên";
             this.btnMenuQlyDanhSach.UseTransparentBackground = true;
             this.btnMenuQlyDanhSach.Click += new System.EventHandler(this.btnMenuQlyDanhSach_Click);
             // 
@@ -272,7 +248,7 @@
             this.btnMenuQlyDiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuQlyDiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuQlyDiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuQlyDiem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuQlyDiem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuQlyDiem.ForeColor = System.Drawing.Color.White;
             this.btnMenuQlyDiem.Location = new System.Drawing.Point(0, 28);
             this.btnMenuQlyDiem.Name = "btnMenuQlyDiem";
@@ -342,7 +318,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Panel PnMenu;
-        private Guna.UI2.WinForms.Guna2Button btnMenuTraCuuSV;
         private Guna.UI2.WinForms.Guna2Button btnMenuGvXemLichDaySV;
         private Guna.UI2.WinForms.Guna2Button btnMenuQlyDanhSach;
         private Guna.UI2.WinForms.Guna2Button btnMenuQlyDiem;

@@ -31,6 +31,8 @@ namespace ASM
         public void LoadDsCBDT()
         {
             dgvData.DataSource = QlCBDT.LoadDsCBDT();
+            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvData.Columns["Hinh"];
+            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
         public void LoadDsPhong()
         {

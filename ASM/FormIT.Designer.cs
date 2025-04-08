@@ -114,7 +114,7 @@
             this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 726);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 765);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(67, 45);
             this.guna2Button2.TabIndex = 2;

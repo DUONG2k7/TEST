@@ -279,7 +279,7 @@
             this.txtMaTk.ForeColor = System.Drawing.Color.Black;
             this.txtMaTk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaTk.Location = new System.Drawing.Point(143, 179);
-            this.txtMaTk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaTk.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaTk.Name = "txtMaTk";
             this.txtMaTk.PlaceholderText = "";
             this.txtMaTk.SelectedText = "";
@@ -391,7 +391,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDataTk.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDataTk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDataTk.ColumnHeadersHeight = 40;
+            this.dgvDataTk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -403,6 +404,7 @@
             this.dgvDataTk.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvDataTk.Location = new System.Drawing.Point(15, 298);
             this.dgvDataTk.Name = "dgvDataTk";
+            this.dgvDataTk.ReadOnly = true;
             this.dgvDataTk.RowHeadersVisible = false;
             this.dgvDataTk.Size = new System.Drawing.Size(929, 353);
             this.dgvDataTk.TabIndex = 50;
@@ -417,9 +419,9 @@
             this.dgvDataTk.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvDataTk.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvDataTk.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvDataTk.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDataTk.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgvDataTk.ThemeStyle.ReadOnly = false;
+            this.dgvDataTk.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvDataTk.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgvDataTk.ThemeStyle.ReadOnly = true;
             this.dgvDataTk.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvDataTk.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDataTk.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

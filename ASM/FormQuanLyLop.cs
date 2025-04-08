@@ -36,7 +36,8 @@ namespace ASM
             txtTenlop.Enabled = false;
 
             btnSave.Enabled = false;
-            btnUpdate.Enabled = true;
+            btnNew.Enabled = true;
+            btnUpdate.Enabled = false;
             btnLoU.Enabled = false;
         }
         public void ClearForm()

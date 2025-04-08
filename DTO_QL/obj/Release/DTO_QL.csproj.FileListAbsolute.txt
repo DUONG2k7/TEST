@@ -1,0 +1,6 @@
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\bin\Release\DTO_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\bin\Release\DTO_QL.pdb
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Release\DTO_QL.csproj.AssemblyReference.cache
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Release\DTO_QL.csproj.CoreCompileInputs.cache
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Release\DTO_QL.dll
+C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Release\DTO_QL.pdb

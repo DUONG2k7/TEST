@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblMarquee = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.PnMain = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PnMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnMenuXemDiem = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMenuXemLichThi = new Guna.UI2.WinForms.Guna2Button();
             this.btnMenuXemLichHoc = new Guna.UI2.WinForms.Guna2Button();
             this.PnInfo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -45,20 +43,11 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.dragFromSV = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PnMenu.SuspendLayout();
             this.PnInfo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(87, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(838, 569);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // lblMarquee
             // 
@@ -89,62 +78,24 @@
             this.PnMain.TabIndex = 16;
             this.PnMain.UseTransparentBackground = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(87, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(838, 569);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // PnMenu
             // 
             this.PnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PnMenu.Controls.Add(this.btnMenuXemDiem);
-            this.PnMenu.Controls.Add(this.btnMenuXemLichThi);
             this.PnMenu.Controls.Add(this.btnMenuXemLichHoc);
             this.PnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnMenu.Location = new System.Drawing.Point(94, 0);
             this.PnMenu.Name = "PnMenu";
             this.PnMenu.Size = new System.Drawing.Size(201, 771);
             this.PnMenu.TabIndex = 19;
-            // 
-            // btnMenuXemDiem
-            // 
-            this.btnMenuXemDiem.Animated = true;
-            this.btnMenuXemDiem.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuXemDiem.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMenuXemDiem.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuXemDiem.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuXemDiem.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuXemDiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuXemDiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuXemDiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenuXemDiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenuXemDiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuXemDiem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMenuXemDiem.ForeColor = System.Drawing.Color.White;
-            this.btnMenuXemDiem.Location = new System.Drawing.Point(0, 174);
-            this.btnMenuXemDiem.Name = "btnMenuXemDiem";
-            this.btnMenuXemDiem.Size = new System.Drawing.Size(201, 45);
-            this.btnMenuXemDiem.TabIndex = 0;
-            this.btnMenuXemDiem.Text = "Xem Điểm";
-            this.btnMenuXemDiem.UseTransparentBackground = true;
-            this.btnMenuXemDiem.Click += new System.EventHandler(this.btnMenuXemDiem_Click);
-            // 
-            // btnMenuXemLichThi
-            // 
-            this.btnMenuXemLichThi.Animated = true;
-            this.btnMenuXemLichThi.BackColor = System.Drawing.Color.Transparent;
-            this.btnMenuXemLichThi.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnMenuXemLichThi.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuXemLichThi.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.btnMenuXemLichThi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuXemLichThi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMenuXemLichThi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMenuXemLichThi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMenuXemLichThi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuXemLichThi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnMenuXemLichThi.ForeColor = System.Drawing.Color.White;
-            this.btnMenuXemLichThi.Location = new System.Drawing.Point(0, 102);
-            this.btnMenuXemLichThi.Name = "btnMenuXemLichThi";
-            this.btnMenuXemLichThi.Size = new System.Drawing.Size(201, 45);
-            this.btnMenuXemLichThi.TabIndex = 0;
-            this.btnMenuXemLichThi.Text = "Xem Lịch Thi";
-            this.btnMenuXemLichThi.UseTransparentBackground = true;
-            this.btnMenuXemLichThi.Click += new System.EventHandler(this.btnMenuXemLichThi_Click);
             // 
             // btnMenuXemLichHoc
             // 
@@ -159,13 +110,13 @@
             this.btnMenuXemLichHoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMenuXemLichHoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMenuXemLichHoc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnMenuXemLichHoc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMenuXemLichHoc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnMenuXemLichHoc.ForeColor = System.Drawing.Color.White;
             this.btnMenuXemLichHoc.Location = new System.Drawing.Point(0, 28);
             this.btnMenuXemLichHoc.Name = "btnMenuXemLichHoc";
             this.btnMenuXemLichHoc.Size = new System.Drawing.Size(201, 45);
             this.btnMenuXemLichHoc.TabIndex = 0;
-            this.btnMenuXemLichHoc.Text = "Xem Lịch Học";
+            this.btnMenuXemLichHoc.Text = "Xem thông tin";
             this.btnMenuXemLichHoc.UseTransparentBackground = true;
             this.btnMenuXemLichHoc.Click += new System.EventHandler(this.btnMenuXemLichHoc_Click);
             // 
@@ -193,7 +144,7 @@
             this.guna2Button2.Image = global::ASM.Properties.Resources.undo;
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button2.Location = new System.Drawing.Point(12, 644);
+            this.guna2Button2.Location = new System.Drawing.Point(12, 714);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(67, 45);
             this.guna2Button2.TabIndex = 2;
@@ -251,9 +202,9 @@
             this.Name = "FormSV";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormSV";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PnMain.ResumeLayout(false);
             this.PnMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PnMenu.ResumeLayout(false);
             this.PnInfo.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -267,8 +218,6 @@
         private System.Windows.Forms.Timer timer2;
         private Guna.UI2.WinForms.Guna2Panel PnMain;
         private Guna.UI2.WinForms.Guna2Panel PnMenu;
-        private Guna.UI2.WinForms.Guna2Button btnMenuXemDiem;
-        private Guna.UI2.WinForms.Guna2Button btnMenuXemLichThi;
         private Guna.UI2.WinForms.Guna2Button btnMenuXemLichHoc;
         private Guna.UI2.WinForms.Guna2Panel PnInfo;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
