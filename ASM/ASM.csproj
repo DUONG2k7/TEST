@@ -293,6 +293,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcTinTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTinTuc.Designer.cs">
+      <DependentUpon>UcTinTuc.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,6 +408,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTinTuc.resx">
+      <DependentUpon>UcTinTuc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ASM_TemporaryKey.pfx" />
     <None Include="packages.config" />

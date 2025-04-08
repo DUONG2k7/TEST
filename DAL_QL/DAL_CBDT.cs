@@ -12,17 +12,22 @@ namespace DAL_QL
     public class DAL_CBDT : DbConnect
     {
         //Sinh Viên
-        public DataTable GetListStudent()
+        public DataTable GetListStudent(string IDLOP)
         {
-            string query = "SELECT CL.IDLop AS N'ID Lớp', SV.IDSV AS N'Mã Sinh Viên', SV.TenSV AS N'Tên Sinh Viên', CL.ClassName AS N'Tên Lớp', SV.Email AS N'Email', SV.SoDT AS N'Số Điện Thoại', CASE WHEN SV.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS N'Giới Tính', SV.Diachi AS N'Địa Chỉ', SV.Hinh AS N'Hình' FROM STUDENTS SV JOIN CLASSES CL ON SV.IDLop = CL.IDLop";
+            string query = "SELECT CL.IDLop AS N'ID Lớp', SV.IDSV AS N'Mã Sinh Viên', SV.TenSV AS N'Tên Sinh Viên', CL.ClassName AS N'Tên Lớp', SV.Email AS N'Email', SV.SoDT AS N'Số Điện Thoại', CASE WHEN SV.Gioitinh = 1 THEN 'Nam' ELSE N'Nữ' END AS N'Giới Tính', SV.Diachi AS N'Địa Chỉ', SV.Hinh AS N'Hình' FROM STUDENTS SV JOIN CLASSES CL ON SV.IDLop = CL.IDLop WHERE CL.IDLop = @IDLOP";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
-                conn.Open();
-                DataTable dt = new DataTable();
-                using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    adapter.Fill(dt);
-                    return dt;
+                    cmd.Parameters.AddWithValue("@IDLOP", IDLOP);
+
+                    using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dataTable = new DataTable();
+                        conn.Open();
+                        dataAdapter.Fill(dataTable);
+                        return dataTable;
+                    }
                 }
             }
         }

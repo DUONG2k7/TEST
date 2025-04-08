@@ -23,9 +23,12 @@ namespace ASM
         public FormQuanLySV()
         {
             InitializeComponent();
+            LoadDanhSachLocDulieu();
             Loaddata();
             LoadDanhSachLop();
             LockControl();
+
+            cbLocDuLieu.SelectedValueChanged += cbLocDuLieu_SelectedIndexChanged;
 
             dgvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
@@ -90,7 +93,7 @@ namespace ASM
         }
         public void Loaddata()
         {
-            dgvData.DataSource = QlSinhVien.LoadDsSinhVien();
+            dgvData.DataSource = QlSinhVien.LoadDsSinhVien(cbLocDuLieu.SelectedValue.ToString());
             dgvData.Columns[0].Visible = false;
             DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvData.Columns["Hình"];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
@@ -100,6 +103,16 @@ namespace ASM
             cbLop.DataSource = QlSinhVien.LoadDsLopChoSinhVien();
             cbLop.DisplayMember = "ClassName";
             cbLop.ValueMember = "IDLop";
+        }
+        public void LoadDanhSachLocDulieu()
+        {
+            cbLocDuLieu.DataSource = QlSinhVien.LoadDsLopChoSinhVien();
+            cbLocDuLieu.DisplayMember = "ClassName";
+            cbLocDuLieu.ValueMember = "IDLop";
+        }
+        private void cbLocDuLieu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Loaddata();
         }
         private void LoadPictureBox()
         {

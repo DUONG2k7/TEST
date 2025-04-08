@@ -29,6 +29,8 @@ namespace ASM
         public void LoadDsTinTuc()
         {
             dgvDataTinTuc.DataSource = QlTinTuc.LoadDsTinTuc();
+            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvDataTinTuc.Columns["Hinh"];
+            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
         private void LoadPictureBox()
         {

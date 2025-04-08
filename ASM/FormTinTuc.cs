@@ -22,90 +22,90 @@ namespace ASM
         public FormTinTuc()
         {
             InitializeComponent();
-            max = qltintuc.GetTotalNews();
-            if (max > 0)
-            {
-                //đổi tin tức theo kiểu random hoặc tăng dần ( đang tăng dần )
-                //GetRandomID();
-                IdTinTuc = GetNextID();
-                LoadInfoTinTuc(IdTinTuc);
+            LoadInfoTinTuc();
+            //max = qltintuc.GetTotalNews();
+            //if (max > 0)
+            //{
+            //    //đổi tin tức theo kiểu random hoặc tăng dần ( đang tăng dần )
+            //    //GetRandomID();
+            //    IdTinTuc = GetNextID();
+            //    LoadInfoTinTuc();
 
-                //Nội dung
-                timerND.Interval = 100;
-                timerND.Tick += timerND_Tick;
-                timerND.Start();
-            }
-            else
-            {
-                MessageBox.Show("Không có dữ liệu tin tức để hiển thị.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //    //Nội dung
+            //    timerND.Interval = 100;
+            //    timerND.Tick += timerND_Tick;
+            //    timerND.Start();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Không có dữ liệu tin tức để hiển thị.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
         }
-        public int GetRandomID()
+        //public int GetRandomID()
+        //{
+        //    Random random = new Random();
+        //    int newId;
+
+        //    do
+        //    {
+        //        newId = random.Next(1, max + 1);
+        //    } while (newId == IdTinTuc); // Lặp lại nếu trùng số trước
+
+        //    return newId;
+        //}
+        //public int GetNextID()
+        //{
+        //    IdTinTuc++;
+
+        //    if (IdTinTuc > max)
+        //        IdTinTuc = 1; // Quay lại từ đầu
+
+        //    return IdTinTuc;
+        //}
+        public void LoadInfoTinTuc()
         {
-            Random random = new Random();
-            int newId;
-
-            do
-            {
-                newId = random.Next(1, max + 1);
-            } while (newId == IdTinTuc); // Lặp lại nếu trùng số trước
-
-            return newId;
-        }
-        public int GetNextID()
-        {
-            IdTinTuc++;
-
-            if (IdTinTuc > max)
-                IdTinTuc = 1; // Quay lại từ đầu
-
-            return IdTinTuc;
-        }
-        public bool LoadInfoTinTuc(int ID)
-        {
-            DataTable dt = qltintuc.LayDsTinTucTheoID(ID);
+            DataTable dt = qltintuc.LayDsTinTuc();
             if (dt.Rows.Count > 0)
             {
-                DataRow row = dt.Rows[0];
-                txtTieuDe.Text = $"{row["Title"]}";
-                lbNoidung.Text = $"{row["Content"]}";
-                lbNoidung.AutoSize = true;
+                flpTinTuc.Controls.Clear();
 
-                byte[] image = row["Hinh"] as byte[];
-                if (image != null && image.Length > 0)
+                foreach (DataRow row in dt.Rows)
                 {
-                    using (MemoryStream ms = new MemoryStream(image))
+                    UcTinTuc tin = new UcTinTuc();
+                    tin.TieuDe = row["Title"].ToString();
+                    tin.NoiDung = row["Content"].ToString();
+
+                    byte[] imgBytes = row["Hinh"] as byte[];
+                    if (imgBytes != null && imgBytes.Length > 0)
                     {
-                        pbAnh.Image = Image.FromStream(ms);
+                        using (MemoryStream ms = new MemoryStream(imgBytes))
+                        {
+                            tin.HinhAnh = Image.FromStream(ms);
+                        }
                     }
-                }
-                else
-                {
-                    pbAnh.Image = null;
-                }
 
-                return true;
+                    flpTinTuc.Controls.Add(tin);
+                }
             }
             else
             {
-                MessageBox.Show($"Id {IdTinTuc} Không có dữ liệu tin tức để hiển thị.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return false;
+                MessageBox.Show("Không có tin tức để hiển thị.");
             }
         }
-        private void timerND_Tick(object sender, EventArgs e)
-        {
-            xPosition -= 5;
+        //private void timerND_Tick(object sender, EventArgs e)
+        //{
+        //    xPosition -= 5;
 
-            lbNoidung.Left = xPosition;
-            if (xPosition + lbNoidung.Width < 0)
-            {
-                //đổi tin tức theo kiểu random hoặc tăng dần ( đang tăng dần )
-                //IdTinTuc = GetRandomID();
-                IdTinTuc = GetNextID();
-                LoadInfoTinTuc(IdTinTuc);
+        //    lbNoidung.Left = xPosition;
+        //    if (xPosition + lbNoidung.Width < 0)
+        //    {
+        //        //đổi tin tức theo kiểu random hoặc tăng dần ( đang tăng dần )
+        //        //IdTinTuc = GetRandomID();
+        //        IdTinTuc = GetNextID();
+        //        LoadInfoTinTuc(IdTinTuc);
 
-                xPosition = this.Width;
-            }
-        }
+        //        xPosition = this.Width;
+        //    }
+        //}
     }
 }

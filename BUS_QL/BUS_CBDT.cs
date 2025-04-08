@@ -15,9 +15,9 @@ namespace BUS_QL
         DAL_CBDT QlThongTin = new DAL_CBDT();
 
         //Sinh Viên
-        public DataTable LoadDsSinhVien()
+        public DataTable LoadDsSinhVien(string IDLOP)
         {
-            return QlThongTin.GetListStudent();
+            return QlThongTin.GetListStudent(IDLOP);
         }
         public DataTable LoadDsLopChoSinhVien()
         {

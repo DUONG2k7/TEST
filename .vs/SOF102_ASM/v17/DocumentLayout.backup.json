@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\GIT_PRO231_3layer\\FinalVer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formquanlycbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlycbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formquanlycbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlycbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\uctintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\uctintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formquanlycbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlycbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formquanlyit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlyit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,52 +34,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormQuanLyCBDT.cs",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBDT.cs",
-              "RelativeDocumentMoniker": "ASM\\FormQuanLyCBDT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBDT.cs",
-              "RelativeToolTip": "ASM\\FormQuanLyCBDT.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UcTinTuc.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\UcTinTuc.cs",
+              "RelativeDocumentMoniker": "ASM\\UcTinTuc.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\UcTinTuc.cs [Design]",
+              "RelativeToolTip": "ASM\\UcTinTuc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:25:47.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T14:02:36.419Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormQuanLyIT.cs [Design]",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyIT.cs",
-              "RelativeDocumentMoniker": "ASM\\FormQuanLyIT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyIT.cs [Design]",
-              "RelativeToolTip": "ASM\\FormQuanLyIT.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "FormTinTuc.cs [Design]",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormTinTuc.cs",
+              "RelativeDocumentMoniker": "ASM\\FormTinTuc.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormTinTuc.cs [Design]",
+              "RelativeToolTip": "ASM\\FormTinTuc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:24:21.117Z",
+              "WhenOpened": "2025-04-08T13:59:46.357Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormQuanLyCBQL.cs [Design]",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBQL.cs",
-              "RelativeDocumentMoniker": "ASM\\FormQuanLyCBQL.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBQL.cs [Design]",
-              "RelativeToolTip": "ASM\\FormQuanLyCBQL.cs [Design]",
+              "Title": "FormTinTuc.cs",
+              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormTinTuc.cs",
+              "RelativeDocumentMoniker": "ASM\\FormTinTuc.cs",
+              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormTinTuc.cs",
+              "RelativeToolTip": "ASM\\FormTinTuc.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwFEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:24:19.833Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormQuanLyCBDT.cs [Design]",
-              "DocumentMoniker": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBDT.cs",
-              "RelativeDocumentMoniker": "ASM\\FormQuanLyCBDT.cs",
-              "ToolTip": "C:\\GIT_PRO231_3layer\\FinalVer\\ASM\\FormQuanLyCBDT.cs [Design]",
-              "RelativeToolTip": "ASM\\FormQuanLyCBDT.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:24:19.004Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-08T13:50:47.113Z",
+              "EditorCaption": ""
             }
           ]
         }

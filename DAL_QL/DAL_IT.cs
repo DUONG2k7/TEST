@@ -550,16 +550,15 @@ namespace DAL_QL
                 }
             }
         }
-        public DataTable GetListNewsFormID(int ID)
+        public DataTable GetAllNews()
         {
             string query = "SELECT N.IDTin, N.Title, N.Content, N.NgayDang, N.Hinh, " +
                            "CASE WHEN N.Trangthai = 1 THEN N'Đang sử dụng' ELSE N'Khóa' END AS Trangthai " +
-                           "FROM NEWS N WHERE N.IDTin = @IDTin AND N.Trangthai = 1";
+                           "FROM NEWS N WHERE N.Trangthai = 1";
 
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 SqlCommand command = new SqlCommand(query, conn);
-                command.Parameters.AddWithValue("@IDTin", ID);
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
