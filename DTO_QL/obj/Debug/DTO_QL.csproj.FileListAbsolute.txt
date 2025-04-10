@@ -22,6 +22,7 @@ C:\GIT_PRO231_3layer\TEST-main\DTO_QL\obj\Debug\DTO_QL.csproj.AssemblyReference.
 C:\GIT_PRO231_3layer\TEST-main\DTO_QL\obj\Debug\DTO_QL.csproj.CoreCompileInputs.cache
 C:\GIT_PRO231_3layer\TEST-main\DTO_QL\obj\Debug\DTO_QL.dll
 C:\GIT_PRO231_3layer\TEST-main\DTO_QL\obj\Debug\DTO_QL.pdb
+<<<<<<< HEAD
 C:\GIT_PRO231_3layer\TEST-main - Copy\DTO_QL\bin\Debug\DTO_QL.dll
 C:\GIT_PRO231_3layer\TEST-main - Copy\DTO_QL\bin\Debug\DTO_QL.pdb
 C:\GIT_PRO231_3layer\TEST-main - Copy\DTO_QL\obj\Debug\DTO_QL.csproj.AssemblyReference.cache
@@ -34,3 +35,11 @@ C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Debug\DTO_QL.csproj.AssemblyReference.c
 C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Debug\DTO_QL.csproj.CoreCompileInputs.cache
 C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Debug\DTO_QL.dll
 C:\GIT_PRO231_3layer\FinalVer\DTO_QL\obj\Debug\DTO_QL.pdb
+=======
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\bin\Debug\DTO_QL.dll
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\bin\Debug\DTO_QL.pdb
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\obj\Debug\DTO_QL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\obj\Debug\DTO_QL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\obj\Debug\DTO_QL.dll
+C:\Users\ADMIN\Desktop\CODE\TEST\DTO_QL\obj\Debug\DTO_QL.pdb
+>>>>>>> cdb6fc8 (Fix dgv)

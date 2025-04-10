@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\GIT_PRO231_3layer\\FinalVer\\",
   "Documents": [
     {
@@ -13,6 +14,57 @@
     {
       "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|c:\\git_pro231_3layer\\finalver\\asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|c:\\users\\admin\\desktop\\code\\test\\dal_ql\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\dal_ql\\dal_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB569C07-FEB1-443E-826C-FFA15907ADE3}|DAL_QL\\DAL_QL.csproj|solutionrelative:dal_ql\\dal_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formquanlyphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlyphongban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formcbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formcbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formcbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formcbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formquanlycbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlycbql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formquanlylop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formquanlylop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formcbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formcbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formcbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formcbdt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formtintuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\asm\\formit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ED0B138-2E1E-4993-BB69-2B902511DF0B}|ASM\\ASM.csproj|solutionrelative:asm\\formit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{855F2DA6-1611-498D-B4EA-F269C56A64E5}|BUS_QL\\BUS_QL.csproj|solutionrelative:bus_ql\\bus_it.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> cdb6fc8 (Fix dgv)
     }
   ],
   "DocumentGroupContainers": [
@@ -22,9 +74,10 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
@@ -67,7 +120,146 @@
               "ViewState": "AgIAADIAAAAAAAAAAAAAwFEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T13:50:47.113Z",
+=======
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormQuanLyPhongBan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyPhongBan.cs",
+              "RelativeDocumentMoniker": "ASM\\FormQuanLyPhongBan.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyPhongBan.cs [Design]",
+              "RelativeToolTip": "ASM\\FormQuanLyPhongBan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T07:43:57.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCBQL.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBQL.cs",
+              "RelativeDocumentMoniker": "ASM\\FormCBQL.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBQL.cs",
+              "RelativeToolTip": "ASM\\FormCBQL.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAASwGUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T07:43:48.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormQuanLyCBQL.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyCBQL.cs",
+              "RelativeDocumentMoniker": "ASM\\FormQuanLyCBQL.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyCBQL.cs [Design]",
+              "RelativeToolTip": "ASM\\FormQuanLyCBQL.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T07:43:40.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormQuanLyLop.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyLop.cs",
+              "RelativeDocumentMoniker": "ASM\\FormQuanLyLop.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormQuanLyLop.cs [Design]",
+              "RelativeToolTip": "ASM\\FormQuanLyLop.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:16:37.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormCBDT.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBDT.cs",
+              "RelativeDocumentMoniker": "ASM\\FormCBDT.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBDT.cs",
+              "RelativeToolTip": "ASM\\FormCBDT.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAASwFEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:16:32.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCBQL.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBQL.cs",
+              "RelativeDocumentMoniker": "ASM\\FormCBQL.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBQL.cs [Design]",
+              "RelativeToolTip": "ASM\\FormCBQL.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:16:20.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormCBDT.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBDT.cs",
+              "RelativeDocumentMoniker": "ASM\\FormCBDT.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormCBDT.cs [Design]",
+              "RelativeToolTip": "ASM\\FormCBDT.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:16:19.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbConnect.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\DAL_QL\\DbConnect.cs",
+              "RelativeDocumentMoniker": "DAL_QL\\DbConnect.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\DAL_QL\\DbConnect.cs",
+              "RelativeToolTip": "DAL_QL\\DbConnect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:15:29.274Z",
+>>>>>>> cdb6fc8 (Fix dgv)
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormIT.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormIT.cs",
+              "RelativeDocumentMoniker": "ASM\\FormIT.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormIT.cs",
+              "RelativeToolTip": "ASM\\FormIT.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDMAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:19:42.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormTinTuc.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormTinTuc.cs",
+              "RelativeDocumentMoniker": "ASM\\FormTinTuc.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\ASM\\FormTinTuc.cs",
+              "RelativeToolTip": "ASM\\FormTinTuc.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T09:36:45.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BUS_IT.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\BUS_QL\\BUS_IT.cs",
+              "RelativeDocumentMoniker": "BUS_QL\\BUS_IT.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\BUS_QL\\BUS_IT.cs",
+              "RelativeToolTip": "BUS_QL\\BUS_IT.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAawFsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T09:32:59.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DAL_IT.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\DAL_QL\\DAL_IT.cs",
+              "RelativeDocumentMoniker": "DAL_QL\\DAL_IT.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\CODE\\TEST\\DAL_QL\\DAL_IT.cs",
+              "RelativeToolTip": "DAL_QL\\DAL_IT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T09:20:25.968Z"
             }
           ]
         }
